@@ -1,0 +1,74 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Software engineer with 2+ years of professional experience building scalable APIs, microservices, and data pipelines in \textbf{C\#}, \textbf{Java}, and \textbf{Python}.
+Delivered measurable process improvements including 50\% faster deployments and 83\% latency reduction through systematic workflow optimisation.
+Actively exploring \textbf{LLM integration} and \textbf{AI-assisted tooling} (LangChain, LlamaIndex) to augment intelligent backend systems.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Java, Python \\
+\textbf{Backend \& APIs:} .NET 8, ASP.NET Core, Spring Boot, REST APIs, Microservices, Kafka, CQRS, API Versioning \\
+\textbf{AI / LLM Tooling:} LangChain, LlamaIndex (familiar), OpenAI APIs, Prompt Engineering \\
+\textbf{Data Structures \& Algorithms:} Arrays, Trees, Graphs, Hash Maps, Queues, Dynamic Programming \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, Lambda, EKS), Docker, Kubernetes, CI/CD, Git, Azure DevOps \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Redis, Indexing, Query Optimisation \\
+\textbf{Process \& Tools:} Workflow Optimisation, Agile/Scrum, Swagger/OpenAPI, Splunk, OpenTelemetry, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless microservice using \textbf{CQRS} and \textbf{SQS} that offloaded compliance checks from the client, reducing wait time from \textbf{3000ms to 500ms (83\%)} while enabling horizontal scaling.
+    \item Built \textbf{ASP.NET Core} REST APIs handling \textbf{200K+ weekly requests} with structured error handling, input validation, and \textbf{Swagger/OpenAPI} documentation; implemented \textbf{URL-based API versioning} for seamless client migrations.
+    \item Engineered scalable data import/export backend for \textbf{30+ data types} using async processing, \textbf{S3 presigned URLs}, and \textbf{MongoDB}, reducing transfer time by \textbf{38\%} and data issues by \textbf{25\%}.
+    \item Streamlined \textbf{Azure DevOps} pipelines with staged gates, parallel jobs, and automated testing --- reducing deployment time by \textbf{50\%} and build cycles by \textbf{33\%} (process improvement).
+    \item Optimised \textbf{database indexing} on \textbf{MongoDB} and \textbf{PostgreSQL}; improved API response time by \textbf{34\%} via \textbf{Redis} caching and connection pooling on hot-path endpoints.
+    \item Authored \textbf{production-safe migration scripts} with idempotent operations enabling zero-downtime deployments; cut technical debt by \textbf{55\%} migrating legacy services to \textbf{.NET 8}.
+    \item Architected event-driven pipelines with \textbf{AWS Lambda}, retry/backoff strategies, and \textbf{SNS/SQS} patterns ensuring zero message loss; instrumented with \textbf{OpenTelemetry} and \textbf{Splunk}.
+    \item Established \textbf{OAuth 2.0} / \textbf{JWT} authentication on \textbf{AWS EKS} behind \textbf{Kong Gateway} with \textbf{Okta} for secure cross-service authorisation.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{AI Agentic Systems -- Self-Study \& Prototyping} \hfill 2025 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Studied LLM integration patterns using \textbf{LangChain} and \textbf{LlamaIndex}; explored RAG pipelines, tool-calling agents, and prompt engineering techniques.
+    \item Prototyped a \textbf{Python}-based Q\&A agent over structured data, applying chunking strategies and vector retrieval to improve answer relevance.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built with \textbf{Spring Boot} and \textbf{5+ microservices} communicating via async \textbf{Kafka}; containerised with \textbf{Docker}, orchestrated on \textbf{Kubernetes}; load-tested with \textbf{1000+ simulated transactions}.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+\textbf{Lean Six Sigma Yellow Belt} \hfill Process Improvement \& Workflow Optimisation
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

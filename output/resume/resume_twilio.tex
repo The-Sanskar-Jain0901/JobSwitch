@@ -1,0 +1,75 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience building distributed microservices, event-driven systems, and REST APIs at scale.
+Proficient in \textbf{Java (Spring Boot)}, cloud-native architectures on \textbf{AWS}, and containerised deployments with \textbf{Docker} and \textbf{Kubernetes}.
+Strong CS fundamentals in data structures, algorithms, operating systems, and distributed systems.
+Thrives in collaborative Agile teams with on-call ownership and full SDLC accountability from design to production.
+
+\section*{Skills}
+\textbf{Languages:} Java, C\#, Python, TypeScript \\
+\textbf{Frameworks:} Spring Boot, Hibernate, ASP.NET Core, REST APIs, GraphQL, Microservices \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, ECS, Lambda), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Messaging \& Data:} Kafka, Redis, MongoDB, PostgreSQL, MySQL \\
+\textbf{Practices \& Tools:} Agile/Scrum, On-call rotation, Splunk, Jira, Postman, Swagger, Git
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Architected \textbf{RulesRunner}, an event-driven microservice using \textbf{AWS SQS} that decoupled compliance processing from the client, reducing response latency from \textbf{3000ms to 500ms} (\textbf{83\%}) and enabling independent scaling across distributed workflows.
+    \item Designed and maintained \textbf{ASP.NET Core} and \textbf{Spring Boot} REST APIs handling \textbf{200K+ weekly requests} with structured error handling, input validation, and Swagger-documented contracts in an Agile/Scrum environment.
+    \item Engineered reliable async pipelines using \textbf{AWS SNS, Lambda, and S3} with idempotent processing, retry/backoff strategies, and dead-letter queues, eliminating message loss under failure conditions.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis} caching, connection pooling, and targeted query optimisation on hot-path endpoints serving distributed clients.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} through migrating legacy services to modern frameworks, modernising dependency injection and async patterns.
+    \item Reduced deployment time by \textbf{50\%} by overhauling CI/CD pipelines with staged gates, parallel jobs, and automated test integration across \textbf{Docker}-containerised services deployed on \textbf{Kubernetes (EKS)}.
+    \item Participated in \textbf{on-call rotation}, reducing mean time to diagnose production incidents by instrumenting services with structured logging and \textbf{Splunk} dashboards for real-time alerting.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Distributed Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a full-stack application using \textbf{Java Spring Boot} with \textbf{Hibernate} ORM, \textbf{5+ microservices}, and async \textbf{Kafka} event-driven communication across bounded contexts.
+    \item Containerised all services with \textbf{Docker} and orchestrated with \textbf{Kubernetes}; integrated \textbf{Kong API Gateway} for routing, load balancing, and authentication; simulated \textbf{1000+} transactions end-to-end.
+    \item Implemented circuit breaker patterns with \textbf{Resilience4j} and distributed tracing with Zipkin for fault-tolerant inter-service communication.
+\end{itemize}
+
+\textbf{Real-Time Notification Service} \hfill Mar 2023 -- May 2023
+\begin{itemize}[leftmargin=*]
+    \item Designed a scalable notification engine in \textbf{Java (Spring Boot)} supporting SMS, email, and push channels with pluggable provider adapters and \textbf{Kafka}-based event ingestion.
+    \item Achieved sub-second delivery latency for \textbf{10K+ concurrent users} using async processing, connection pooling, and rate-limiting with token bucket algorithms.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \hfill 2024 \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \;|\; CGPA: 8.8 \\
+\textit{Relevant Coursework:} Data Structures \& Algorithms, Operating Systems, Distributed Systems, Database Management, Computer Networks
+
+\end{document}

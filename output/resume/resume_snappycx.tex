@@ -1,0 +1,72 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience shipping production APIs, cloud integrations, and automation pipelines at Verisk Analytics.
+Proficient in \textbf{Python}, \textbf{REST API integration}, and deploying third-party platforms on \textbf{AWS} using cost-efficient, open-source tooling.
+Pragmatic builder with a strong bias for working solutions -- experienced integrating external services, automating workflows, and delivering end-to-end systems with full ownership.
+
+\section*{Skills}
+\textbf{Languages:} Python, C\#, Java \\
+\textbf{AI \& Integrations:} REST API Integration, Webhook Pipelines, Third-Party Platform Deployment, Async Event Processing \\
+\textbf{Web \& Backend:} ASP.NET Core, Spring Boot, REST APIs, Microservices, Kong API Gateway, OAuth 2.0, JWT \\
+\textbf{Cloud \& DevOps:} AWS (Lambda, S3, SQS, SNS, EKS, ECS, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases \& Storage:} MongoDB, PostgreSQL, MySQL, Redis, Query Optimisation \\
+\textbf{Tools \& Observability:} GitHub, OpenTelemetry, Splunk, Swagger/OpenAPI, Azure DevOps, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Built and deployed \textbf{REST APIs} handling \textbf{200K+ weekly requests}, integrating third-party services with structured error handling, retries, and \textbf{Swagger/OpenAPI} contracts -- shipped end-to-end with full ownership.
+    \item Engineered \textbf{event-driven automation pipelines} on \textbf{AWS Lambda} and \textbf{SQS/SNS} with idempotent processing, retry/backoff, and DLQ handling for reliable third-party service orchestration.
+    \item Designed \textbf{RulesRunner}, a stateless microservice decoupling compliance logic from clients via \textbf{CQRS} and async queuing, reducing latency by \textbf{83\%} (3000ms → 500ms) with horizontal scalability.
+    \item Built large-scale async data pipeline for \textbf{Xactimate} integrating \textbf{30+ external data types} via \textbf{S3 presigned URLs} and \textbf{MongoDB}, cutting transfer time \textbf{38\%} and data issues \textbf{25\%}.
+    \item Integrated \textbf{OAuth 2.0 / JWT} with \textbf{Okta} on \textbf{Kong API Gateway} to enable secure, token-based access across distributed services -- reusable pattern adopted across multiple teams.
+    \item Improved hot-path response time by \textbf{34\%} through \textbf{Redis} caching and \textbf{PostgreSQL / MongoDB} query optimisation on high-traffic endpoints.
+    \item Accelerated deployment cycles by \textbf{50\%} by overhauling \textbf{Azure DevOps} CI/CD pipelines with parallel jobs, staged gates, and automated tests -- leveraging open-source tooling throughout.
+    \item Authored \textbf{production-safe, idempotent migration scripts} enabling zero-downtime schema deployments; instrumented services with \textbf{OpenTelemetry} and \textbf{Splunk} for end-to-end observability.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{AI Chatbot Integration Prototype -- Python \& Webhook Automation} \hfill 2025
+\begin{itemize}[leftmargin=*]
+    \item Built a \textbf{Python}-based prototype integrating \textbf{LLM APIs} (OpenAI-compatible) to automate conversational workflows, processing webhook events and routing responses to downstream services.
+    \item Designed prompt engineering templates and API orchestration layer to serve structured responses -- deployed on \textbf{AWS Lambda} for serverless, cost-efficient operation.
+\end{itemize}
+
+\textbf{Kafka-Driven Expense Tracker -- Microservices Platform} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{5+ Java microservices} with async \textbf{Kafka} messaging and \textbf{Kong API Gateway}; containerised with \textbf{Docker} and orchestrated via \textbf{Kubernetes}, load-tested at \textbf{1000+ concurrent transactions}.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

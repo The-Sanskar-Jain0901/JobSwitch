@@ -1,0 +1,71 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=2pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    Full-Stack Software Engineer | AI-Native Development | Distributed Systems \\
+    Hyderabad, Telangana, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\section*{Summary}
+Full-stack software engineer with 2+ years of experience owning backend systems, REST APIs, and full-stack features end-to-end at Verisk Analytics, using Claude Code daily as the primary driver for feature development, debugging, and code review. Also built production LLM-powered internal agents via direct API integration and prompt engineering. Comfortable working across the stack (Spring Boot/ASP.NET Core backends, React frontends, PostgreSQL/MongoDB), decomposing engineering work for AI-assisted execution, and verifying AI-generated code for correctness and maintainability. Resourceful in ambiguous environments with strong systems thinking and end-to-end ownership.
+
+\section*{Key Skills}
+\textbf{AI-Native Development:} Claude Code (daily driver), LLM API integration (OpenAI), prompt engineering, agent orchestration, task decomposition for AI-assisted coding, AI-generated code review \\
+\textbf{Languages \& Frameworks:} Python, Java, TypeScript, C\#, Spring Boot, ASP.NET Core, React \\
+\textbf{Backend \& Architecture:} REST APIs, system design, microservices, distributed systems, event-driven architecture, API design \\
+\textbf{Data \& Cloud:} PostgreSQL, MongoDB, AWS (S3, SQS, SNS, Lambda, EKS), Docker, Kubernetes, CI/CD, Terraform
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Use Claude Code daily as the primary development environment, directing it to implement, debug, and refactor backend features while reviewing generated code for correctness, security, and maintainability before merge.
+    \item Built and shipped an internal LLM-powered workflow agent (Python, OpenAI API) end-to-end, using prompt engineering and custom orchestration logic to automate Jira ticket creation and task routing, reducing manual coordination effort for the team.
+    \item Owned feature delivery end-to-end for RulesRunner, a stateless microservice using CQRS and SQS that offloaded compliance checks from the client, reducing wait time from 3000ms to 500ms (83\%) while enabling horizontal scaling.
+    \item Designed and built ASP.NET Core REST APIs handling 200K+ weekly requests, decomposing feature work into clear, testable units with structured error handling, input validation, and Swagger/OpenAPI documentation.
+    \item Engineered end-to-end data integration for Xactimate's import/export across 30+ data types using async processing, S3 presigned URLs, and PostgreSQL/MongoDB, reducing transfer time by 38\% and issues by 25\%.
+    \item Improved API response time by 34\% via Redis/ElastiCache caching and query optimization; set standards for code quality through structured code reviews covering architecture, edge cases, and production readiness.
+\end{itemize}
+
+\section*{Projects}
+\resumeSubheading{Internal Workflow Automation Agent}{2025 -- 2026}{}{Python, OpenAI API, Prompt Engineering}
+\begin{itemize}
+    \item Designed and built an AI agent using direct OpenAI API integration with custom prompt engineering and orchestration logic, decomposing the problem into agent tasks to automate Jira ticket creation and cross-team task routing.
+\end{itemize}
+
+\resumeSubheading{Expense Tracker -- Full-Stack Microservices Application}{Aug 2023 -- Dec 2023}{}{Java, Spring Boot, React, PostgreSQL}
+\begin{itemize}
+    \item Built a full-stack expense tracker using Java/Spring Boot with 5+ microservices, a React frontend with HTML/CSS backed by PostgreSQL, and Kong API Gateway routing, containerized with Docker/Kubernetes.
+\end{itemize}
+
+\section*{Certifications}
+AWS Certified Cloud Practitioner -- Amazon Web Services \enspace | \enspace Oct 2024
+
+\section*{Education}
+\resumeSubheading{Bachelor of Technology in Computer Engineering}{}{Vishwakarma Institute of Technology, Pune (S.P.P.U)}{2024 \enspace | \enspace 8.8 GPA}
+
+\end{document}

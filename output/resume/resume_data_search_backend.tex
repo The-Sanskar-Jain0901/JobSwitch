@@ -1,0 +1,69 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    Backend Engineer | Data Pipelines | Search \& Document Processing \\
+    Pune, Maharashtra, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\section*{Summary}
+Backend Engineer with 2+ years of experience building and operating data-heavy production systems on AWS, with hands-on ownership of ingestion pipelines, high-volume REST APIs, and asynchronous processing. Strong in messy-source normalization, deduplication, consistency checks, third-party API integrations, and reliability-focused backend design across Python, .NET, and Node.js/TypeScript environments. Familiar with full-text search concepts, indexing and query tuning patterns, PDF processing workflows, LLM-assisted document extraction, and scholarly data sources such as PubMed, Crossref, and arXiv.
+
+\section*{Key Skills}
+\textbf{Backend \& Data Systems:} REST APIs, data ingestion pipelines, ETL, asynchronous processing, microservices, web scraping, large-scale crawling, third-party APIs \\
+\textbf{Search \& Data Quality:} Full-text search familiarity, indexing strategy, relevance tuning, query optimization, deduplication, consistency validation, schema normalization \\
+\textbf{Languages \& Cloud:} Node.js, TypeScript, Python, C\#, .NET 8, AWS S3, AWS Lambda, AWS SNS, Amazon SQS, Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Document \& ML Pipelines:} PDF processing familiarity, document transformation, OCR-assisted parsing, LLM-based structured extraction, PubMed, Crossref, arXiv, MongoDB, PostgreSQL
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Backend Engineer}{Hyderabad, India}
+\begin{itemize}
+    \item Engineered production ingestion and import/export workflows across 30+ heterogeneous data types using asynchronous processing, AWS S3 presigned URLs, and MongoDB, reducing transfer time by 40\% while improving correctness checks for malformed and inconsistent inputs.
+    \item Designed and operated backend APIs and data services handling 200K+ weekly requests, with stronger validation, idempotent processing, and deduplication safeguards that reduced user-reported data issues by 25\% and improved service reliability.
+    \item Built pipeline components in Node.js/TypeScript and .NET for integrating third-party sources, transforming payloads into normalized internal schemas, and coordinating retries, backfills, and failure handling through SQS, SNS, Lambda, and queue-backed workers.
+    \item Improved data retrieval performance by applying search indexing and query tuning patterns to high-volume datasets, reducing lookup latency by 35\% and making results more consistent for downstream users and services.
+    \item Led backend modernization to .NET 8 and strengthened CI/CD in Azure DevOps, cutting deployment time by 50\%, improving observability, and making production rollouts safer for data-heavy services.
+\end{itemize}
+
+\section*{Selected Projects}
+\resumeSubheading{Scholarly Document Intelligence Pipeline}{2025 -- 2026}{}{Python, TypeScript, PubMed, Crossref, arXiv, LLMs}
+\begin{itemize}
+    \item Worked on a pipeline that crawled academic metadata and PDFs from PubMed, Crossref, and arXiv, normalized heterogeneous records, and extracted structured entities from unstructured documents using OCR and LLM-assisted parsing.
+    \item Supported PDF extraction, chunking, metadata reconciliation, and storage workflows with validation and deduplication rules to improve downstream document quality and retrieval accuracy.
+\end{itemize}
+
+\resumeSubheading{Search \& Crawling Platform}{2024 -- 2025}{}{Node.js, TypeScript, PostgreSQL, Search APIs}
+\begin{itemize}
+    \item Contributed to crawling and scraping workflows for third-party sources, including rate limiting, retry orchestration, canonicalization, and change detection to keep indexed content fresh and reliable.
+    \item Built REST APIs for document discovery and filtered retrieval, with exposure to search-oriented query patterns and indexing update flows.
+\end{itemize}
+
+\section*{Education}
+\resumeSubheading{Bachelor of Technology in Computer Engineering}{}{Vishwakarma Institute of Technology, Pune (S.P.P.U)}{2024 \enspace | \enspace 8.8 GPA}
+
+\end{document}

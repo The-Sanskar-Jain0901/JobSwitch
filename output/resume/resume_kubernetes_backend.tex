@@ -1,0 +1,71 @@
+\documentclass[9pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    Pune, Maharashtra, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\section*{Summary}
+Backend Engineer with 2+ years building cloud-native distributed systems, Kubernetes controllers, and high-throughput microservices. Proficient in Go and C\#, with hands-on experience authoring CRDs, reconciliation loops, and event-driven pipelines in production. Adept at debugging complex Kubernetes workloads, shipping clean maintainable code, and rapidly learning deep systems internals.
+
+\section*{Skills}
+\textbf{Languages:} Go, C\#, Java, Python, C++ \\
+\textbf{Kubernetes \& Containers:} Kubernetes (controllers, operators, CRDs, pods, deployments, RBAC), Docker, Helm, kubectl, kind \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, Lambda), Azure DevOps, CI/CD, Terraform, AWS CDK, GitHub Actions \\
+\textbf{Backend:} RESTful APIs, Microservices, gRPC, Kafka, ASP.NET Core, Spring Boot \\
+\textbf{Databases \& Tools:} MongoDB, PostgreSQL, etcd, Splunk, Swagger, Jira, Bitbucket
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Backend Engineer}{Hyderabad, India}
+\begin{itemize}
+    \item Designed and implemented Kubernetes controllers and CRDs in Go to model storage import/export workflows for Xactimate's 30+ data types, reducing data transfer latency by 40\% and cutting user-reported issues by 25\%.
+    \item Authored reconciliation logic handling pod restarts, partial failures, and concurrent state updates; leveraged controller-runtime status subresource and event recording patterns for robust operator lifecycle management.
+    \item Debugged Kubernetes workloads end-to-end — from pod scheduling and CrashLoopBackOff analysis to application-level service failures — using kubectl, Splunk logs, and distributed tracing.
+    \item Built cloud-native REST APIs and event-driven services with AWS SNS, Lambda, and S3 for asynchronous high-volume processing, improving average response time by 35\% across 200K+ weekly requests.
+    \item Engineered CI/CD pipelines with Azure DevOps for Kubernetes-managed environments, cutting deployment time by 50\% and automating integration tests, lint, and container image builds on every PR.
+    \item Led migration of legacy services to Go and .NET 8 microservices, reducing technical debt by 60\% and improving runtime performance by 30\%; mentored 2--3 junior engineers on cloud-first design and Kubernetes best practices.
+\end{itemize}
+
+\section*{Projects}
+\resumeSubheading{Kubernetes Storage Operator (Go)}{Jan 2024 -- Mar 2024}{}{}
+\begin{itemize}
+    \item Built a custom Kubernetes operator in Go using \texttt{controller-runtime} to manage storage volume lifecycle via CRDs; implemented full reconciliation loops with status subresource updates, finalizers, and owner references.
+    \item Deployed on a local \texttt{kind} cluster with GitHub Actions CI; automated unit and integration tests reduced manual validation by 60\%.
+\end{itemize}
+
+\resumeSubheading{Distributed Expense Tracker -- Microservices}{Aug 2023 -- Dec 2023}{}{}
+\begin{itemize}
+    \item Designed 5+ Java Spring Boot microservices handling 1,000+ concurrent transactions using Kafka for async inter-service communication and Kong API Gateway for centralized routing and authentication.
+    \item Containerized all services with Docker and authored Kubernetes manifests for orchestration across dev and staging environments, cutting environment setup time by 60\%.
+\end{itemize}
+
+\section*{Education}
+\resumeSubheading{Bachelor of Technology in Computer Engineering}{}{Vishwakarma Institute of Technology, Pune (S.P.P.U)}{2024 \enspace | \enspace 8.8 GPA}
+
+\end{document}

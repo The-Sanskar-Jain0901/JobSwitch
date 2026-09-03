@@ -1,0 +1,69 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience building cloud-native APIs, distributed systems, and data pipelines using \textbf{Python}, \textbf{Go}, and \textbf{AWS}.
+Proven track record of owning features end-to-end --- from design through production operations --- in Agile, geographically distributed teams.
+Comfortable leveraging AI-assisted development tools (GitHub Copilot, Cursor) and working asynchronously across time zones.
+
+\section*{Skills}
+\textbf{Languages:} Python, Go, Java \\
+\textbf{Backend:} Go (net/http, Gin), REST APIs, Microservices, Kafka, Redis, CQRS, Data Pipelines \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, Lambda, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Indexing, Query Optimization \\
+\textbf{AI \& Tools:} GitHub Copilot, Cursor, LLM APIs, OpenTelemetry, Splunk, Swagger/OpenAPI, Azure DevOps \\
+\textbf{Security:} OAuth 2.0, JWT, Okta, Kong Gateway
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Designed and built \textbf{RulesRunner} end-to-end --- a stateless microservice using \textbf{CQRS} and \textbf{SQS} --- reducing compliance-check latency from \textbf{3000ms to 500ms (83\%)} and enabling horizontal scaling.
+    \item Engineered \textbf{event-driven data pipelines} with idempotent processing, retry/backoff strategies, and \textbf{AWS Lambda}, ensuring zero message loss under failure conditions.
+    \item Engineered scalable backend for \textbf{Xactimate's} import/export of \textbf{30+ data types} using async processing, \textbf{S3 presigned URLs}, and \textbf{MongoDB}, cutting transfer time by \textbf{38\%} and error rate by \textbf{25\%}.
+    \item Built \textbf{Go} REST APIs handling \textbf{200K+ weekly requests} with structured error handling, input validation, and \textbf{Swagger/OpenAPI} documentation.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong Gateway}, integrating \textbf{Okta JWT tokens} with Identity Server for secure cross-service authorization.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis/ElastiCache} caching, connection pooling, and query optimisation on hot-path endpoints.
+    \item Authored \textbf{production-safe migration scripts} with idempotent operations and backward compatibility, enabling zero-downtime deployments.
+    \item Slashed deployment time by \textbf{50\%} and build cycles by \textbf{33\%} by overhauling \textbf{Azure DevOps} pipelines with staged gates, parallel jobs, and automated testing.
+    \item Instrumented services with \textbf{OpenTelemetry} and \textbf{Splunk} dashboards, reducing mean time to diagnose production incidents; coordinated resolutions asynchronously with distributed teams.
+    \item Wrote unit and integration tests (\textbf{Go testing, testify}); authored technical design docs and led code reviews across architecture, edge cases, and production readiness.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built end-to-end expense tracker using \textbf{Python} scripts and \textbf{Spring Boot} with \textbf{5+ microservices}, async \textbf{Kafka} event pipelines, and \textbf{Kong API Gateway} for routing and auth.
+    \item Containerised all services with \textbf{Docker} and orchestrated via \textbf{Kubernetes}; simulated \textbf{1000+ transactions} for load and pipeline reliability testing.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

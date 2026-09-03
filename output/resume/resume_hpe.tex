@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Software engineer with 2+ years of experience designing and delivering cloud-native distributed systems, microservices, and data pipelines across multiple languages and platforms.
+Proficient in Java, C\#, and Python with hands-on expertise in DevOps automation, cloud architectures, and testing \& automation practices.
+Strong analytical and problem-solving skills with a security-first mindset; consistently ships reliable, high-quality solutions in collaborative Agile environments.
+
+\section*{Skills}
+\textbf{Languages:} Java (Java 17), C\#, Python, TypeScript \\
+\textbf{Backend \& Systems:} Spring Boot, ASP.NET Core, REST APIs, Microservices, Distributed Computing, Kafka, Redis \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, Lambda), CI/CD (Jenkins/Azure Pipelines), Docker, Kubernetes, Terraform \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB \\
+\textbf{Tools:} Maven, Git, Bitbucket, Jira, Swagger, Postman, Splunk
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Designed and built \textbf{RulesRunner}, a distributed \textbf{microservice} consuming \textbf{SQS} messages to decouple compliance rules into an independently scalable component, reducing client wait time from \textbf{3000ms to 500ms} (\textbf{83\%}) through solutions-oriented design.
+    \item Engineered production REST APIs with a \textbf{security-first mindset} -- structured error handling, strict input validation, OOP design patterns (SOLID), and \textbf{Swagger}-documented contracts ensuring API correctness across platforms.
+    \item Built async \textbf{distributed} messaging pipelines using \textbf{AWS SNS}, Lambda, and S3 with idempotent processing and retry/backoff logic, eliminating message loss under failure and demonstrating cross-domain cloud architecture fluency.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis} distributed caching, connection pooling, and targeted query optimisation, sustaining \textbf{200K+ weekly requests} reliably at scale.
+    \item Overhauled \textbf{DevOps} CI/CD pipelines (Jenkins/Azure DevOps) with staged gates, parallel jobs, and automated test integration, slashing deployment time by \textbf{50\%} and eliminating all manual release steps.
+    \item Delivered \textbf{85\%+} unit and integration test coverage using \textbf{JUnit 5} and \textbf{Mockito}, accelerating build cycles by \textbf{33\%} through \textbf{testing \& automation} best practices and parallelised execution.
+    \item Reduced mean time to diagnose production incidents by \textbf{40\%} by instrumenting services with structured logging and \textbf{Splunk} dashboards, surfacing error trends and latency spikes in real time.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Full-Stack Distributed Microservices} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Designed a \textbf{full-stack} expense tracker using \textbf{Java 17} and \textbf{Spring Boot} with \textbf{5+} independently deployable microservices communicating via async \textbf{Kafka} topics, demonstrating distributed computing and microservices fluency.
+    \item Modelled domain entities with \textbf{Spring Data JPA} and \textbf{Hibernate}, applying OOP principles and clean service layering to separate persistence, business logic, and API concerns.
+    \item Integrated \textbf{Kong API Gateway} for routing, rate limiting, and token-based authentication; validated end-to-end with \textbf{1000+} simulated transactions.
+    \item Containerised all services with \textbf{Docker} and Docker Compose, reducing environment setup time by \textbf{60\%} and enabling consistent, reproducible multi-platform deployments.
+\end{itemize}
+
+\textbf{Stock Recommendation and Prediction} \hfill Apr 2022 -- Jun 2022
+\begin{itemize}[leftmargin=*]
+    \item Applied \textbf{cross-domain knowledge} to build a stock advisory platform using \textbf{Python} and \textbf{LSTM} models for 30-day price predictions, integrating Yahoo Finance API and \textbf{Firebase} for real-time data ingestion; deployed via \textbf{Streamlit} showcasing end-to-end pipeline design from ingestion to ML inference to presentation.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+\end{document}

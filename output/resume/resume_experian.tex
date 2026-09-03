@@ -1,0 +1,75 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    .NET Software Engineer \;|\; C\# \;|\; Microservices \;|\; Cloud-Native Development \\
+    Hyderabad, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{2pt}
+
+\section*{Summary}
+C\#/.NET software engineer with 2+ years of professional experience building and maintaining production \textbf{ASP.NET MVC/Web API 2} applications on \textbf{.NET Framework}, then leading their migration to cloud-native \textbf{ASP.NET Core}/.NET 8 microservices at Verisk Analytics. Skilled in applying common architectural patterns (\textbf{CQRS}, event-driven, API versioning) across distributed systems deployed on \textbf{AWS}, with hands-on \textbf{Azure DevOps} CI/CD pipeline ownership. Comfortable across the stack, from \textbf{SQL Server/T-SQL} data design to frontend integration, delivering reliably within \textbf{Agile} teams.
+
+\section*{Skills}
+\textbf{Languages \& Web:} C\#, Java, Python, JavaScript, TypeScript, HTML, CSS, Angular (basic), React (basic) \\
+\textbf{Frameworks \& Platforms:} .NET Framework, ASP.NET MVC, Web API 2, .NET 8/.NET Core, ASP.NET Core, REST APIs, Microservices \\
+\textbf{Databases:} SQL Server, T-SQL, Stored Procedures, Relational Database Design, PostgreSQL, MySQL, MongoDB, Query Optimization \\
+\textbf{Architecture \& Patterns:} Microservices Architecture, CQRS, Event-Driven Design, API Versioning, Cloud-Native Development \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, ECS, Lambda), Azure DevOps, Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Practices \& Tools:} Agile/Scrum, xUnit/NUnit, Swagger/OpenAPI, Code Reviews, Git, Jira, Splunk
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Architected \textbf{RulesRunner}, a stateless \textbf{C\#} microservice applying \textbf{CQRS} and event-driven patterns over \textbf{AWS SQS}, reducing client wait time from \textbf{3000ms to 500ms (83\%)} while enabling independent horizontal scaling.
+    \item Designed and delivered \textbf{ASP.NET Core Web API} services handling \textbf{200K+ weekly requests}, with relational data models, structured error handling, and \textbf{Swagger/OpenAPI}-documented API contracts.
+    \item Built a scalable import/export backend for \textbf{Xactimate} covering \textbf{30+ data types} using async \textbf{C\#} processing, \textbf{SQL}-backed persistence, and \textbf{AWS S3} presigned URLs, cutting transfer time by \textbf{38\%} and issues by \textbf{25\%}.
+    \item Implemented \textbf{URL-based API versioning} and integration patterns across services to ensure backward compatibility and support seamless client migrations in a microservices architecture.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong Gateway}, integrating \textbf{Okta JWT} tokens with existing Identity Server flows for secure cross-service authorization.
+    \item Optimised \textbf{database indexing and query performance} across relational and NoSQL stores, and improved API response time by \textbf{34\%} via \textbf{Redis} caching and connection pooling on high-throughput endpoints.
+    \item Overhauled \textbf{Azure DevOps CI/CD} pipelines with staged gates, parallel jobs, and automated testing, cutting deployment time by \textbf{50\%} and build cycles by \textbf{33\%} within an \textbf{Agile} delivery model.
+    \item Built and maintained production \textbf{ASP.NET MVC/Web API 2} applications on \textbf{.NET Framework}, then led their migration to \textbf{.NET 8/.NET Core}, reducing technical debt by \textbf{55\%} and improving runtime performance by \textbf{30\%} with modern async patterns and dependency injection.
+    \item Instrumented services with \textbf{Splunk} logging and \textbf{OpenTelemetry} tracing, reducing mean time to diagnose production incidents; wrote unit/integration tests with \textbf{xUnit/NUnit} and led structured code reviews.
+\end{itemize}
+
+\section*{Projects}
+
+\resumeSubheading{Expense Tracker -- Full-Stack Microservices Application}{Aug 2023 -- Dec 2023}{}{C\#, Spring Boot, Angular/React basics, SQL, Docker, Kubernetes}
+\begin{itemize}
+    \item Built a full-stack expense tracker with \textbf{5+ microservices}, async \textbf{Kafka} communication, and a \textbf{HTML/CSS/JavaScript} frontend consuming \textbf{REST/JSON} APIs backed by relational data models.
+    \item Containerised all services with \textbf{Docker} and orchestrated deployments using \textbf{Kubernetes}; integrated \textbf{Kong API Gateway} for routing and auth, simulating \textbf{1000+ transactions} for load testing.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} --- Vishwakarma Institute of Technology, Pune (SPPU) \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

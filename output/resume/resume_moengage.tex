@@ -1,0 +1,76 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    Backend Engineer | Python, Java, SQL | Infrastructure at Scale \\
+    Hyderabad, Telangana, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience building infrastructure at scale, designing high-throughput data pipelines, and optimising SQL-heavy systems at Verisk Analytics. Proficient in Python, Java, and SQL with a strong grasp of data structures, algorithms, and system performance metrics. Proven ability to ship scalable, reliable services handling 200K+ weekly requests in production.
+
+\section*{Key Skills}
+\textbf{Languages:} Python, Java, SQL, C\#, TypeScript \\
+\textbf{Infrastructure \& Scale:} Distributed Systems, Microservices, Event-Driven Architecture, Kafka, Redis, AWS (S3, SNS, SQS, EKS, Lambda) \\
+\textbf{Databases \& SQL:} PostgreSQL, MySQL, MongoDB, Query Optimisation, Indexing, Connection Pooling \\
+\textbf{CS Fundamentals:} Data Structures \& Algorithms, Time/Space Complexity Analysis, System Design \\
+\textbf{Tools \& DevOps:} Docker, Kubernetes, Terraform, CI/CD, Splunk, Git, Jira
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Architected \textbf{RulesRunner}, a distributed microservice processing \textbf{200K+} weekly messages via \textbf{SQS}, reducing client-side latency from 3000ms to 500ms (\textbf{83\% reduction}) through efficient queue-based decoupling and algorithm-optimised rule evaluation.
+    \item Implemented \textbf{high-performance SQL queries} and indexing strategies on PostgreSQL/MongoDB, improving API response time by \textbf{34\%} via Redis caching, connection pooling, and targeted query optimisation on hot-path endpoints.
+    \item Engineered scalable data pipeline for import/export of \textbf{30+ data types} using \textbf{Python} scripts, async processing, AWS S3 presigned URLs, and MongoDB, reducing data transfer time by \textbf{38\%} and user-reported issues by \textbf{25\%}.
+    \item Built production \textbf{REST APIs} handling \textbf{200K+ requests/week} with structured error handling, input validation, and O(1) lookup patterns for low-latency responses.
+    \item Developed \textbf{Python} automation for data validation, log analysis, and performance benchmarking, reducing manual effort by \textbf{15+ hours/week} and enabling data-driven decision-making.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} through service modernisation, optimising time-complexity of core algorithms and memory allocation patterns.
+    \item Instrumented services with structured logging and \textbf{Splunk} dashboards tracking latency percentiles, throughput, and error rates to proactively identify bottlenecks.
+\end{itemize}
+
+\section*{Projects}
+\resumeSubheading{Expense Tracker -- Full-Stack Microservices}{Aug 2023 -- Dec 2023}{}{Java, Spring Boot, Kafka, PostgreSQL, Docker}
+\begin{itemize}
+    \item Built expense analytics platform using \textbf{Java}/Spring Boot with \textbf{5+ microservices}, async \textbf{Kafka} event streaming, and \textbf{SQL}-based transaction aggregation with optimised joins.
+    \item Designed schema with indexing and normalisation; wrote complex \textbf{SQL queries} for reporting and analytics across \textbf{1000+} simulated transactions; containerised with Docker.
+\end{itemize}
+
+\resumeSubheading{Stock Recommendation \& Prediction}{Apr 2022 -- Jun 2022}{}{Python, MySQL, Data Analysis, LSTM}
+\begin{itemize}
+    \item Developed \textbf{Python}-based stock advisory platform using LSTM models for 30-day price predictions with \textbf{MySQL} backend for historical data storage and retrieval.
+    \item Wrote optimised \textbf{SQL queries} for time-series data aggregation and implemented efficient data structures for real-time price lookups.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \enspace | \enspace Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 | CGPA: 8.8
+
+\end{document}

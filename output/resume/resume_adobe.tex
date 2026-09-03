@@ -1,0 +1,80 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    Full-Stack Engineer \;|\; Java / Spring \;|\; TypeScript \;|\; Cloud-Native APIs \\
+    Hyderabad, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{2pt}
+
+\section*{Summary}
+Full-stack software engineer with 2+ years of industry experience building scalable REST APIs, Spring-based microservices, and TypeScript-driven applications. Proven ability to own features end-to-end --- from server-side design through cloud deployment --- in fast-paced Agile teams. Strong foundation in data structures, algorithms, and distributed systems. Hands-on with Docker, AWS, Azure, automated testing, and CI/CD pipelines; consistently ships reliable, high-quality software with minimal supervision.
+
+\section*{Skills}
+\textbf{Languages:} Java, C\#, Python, TypeScript, JavaScript \\
+\textbf{Server-Side:} Spring Boot, Spring MVC, Spring Data JPA (Hibernate), REST APIs, GraphQL, Microservices, Kafka \\
+\textbf{Client-Side:} TypeScript, React, REST API integration \\
+\textbf{Cloud \& DevOps:} AWS (S3, SQS, SNS, Lambda, EKS), Azure DevOps, Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis \\
+\textbf{Testing \& Tools:} Unit Testing, xUnit, Test Automation, Swagger, Postman, Splunk, Jira, Bitbucket
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Designed and delivered production \textbf{REST APIs} and \textbf{microservices} handling \textbf{200K+ weekly requests}, with structured error handling, input validation, and Swagger-documented contracts ensuring reliability and clear API ownership.
+    \item Built \textbf{RulesRunner}, a \textbf{Java/C\#}-style server-side microservice backed by \textbf{SQS} that offloaded compliance checks from the client, reducing wait time from \textbf{3000ms to 500ms} (83\%) through decoupled, independently scalable service design.
+    \item Engineered a scalable \textbf{Spring}-style import/export pipeline for \textbf{30+ data types} using async processing, \textbf{AWS S3} presigned URLs, and \textbf{MongoDB}, cutting data transfer time by \textbf{38\%} and reducing user-reported issues by \textbf{25\%}.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis} caching, connection pooling, and targeted \textbf{SQL query optimisation} on PostgreSQL hot-path endpoints, demonstrating strong data structures and performance reasoning.
+    \item Built and maintained \textbf{automated test suites} with parallelised unit testing and pipeline-integrated regression checks, accelerating build and test cycle by \textbf{33\%} and enabling the team to ship \textbf{10+ features per quarter}.
+    \item Overhauled \textbf{Azure DevOps} CI/CD pipelines with staged gates, parallel jobs, and automated test integration, cutting deployment time by \textbf{50\%} and eliminating all manual release steps.
+    \item \textbf{Containerised} services with \textbf{Docker} and deployed to \textbf{Kubernetes (EKS/ECS)}, ensuring environment consistency across dev, staging, and production in a multi-service Agile delivery workflow.
+    \item Eliminated message loss by designing \textbf{AWS SNS}, Lambda, and S3 pipelines with idempotent processing and retry/backoff logic, improving async delivery reliability across distributed workflows.
+    \item Reduced mean time to diagnose incidents by instrumenting services with structured logging and \textbf{Splunk} dashboards, surfacing error trends and latency spikes in real time across production environments.
+\end{itemize}
+
+\section*{Projects}
+
+\resumeSubheading{Expense Tracker -- Full-Stack Microservices Application}{Aug 2023 -- Dec 2023}{}{Java, Spring Boot, Spring Data JPA (Hibernate), Kafka, TypeScript, Docker, PostgreSQL}
+\begin{itemize}
+    \item Built 5+ \textbf{Spring Boot} microservices with \textbf{Spring Data JPA / Hibernate} for ORM, and a \textbf{TypeScript} frontend client consuming REST APIs, demonstrating end-to-end full-stack ownership.
+    \item Simulated \textbf{1000+ transactions} with async \textbf{Kafka} inter-service communication; containerised all services with \textbf{Docker}, cutting environment setup time by \textbf{60\%}; integrated Kong API Gateway for routing and auth.
+\end{itemize}
+
+\resumeSubheading{Stock Recommendation and Prediction Platform}{Apr 2022 -- Jun 2022}{}{Python, LSTM, Firebase, Streamlit, REST APIs}
+\begin{itemize}
+    \item Developed a data-driven advisory platform applying algorithmic modelling (LSTM) for 30-day stock predictions; integrated Yahoo Finance API, Firebase, and a lightweight frontend --- independently designed and shipped end-to-end.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} --- Vishwakarma Institute of Technology, Pune (SPPU) \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

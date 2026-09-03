@@ -1,0 +1,77 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    Software Engineer \;|\; Java / Spring Boot \;|\; Microservices \;|\; CI/CD \;|\; Agile SDLC \\
+    Hyderabad, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{2pt}
+
+\section*{Summary}
+Backend software engineer with 2+ years translating business requirements into stable enterprise application solutions using \textbf{Java}, \textbf{Spring Boot}, microservices, and \textbf{C\#} across full \textbf{SDLC} in Agile teams at Verisk Analytics. Proven in implementing \textbf{CI/CD automation}, test-driven development, code reviews, and root cause analysis to ship reliable, maintainable software. Hands-on with \textbf{SQL/NoSQL} databases, Docker, Kubernetes, AWS, and exposure to \textbf{AI/ML} model development.
+
+\section*{Skills}
+\textbf{Backend:} Java, Spring Boot, Microservices, C\#, .NET 8, ASP.NET Core, REST APIs, Kafka, Redis \\
+\textbf{Frontend:} TypeScript, JavaScript, React.js, HTML/CSS, JSON \\
+\textbf{Databases:} PostgreSQL, MySQL, SQL Server, MongoDB (NoSQL), Database Design \\
+\textbf{DevOps \& CI/CD:} Docker, Kubernetes (EKS/ECS), AWS (S3, SQS, SNS, Lambda), Azure DevOps, Terraform \\
+\textbf{Practices:} TDD, SDLC, Agile/Scrum, Code Review, Root Cause Analysis, Technical Documentation
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Translated \textbf{business requirements and functional specifications} into logical program designs for Xactimate's import/export feature, delivering a scalable backend supporting \textbf{30+ data types} via async \textbf{C\#}, \textbf{SQL}-backed pipelines, and AWS S3; reduced data transfer time by \textbf{38\%} and user-reported issues by \textbf{25\%}.
+    \item Built \textbf{RulesRunner}, a \textbf{component-based microservice} decoupling compliance logic from the client using SQS and clean \textbf{C\#} design patterns through iterative \textbf{SDLC}, reducing client wait time from \textbf{3000ms to 500ms} (\textbf{83\%}).
+    \item Developed and maintained \textbf{ASP.NET Core} REST APIs sustaining \textbf{200K+ weekly requests} with structured error handling, input validation, and \textbf{JSON} API contracts, solving difficult technical problems to ensure solutions are testable and maintainable.
+    \item Implemented \textbf{CI/CD pipelines} via \textbf{Azure DevOps} with staged gates, parallel jobs, and \textbf{DevOps automation} tooling, cutting deployment time by \textbf{50\%} and enforcing quality and efficiency in the delivery cycle.
+    \item Applied \textbf{TDD} strategies with parallelised automated test suites and pipeline-integrated regression checks, accelerating build-and-test cycle by \textbf{33\%} and enabling the team to ship \textbf{10+ features per quarter}.
+    \item Conducted \textbf{root cause analysis} and \textbf{code reviews} to identify gaps, enforce architectural patterns, and maintain reference documentation, ensuring consistency and long-term stability across the engineering team.
+    \item Ideated and published \textbf{reusable .NET libraries} and shared async patterns by migrating legacy services to \textbf{.NET 8}, reducing technical debt by \textbf{55\%}, runtime overhead by \textbf{30\%}, and improving productivity across teams.
+    \item Improved \textbf{API response time by 34\%} via \textbf{Redis} caching and \textbf{SQL query optimisation}; diagnosed and resolved \textbf{production issues} in real time using \textbf{Splunk} dashboards with structured logging across distributed services.
+\end{itemize}
+
+\section*{Projects}
+
+\resumeSubheading{Expense Tracker -- Full-Stack Enterprise Application}{Aug 2023 -- Dec 2023}{}{Java, Spring Boot, Kafka, TypeScript, Docker, SQL/NoSQL, Kong API Gateway}
+\begin{itemize}
+    \item Designed \textbf{5+ Spring Boot microservices} with async \textbf{Kafka} communication, \textbf{SQL/NoSQL} persistence, and a \textbf{TypeScript/JavaScript} UI layer; containerised with \textbf{Docker} (60\% faster setup), integrated \textbf{Kong API Gateway} for routing and auth, and simulated \textbf{1000+ transactions} end-to-end across full \textbf{SDLC}.
+\end{itemize}
+
+\resumeSubheading{Stock Recommendation and Prediction Platform}{Apr 2022 -- Jun 2022}{}{Python, LSTM, AI/ML, Firebase, REST APIs, Streamlit}
+\begin{itemize}
+    \item Built an \textbf{AI/ML}-driven advisory platform using \textbf{Python} and \textbf{LSTM} models for 30-day stock predictions; integrated Yahoo Finance \textbf{REST API} and \textbf{Firebase} for real-time data ingestion, and deployed via Streamlit --- independently shipped across the full \textbf{SDLC}.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} --- Vishwakarma Institute of Technology, Pune (SPPU) \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

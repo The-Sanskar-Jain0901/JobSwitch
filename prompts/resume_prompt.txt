@@ -1,0 +1,33 @@
+Prompt:
+I am attaching:
+1. My resume or LinkedIn profile
+2. A job description
+
+Act as an ATS resume expert, recruiter, and hiring manager.
+
+Tasks:
+1. Analyze my profile for experience, skills, achievements, and strengths.
+2. Analyze the job description for required skills, keywords, responsibilities, and role expectations.
+3. Create a highly tailored, ATS-friendly one-page Harvard-style resume in LaTeX.
+4. Identify gaps, then produce a revised resume that fills those gaps, and list exactly what you changed.
+
+Resume requirements:
+- STRICT ONE PAGE ONLY — this is a hard constraint, not a guideline. The compiled PDF must fit entirely on a single page. If content overflows, cut or condense ruthlessly: shorten bullets, reduce the summary to 3 lines, drop older or less relevant roles. Do not reduce font size below 10pt or margins below 0.5in to compensate. There must be no second page under any circumstance.
+- Clean, minimalist, ATS-safe layout with no tables, icons, columns, or graphics
+- Header with name, role-focused headline, and contact details
+- 4 to 5 line professional summary tailored to the role (reduce to 3 lines if space is tight)
+- Key skills section after summary, grouped by relevance and prioritized by JD keywords
+- Reverse chronological experience with 3 to 4 impact-focused bullets per role (cut to 2 bullets for older roles if needed to stay on one page)
+- Include projects only if they strengthen fit for the role and space allows
+- Keep education concise — one line per degree
+- Ensure my resume includes at least 12 strong, ATS-friendly bullet points highlighting technical skills, ownership, achievements, and measurable impact across experience and projects.
+
+Each experience bullet must use a strong action verb, include measurable impact, and align with the job requirements.
+
+After the resume, provide:
+1. Keywords Added: important JD keywords you included
+2. Match Score: estimated ATS match percentage
+3. Gaps: missing skills or weaker areas for this role
+4. Gap Fixes: for each gap identified, describe exactly what change you made to the resume to address it — which section was updated, what was added or reworded, and why. If a gap cannot be addressed without fabricating experience, explicitly state that and suggest how the candidate could address it (e.g., a side project, certification, or course).
+
+Goal: produce a resume that passes ATS filters, feels highly relevant to recruiters, and improves shortlist chances for this specific job.

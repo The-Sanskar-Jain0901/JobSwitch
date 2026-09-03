@@ -1,0 +1,68 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Backend Engineer | Java \& Spring Boot | Microservices \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience building cloud-native APIs, event-driven microservices, and distributed systems at Verisk Analytics. Strong hands-on expertise in Java, Spring Boot, C\#/.NET, multithreaded processing, and cloud-native architecture on AWS. Proven ability to design scalable backend services, work with SQL and NoSQL databases, and ship production features end-to-end in Agile teams. Passionate about clean OOP design, performance optimisation, and delivering reliable backend services.
+
+\section*{Skills}
+\textbf{Languages:} Java 8+, C\#, Python, TypeScript \\
+\textbf{Backend \& Frameworks:} Spring Boot, Spring Framework, ASP.NET Core, .NET 8, REST APIs, Microservices, Multithreading \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, Lambda), Docker, Kubernetes, Terraform, CI/CD Pipelines, Git \\
+\textbf{Databases \& Messaging:} PostgreSQL, MySQL, MongoDB, Apache Kafka, RabbitMQ, Redis, ElastiCache \\
+\textbf{Tools:} Kong API Gateway, Swagger, Postman, Splunk, Azure DevOps, Jira, Bitbucket
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{RulesRunner}, a multithreaded microservice consuming messages from \textbf{AWS SQS} that offloaded compliance checks from the client, reducing response latency from \textbf{3000ms to 500ms} (83\% improvement) and enabling independent horizontal scaling.
+    \item Designed and delivered production \textbf{REST APIs} handling \textbf{200K+ weekly requests} with structured error handling, input validation, and \textbf{Swagger}-documented contracts, ensuring high availability and API stability.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis}/ElastiCache caching layers, connection pooling, and targeted query optimisation on high-traffic endpoints.
+    \item Engineered a scalable backend for import/export of \textbf{30+ data types} using async processing, \textbf{AWS S3} presigned URLs, and \textbf{MongoDB}, reducing data transfer time by \textbf{38\%} and user-reported issues by \textbf{25\%}.
+    \item Designed event-driven pipelines with \textbf{AWS SNS}, Lambda, and S3 featuring idempotent processing, retry/backoff strategies, and dead-letter queues for reliable asynchronous message delivery.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} migrating legacy services to \textbf{.NET 8} with modern dependency injection, async patterns, and multithreaded execution.
+    \item Slashed deployment time by \textbf{50\%} by overhauling CI/CD pipelines with staged gates, parallel jobs, \textbf{Docker} containerisation, and automated test integration.
+    \item Reduced mean time to diagnose incidents by instrumenting services with structured logging and \textbf{Splunk} dashboards for real-time error trend and latency monitoring.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Distributed Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Architected a cloud-native expense tracker using \textbf{Java/Spring Boot} with \textbf{5+ microservices} and async \textbf{Kafka}-based inter-service communication with multithreaded consumers.
+    \item Integrated \textbf{Kong API Gateway} for routing, load balancing, rate limiting, and service discovery; containerised all services with \textbf{Docker} and \textbf{Kubernetes}.
+    \item Implemented \textbf{PostgreSQL}-backed persistence with connection pooling and optimised queries for concurrent read/write workloads across microservices.
+    \item Conducted load testing simulating \textbf{1000+} peak transactions end-to-end to validate throughput and identify performance bottlenecks pre-deployment.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+    \end{document}

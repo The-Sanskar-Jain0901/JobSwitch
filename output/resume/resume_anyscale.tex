@@ -1,0 +1,71 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience at Verisk Analytics building scalable, fault-tolerant distributed systems in \textbf{C\#/.NET 8}, grounded in strong algorithms, data structures, and system design fundamentals.
+Skilled at reasoning through consistency, availability, and latency trade-offs when designing microservices and event-driven pipelines on \textbf{AWS}.
+Track record of shipping production systems end-to-end with measurable gains in scalability, reliability, and performance.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Java, Python \\
+\textbf{CS Fundamentals:} Algorithms, Data Structures, System Design, Concurrency, Fault Tolerance, Scalability \\
+\textbf{Backend \& Architecture:} Microservices, Event-Driven Systems, REST APIs, Kafka, AWS SQS, CQRS, API Versioning \\
+\textbf{Cloud:} AWS (EKS, ECS, Lambda, S3, SNS, SQS, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis, Schema Design, Query Optimisation, Indexing \\
+\textbf{Observability \& Tools:} OpenTelemetry, Splunk, Swagger/OpenAPI, xUnit/NUnit, Azure DevOps, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed and built \textbf{RulesRunner}, a fault-tolerant backend service in \textbf{C\#/.NET 8} using \textbf{CQRS} and \textbf{AWS SQS} to decouple compliance checks from clients, cutting response latency from \textbf{3000ms to 500ms (83\%)} while scaling horizontally under load.
+    \item Engineered event-driven pipelines with \textbf{Kafka} and \textbf{AWS SNS}, adding idempotent message handling, retry/backoff strategies, and dead-letter queues that eliminated message loss during partial failures.
+    \item Designed system architecture and API contracts for \textbf{ASP.NET Core} services handling \textbf{200K+ weekly requests}, weighing consistency, availability, and latency trade-offs across service boundaries.
+    \item Built a resilient backend for \textbf{Xactimate's} import/export of \textbf{30+ data types} using async \textbf{Lambda} pipelines and \textbf{S3} presigned URLs, cutting transfer time \textbf{38\%} and defects \textbf{25\%}.
+    \item Ran services on \textbf{AWS EKS/ECS} with \textbf{Docker} and \textbf{Kubernetes}, enabling rolling, zero-downtime releases and automatic failover across replicas.
+    \item Optimised \textbf{PostgreSQL}/\textbf{MongoDB} schema design, indexing, and query plans, and introduced \textbf{Redis} caching on hot paths, lifting API response time \textbf{34\%}.
+    \item Authored idempotent, production-safe migration scripts for zero-downtime schema changes across live clusters under concurrent traffic.
+    \item Instrumented services with \textbf{OpenTelemetry} tracing and \textbf{Splunk} dashboards, shrinking mean time to detect production incidents.
+    \item Secured cross-service calls behind \textbf{Kong Gateway} using \textbf{OAuth 2.0} and \textbf{Okta}-issued \textbf{JWT} tokens without disrupting live traffic.
+    \item Reworked \textbf{Azure DevOps} CI/CD pipelines with staged gates and parallel jobs, shrinking deployment time \textbf{50\%} and build cycles \textbf{33\%}.
+    \item Cut technical debt \textbf{55\%} and lifted runtime performance \textbf{30\%} by migrating legacy services onto modern async patterns.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Fault-Tolerant Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built an expense tracker with \textbf{5+ microservices} in \textbf{Spring Boot}, using async \textbf{Kafka} messaging and \textbf{Kong API Gateway} for routing and auth.
+    \item Containerised services with \textbf{Docker}, orchestrated via \textbf{Kubernetes}, and load-tested \textbf{1000+} simulated transactions end-to-end.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8 \\
+\textit{Relevant Coursework:} Data Structures \& Algorithms, System Design, Operating Systems, Distributed Systems
+
+\end{document}

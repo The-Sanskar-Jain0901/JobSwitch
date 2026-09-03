@@ -1,0 +1,75 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+C\# and .NET backend engineer with 2+ years of experience in shipping cloud-native APIs and event-driven microservices at Verisk Analytics.
+Hands-on in building async pipelines, designing distributed systems, owning REST APIs end-to-end, and delivering via CI/CD pipelines.
+Consistently reduced latency, improved reliability, and shipped production systems from design to deployment in Agile teams.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Java, Python, TypeScript \\
+\textbf{Backend:} .NET 8, ASP.NET Core, Spring Boot, REST APIs, GraphQL APIs, Microservices, Kafka, Redis \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, ECS, Lambda), CI/CD, Terraform, AWS SDK, Docker, Kubernetes \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL \\
+\textbf{Tools:} Azure DevOps,Podman, Postman, Swagger, Splunk, Bitbucket, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{RulesRunner}, a server-side microservice using \textbf{SQS} that offloaded estimate compliance checks from the client, reducing client-side wait time from \textbf{3000ms to 500ms} (\textbf{83\%}), cutting overhead, and decoupling rules logic to enable flexible scaling across workflows.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} through migrating legacy services to \textbf{.NET 8}, modernising dependency injection, async patterns, and SDK tooling.
+    \item Slashed deployment time by \textbf{50\%} by overhauling \textbf{Azure DevOps} CI/CD pipelines with staged gates, parallel jobs, and automated test integration, eliminating all manual release steps.
+    \item Reduced data transfer time by \textbf{38\%} and user-reported issues by \textbf{25\%} by engineering a scalable backend for \textbf{Xactimate's} import/export of \textbf{30+} data types using async processing, AWS S3 presigned URLs, and MongoDB.
+    \item Achieved reliable \textbf{200K+} weekly requests by building \textbf{ASP.NET Core} REST APIs with structured error handling, input validation, and \textbf{Swagger}-documented contracts, ensuring API stability and clear ownership.
+    \item Accelerated build and test cycle speed by \textbf{33\%} through parallelised testing, build caching, and pipeline optimisation, enabling the team to consistently ship \textbf{10+} features per quarter.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis}/ElastiCache caching, connection pooling, and targeted query optimisation on hot-path endpoints.
+    \item Eliminated message loss under failure conditions by designing \textbf{AWS SNS}, Lambda, and S3 pipelines with idempotent processing and retry/backoff handling for reliable async delivery.
+    \item Reduced mean time to diagnose production incidents by instrumenting services with structured logging and \textbf{Splunk} dashboards, surfacing error trends, latency spikes, and pipeline failures in real time.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Full-Stack Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a full-stack expense tracker using \textbf{Spring Boot} with \textbf{5+} microservices and async \textbf{Kafka} communication across services.
+    \item Containerised all services with \textbf{Docker}, reducing local environment setup time by \textbf{60\%}.
+    \item Integrated \textbf{Kong API Gateway} for routing, load balancing, and authentication; simulated \textbf{1000+} transactions end-to-end.
+\end{itemize}
+\textbf{Stock Recommendation and Prediction} \hfill Apr 2022 -- Jun 2022
+\begin{itemize}[leftmargin=*]
+    \item Developed stock advisory platform using Python and LSTM models for 30-day predictions.
+    \item Integrated Yahoo Finance API, Firebase, and deployed using Streamlit.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+\end{document}

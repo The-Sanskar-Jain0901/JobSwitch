@@ -1,0 +1,70 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years building high-throughput, low-latency distributed systems at Verisk Analytics using \textbf{Java/Spring Boot}, \textbf{C\#/.NET 8}, \textbf{Kafka}, and \textbf{AWS}.
+Ships resilient REST APIs with retry/circuit-breaker patterns, sub-100ms cached hot paths, and idempotent event-driven pipelines.
+Owns services end-to-end -- from JVM performance tuning to on-call observability -- and uses AI coding tools daily to speed up delivery.
+
+\section*{Skills}
+\textbf{Languages:} Java, C\#, Python \\
+\textbf{Backend:} Spring Boot, .NET 8/ASP.NET Core, REST \& gRPC API Design, Microservices, Kafka, Redis, CQRS, Circuit Breakers/Backpressure \\
+\textbf{Concurrency \& Performance:} JVM tuning, async/non-blocking I/O, connection pooling, sub-100ms latency budgets \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, ECS, Lambda, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Reliability \& Observability:} OpenTelemetry, Splunk, on-call ownership, metrics/logging/alerting, SLA management \\
+\textbf{Security:} OAuth 2.0, JWT, Okta, Kong Gateway \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, indexing, query optimization \\
+\textbf{AI Tooling:} Claude Code (daily use for feature implementation, debugging, and refactoring)
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Architected \textbf{RulesRunner}, a stateless \textbf{Java/Spring Boot} policy-enforcement microservice offloading rule checks from the client via \textbf{AWS SQS}, cutting wait time from \textbf{3000ms to 500ms (83\%)} while enabling horizontal scaling.
+    \item Engineered REST APIs handling \textbf{200K+ weekly requests} with configurable timeouts, exponential-backoff retries, and circuit-breaker safeguards that gracefully degraded non-critical paths during upstream outages.
+    \item Orchestrated \textbf{Kafka}- and \textbf{SNS/SQS}-based pipelines with idempotent consumers and dead-letter queues, guaranteeing zero message loss across \textbf{30+ data-type} import/export flows.
+    \item Tuned \textbf{Redis/ElastiCache} caching, JVM garbage collection, and connection pooling to keep hot-path endpoints under \textbf{100ms}, lifting overall API response time by \textbf{34\%}.
+    \item Secured containerized services on \textbf{AWS EKS} behind \textbf{Kong Gateway} with \textbf{OAuth 2.0} and \textbf{Okta}-issued JWTs across service-to-service calls.
+    \item Overhauled \textbf{Azure DevOps} CI/CD pipelines with staged gates and parallel test jobs, shrinking deployment time by \textbf{50\%} and build cycles by \textbf{33\%}.
+    \item Instrumented production services with \textbf{OpenTelemetry} tracing and \textbf{Splunk} alerting, carrying on-call ownership that shortened mean time to diagnose incidents.
+    \item Adopted \textbf{Claude Code} daily to implement, debug, and refactor production features, reviewing AI-generated code before merge to speed delivery without sacrificing quality.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} migrating legacy services to \textbf{.NET 8} with modern async patterns.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Delivered an expense tracker using \textbf{Spring Boot} with \textbf{5+ microservices}, async \textbf{Kafka} messaging, and \textbf{Kong API Gateway} for routing and auth.
+    \item Packaged services with \textbf{Docker} and load-tested via \textbf{Kubernetes}, simulating \textbf{1000+ transactions} end-to-end.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

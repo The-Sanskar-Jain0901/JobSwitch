@@ -1,0 +1,70 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.2pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Backend Engineer -- Distributed Systems \& Streaming \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{1pt}
+
+\section*{Summary}
+Backend engineer with 2+ years building high-throughput, event-driven distributed systems at Verisk Analytics, a compliance-heavy insurance/claims data platform.
+Strong CS fundamentals in data structures, algorithms, and system design, with hands-on \textbf{Spring Boot} and \textbf{Kafka}-based microservice experience.
+Deep grounding in consistency, idempotency, retries/backoff, DLQ handling, and horizontal scaling, with direct ownership of production reliability and incident diagnosis.
+Proven technical communicator who authors design docs, drives architecture reviews, and mentors on production-readiness.
+
+\section*{Skills}
+\textbf{Languages:} Java, C\#, Python \\
+\textbf{Backend:} Spring Boot, ASP.NET Core, REST APIs, Microservices, CQRS, Event-Driven Architecture, API Versioning \\
+\textbf{Distributed Systems:} Kafka, AWS SQS/SNS, Idempotency, Retry/Backoff, DLQ, Partitioning, Backpressure, Eventual Consistency, Horizontal Scaling \\
+\textbf{Cloud \& DevOps:} AWS (Lambda, EKS, ECS, S3, ElastiCache), Docker, Kubernetes, Terraform, CI/CD (Azure DevOps) \\
+\textbf{Observability \& Ops:} OpenTelemetry, Splunk, Production Incident Diagnosis, Postmortems, Swagger/OpenAPI \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Redis, Indexing, Query Optimization \\
+\textbf{Security \& Tools:} OAuth 2.0, JWT, Okta, Kong Gateway, xUnit/NUnit, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless microservice using \textbf{CQRS} and \textbf{SQS} that offloaded compliance checks from the client, cutting wait time from \textbf{3000ms to 500ms (83\%)} while enabling horizontal scaling under variable load.
+    \item Architected an \textbf{event-driven ingestion pipeline} with idempotent message processing, retry/backoff strategies, and \textbf{DLQ}-backed \textbf{AWS Lambda} consumers, guaranteeing zero message loss and consistent state under partial failures.
+    \item Authored technical design documents defining service boundaries, API contracts, partitioning strategy, and \textbf{SNS}-based pub/sub patterns consumed by multiple downstream distributed services.
+    \item Engineered scalable ingestion/export backend for \textbf{Xactimate} handling \textbf{30+ data types} via async processing and \textbf{S3} streaming, reducing transfer time \textbf{38\%} and data issues \textbf{25\%} in a compliance-driven insurance data domain.
+    \item Built \textbf{Spring Boot}-compatible REST API design patterns and \textbf{ASP.NET Core} services handling \textbf{200K+ weekly requests}, with structured error handling, input validation, and \textbf{Swagger/OpenAPI} contracts.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong Gateway}, integrating \textbf{Okta JWT} tokens for secure cross-service authorization across the distributed platform.
+    \item On-call owner for production services: triaged incidents, drove root-cause postmortems, and improved API response time \textbf{34\%} via \textbf{Redis} caching, connection pooling, and hot-path query optimization.
+    \item Optimized \textbf{database indexing/partitioning} on \textbf{MongoDB} and \textbf{PostgreSQL} and authored idempotent \textbf{migration scripts}, sustaining performance and zero-downtime deployments at scale.
+    \item Slashed deployment time \textbf{50\%} and build cycles \textbf{33\%} by re-architecting \textbf{CI/CD} pipelines with staged gates, parallel jobs, and automated tests; instrumented \textbf{OpenTelemetry}/\textbf{Splunk} to cut incident MTTD.
+    \item Cut technical debt \textbf{55\%} and improved runtime performance \textbf{30\%} by migrating legacy services to modern async, resilience-first patterns; led code reviews on architecture and edge-case handling.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Kafka-Based Microservices Platform} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a \textbf{5+ microservice} system in \textbf{Spring Boot} using async \textbf{Kafka} topics/partitions for inter-service communication and a \textbf{Kong API Gateway} for routing, auth, and rate limiting.
+    \item Containerized services with \textbf{Docker} and orchestrated on \textbf{Kubernetes}; load-tested \textbf{1000+ concurrent transactions} to validate throughput, retry behavior, and failure recovery.
+\end{itemize}
+
+\section*{Certifications \& Education}
+\textbf{AWS Certified Cloud Practitioner} -- Amazon Web Services \hfill Oct 2024 \\
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

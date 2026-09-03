@@ -1,0 +1,72 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience delivering cloud-native microservices and RESTful APIs in \textbf{C\#/.NET 8} on \textbf{AWS}.
+Proven track record in OOP design patterns, test-driven development with \textbf{xUnit/NUnit}, and CI/CD automation in \textbf{Agile/Scrum} teams.
+Strong problem-solving skills with hands-on exposure to performance optimisation, security best practices, and Infrastructure as Code using \textbf{Terraform}.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Java, Python \\
+\textbf{Backend \& Design:} .NET 8, ASP.NET Core, REST APIs, Microservices, CQRS, OOP, Design Patterns, API Versioning \\
+\textbf{Testing:} xUnit, NUnit, Unit Testing, Integration Testing, Test Automation, Code Reviews \\
+\textbf{Cloud \& DevOps:} AWS (EC2, S3, Lambda, RDS, SQS, SNS, EKS, CloudWatch, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Security:} OAuth 2.0, JWT, Okta, Kong Gateway, Cloud Security Best Practices \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Query Optimisation, Indexing \\
+\textbf{Tools:} Jira, Confluence, Azure DevOps, Swagger/OpenAPI, Splunk, OpenTelemetry
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless microservice applying \textbf{CQRS} and \textbf{SQS} event-driven patterns that reduced compliance-check latency from \textbf{3000ms to 500ms (83\%)} and enabled horizontal scaling.
+    \item Built \textbf{ASP.NET Core} REST APIs handling \textbf{200K+ weekly requests}, applying \textbf{OOP principles}, SOLID design patterns, structured error handling, and \textbf{Swagger/OpenAPI} documentation.
+    \item Wrote comprehensive \textbf{xUnit/NUnit} unit and integration tests; enforced test automation in CI gates and conducted structured \textbf{code reviews} covering architecture, edge cases, and production readiness.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong Gateway}, integrating \textbf{Okta JWT} tokens with Identity Server for secure cross-service authorisation following cloud security best practices.
+    \item Engineered scalable data pipeline for \textbf{Xactimate's} import/export of \textbf{30+ data types} using async processing, \textbf{AWS S3} presigned URLs, and \textbf{MongoDB}, reducing transfer time by \textbf{38\%}.
+    \item Improved API response time by \textbf{34\%} through \textbf{Redis/ElastiCache} caching, connection pooling, and query optimisation; monitored performance via \textbf{CloudWatch} and \textbf{Splunk} dashboards.
+    \item Architected event-driven pipelines with \textbf{AWS Lambda}, idempotent processing, and retry/backoff strategies ensuring zero message loss under failure conditions.
+    \item Slashed deployment time by \textbf{50\%} and build cycles by \textbf{33\%} by overhauling \textbf{Azure DevOps} CI/CD pipelines with staged gates, parallel jobs, and automated test suites.
+    \item Managed cloud infrastructure with \textbf{Terraform} for reproducible deployments; authored idempotent migration scripts enabling zero-downtime releases.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} by migrating legacy services to \textbf{.NET 8} with modern async/await patterns; tracked and prioritised work in \textbf{Jira} across Scrum sprints.
+    \item Leveraged \textbf{AI coding tools} (GitHub Copilot) to accelerate feature development, test generation, and debugging, improving individual delivery throughput.
+    \item Instrumented services with \textbf{OpenTelemetry} tracing and \textbf{CloudWatch} alerts, reducing mean time to diagnose production incidents.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built expense tracker with \textbf{5+ microservices} in \textbf{Spring Boot}, applying \textbf{OOP design patterns}, async \textbf{Kafka} communication, and \textbf{Kong API Gateway} for routing and auth.
+    \item Containerised services with \textbf{Docker}, orchestrated deployments on \textbf{Kubernetes}, and simulated \textbf{1000+ transactions} end-to-end for load and performance testing.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

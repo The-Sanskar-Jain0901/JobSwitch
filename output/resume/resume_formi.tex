@@ -1,0 +1,71 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience building scalable distributed services, workflow engines, and data-heavy platforms at Verisk Analytics.
+Designs state machines, async pipelines, and fault-tolerant architectures handling 200K+ weekly requests in high-scale production.
+Thinks in systems, data models, and trade-offs; owns architecture end-to-end from design to production reliability.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Java, Python, TypeScript \\
+\textbf{Backend \& Systems:} .NET 8, ASP.NET Core, Spring Boot, Microservices, REST APIs, State Machines, Workflow Engines \\
+\textbf{Distributed Systems:} Kafka, AWS SQS/SNS, Redis, Event-Driven Architecture, Idempotency, Retry/Backoff \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, ECS, Lambda), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL \\
+\textbf{Observability \& Tools:} Splunk, Structured Logging, Azure DevOps, Swagger, Postman
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Designed and built \textbf{RulesRunner}, a workflow engine microservice using \textbf{SQS} and state-machine patterns that orchestrates compliance checks across multiple stages, reducing client-side latency from \textbf{3000ms to 500ms} (\textbf{83\%}) and enabling flexible scaling across workflows.
+    \item Architected a scalable data-heavy backend for \textbf{Xactimate's} import/export of \textbf{30+ data types} using async processing, S3 presigned URLs, and MongoDB — reducing data transfer time by \textbf{38\%} and user-reported issues by \textbf{25\%}.
+    \item Eliminated message loss under failure conditions by designing \textbf{AWS SNS/SQS/Lambda} pipelines with idempotent processing, dead-letter queues, and exponential retry/backoff for reliable distributed delivery.
+    \item Owned production architecture for APIs handling \textbf{200K+ weekly requests}, implementing structured error handling, input validation, circuit breakers, and \textbf{Swagger}-documented contracts.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis}/ElastiCache caching, connection pooling, and targeted query optimisation on hot-path endpoints serving high-scale traffic.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} through migrating legacy services to \textbf{.NET 8}, modernising dependency injection, async patterns, and SDK tooling.
+    \item Reduced mean time to diagnose production incidents by instrumenting services with structured logging and \textbf{Splunk} dashboards, surfacing error trends and latency spikes in real time.
+    \item Designed data models in \textbf{MongoDB} and \textbf{PostgreSQL} optimised for high-throughput read/write patterns, balancing consistency trade-offs across distributed services.
+    \item Led architecture decisions — evaluated trade-offs between synchronous vs.\ event-driven patterns, choosing SQS fan-out for decoupled scaling and resilience under peak load.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Distributed Microservices Platform} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a distributed platform using \textbf{Spring Boot} with \textbf{5+ microservices}, async \textbf{Kafka} event-driven communication, and stateful workflow coordination across services.
+    \item Integrated \textbf{Kong API Gateway} for routing, load balancing, and authentication; simulated \textbf{1000+} concurrent transactions with failure recovery.
+    \item Implemented distributed state management with eventual consistency, handling partial failures and compensating transactions across service boundaries.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Software Engineer | Java, Microservices \& Cloud-Native AWS \\
+    \vspace{2pt}
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Software engineer with 2+ years of experience designing and delivering cloud-native microservices and distributed systems on AWS at Verisk Analytics.
+Proficient in Java and C\# with a strong grounding in scalability, performance optimisation, availability engineering, and automation.
+Experienced in end-to-end software design and architecture, applying programming best practices to solve complex analytical problems in Agile teams.
+
+\section*{Skills}
+\textbf{Languages:} Java, C\#, Python, TypeScript \\
+\textbf{Backend:} Spring Boot, .NET 8, ASP.NET Core, REST APIs, GraphQL, Microservices, Kafka, Redis \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, ECS, Lambda), Docker, Kubernetes, Terraform, CI/CD, Azure DevOps \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL \\
+\textbf{Tools:} Jira, Confluence, Bitbucket, Git, Swagger, Postman, Splunk
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Designed and built \textbf{cloud-native microservices} on \textbf{AWS} for \textbf{Xactimate}, a large-scale SaaS platform, applying software architecture best practices around scalability, availability, and performance to serve \textbf{200K+} weekly requests.
+    \item Engineered \textbf{RulesRunner}, a distributed microservice using \textbf{AWS SQS} that offloaded compliance checks from the client, reducing wait time from \textbf{3000ms to 500ms} (\textbf{83\%}) through async processing and decoupled event-driven design.
+    \item Built a scalable backend for import/export of \textbf{30+ data types} using async processing, \textbf{AWS S3} presigned URLs, and MongoDB, solving complex data-pipeline performance challenges and reducing transfer time by \textbf{38\%}.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} by migrating legacy services to \textbf{.NET 8}, applying modern dependency injection, async patterns, and virtualisation via \textbf{Docker} and \textbf{Kubernetes}.
+    \item Eliminated message loss under failure conditions by architecting \textbf{AWS SNS}, Lambda, and S3 event-driven pipelines with idempotent processing, retry/backoff strategies, and fault-tolerant design for reliable async delivery.
+    \item Improved API response time by \textbf{34\%} through \textbf{Redis}/ElastiCache caching, connection pooling, and targeted query optimisation — applying analytical profiling to identify and resolve hot-path bottlenecks.
+    \item Slashed deployment time by \textbf{50\%} by overhauling \textbf{CI/CD pipelines} with staged gates, parallel jobs, and automated test integration, eliminating manual release steps and enforcing automation best practices.
+    \item Containerised and orchestrated services using \textbf{Docker} and \textbf{Kubernetes} on \textbf{AWS EKS}, managing deployments, scaling policies, and health checks to maintain high availability across production environments.
+    \item Tracked and resolved bugs using \textbf{Jira} with structured sprint workflows; maintained system documentation and architectural decision records in \textbf{Confluence} wikis for cross-team knowledge sharing.
+    \item Reduced MTTR by instrumenting services with structured logging and \textbf{Splunk} dashboards, surfacing error trends, latency spikes, and pipeline failures in real time for proactive incident response.
+    \item Accelerated build and test cycle by \textbf{33\%} through parallelised automated testing, build caching, and pipeline optimisation, enforcing testing best practices and enabling consistent delivery of \textbf{10+ features per quarter}.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Full-Stack Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built full-stack application using \textbf{Java Spring Boot} with \textbf{5+} microservices, async \textbf{Kafka} messaging, \textbf{Docker}, and \textbf{Kong API Gateway}; simulated \textbf{1000+} transactions end-to-end to validate scalability and performance.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+\end{document}

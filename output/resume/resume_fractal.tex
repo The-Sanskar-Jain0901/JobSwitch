@@ -1,0 +1,75 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years of experience building event-driven microservices and cloud-native APIs on AWS.
+Proficient in Python with hands-on experience in AWS Lambda, SNS, SQS, and API integration across distributed systems.
+Skilled in DevOps practices, CI/CD pipeline automation, and delivering production-grade systems end-to-end in Agile teams.
+
+\section*{Skills}
+\textbf{Languages:} Python, C\#, Java, TypeScript \\
+\textbf{Backend:} REST APIs, ASP.NET Core, Spring Boot, Microservices, Kafka, Redis, Webhooks \\
+\textbf{Cloud \& DevOps:} AWS (Lambda, EC2, S3, SNS, SQS, CloudWatch, EKS, Lex), Docker, Kubernetes, CI/CD, Jenkins, Terraform, Linux \\
+\textbf{Databases:} PostgreSQL, MongoDB, MySQL \\
+\textbf{Tools:} Git, Azure DevOps, Postman, Swagger, Splunk, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Implemented \textbf{AWS Lambda} and \textbf{SNS} event pipelines with idempotent processing and retry/backoff handling, enabling reliable async integration between backend services with zero message loss under failure.
+    \item Designed and shipped scalable \textbf{REST APIs} handling \textbf{200K+} weekly requests with structured error handling, input validation, and \textbf{Swagger}-documented contracts for reliable third-party and internal integration.
+    \item Built \textbf{RulesRunner}, a server-side \textbf{SQS}-driven microservice that decoupled compliance logic from the client, cutting wait time by \textbf{83\%} (3000ms $\rightarrow$ 500ms) and enabling independent scaling of backend workflows.
+    \item Engineered backend integration for import/export of \textbf{30+} data types using async processing, \textbf{AWS S3} presigned URLs, and MongoDB, reducing data transfer time by \textbf{38\%} and user-reported issues by \textbf{25\%}.
+    \item Automated \textbf{CI/CD} deployment pipelines with staged gates, parallel jobs, and automated test integration, cutting deployment time by \textbf{50\%} and eliminating all manual release steps.
+    \item Deployed and managed \textbf{AWS EC2}-hosted services with \textbf{CloudWatch} monitoring, maintaining high availability and real-time visibility into application and infrastructure health.
+    \item Containerised microservices with \textbf{Docker} and orchestrated deployments with \textbf{Kubernetes}, ensuring consistent environments across dev, staging, and production.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis} caching, connection pooling, and targeted query optimisation on high-traffic endpoints.
+    \item Reduced MTTR for production incidents by instrumenting services with structured logging and \textbf{Splunk} dashboards, surfacing error trends, latency spikes, and pipeline failures in real time.
+    \item Continuously evaluated and adopted emerging technologies, migrating legacy services to modernised async patterns and tooling, cutting technical debt by \textbf{55\%} and improving runtime performance by \textbf{30\%}.
+    \item Accelerated build and test cycle speed by \textbf{33\%} through parallelised testing, build caching, and \textbf{CI/CD} pipeline optimisation, enabling the team to consistently ship \textbf{10+} features per quarter.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Full-Stack Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a full-stack application with \textbf{5+} microservices using async \textbf{Kafka} communication; containerised all services with \textbf{Docker}, reducing local setup time by \textbf{60\%}.
+    \item Integrated \textbf{Kong API Gateway} for routing, load balancing, and authentication; simulated \textbf{1000+} end-to-end transactions across services.
+\end{itemize}
+\textbf{Stock Recommendation and Prediction} \hfill Apr 2022 -- Jun 2022
+\begin{itemize}[leftmargin=*]
+    \item Developed a stock advisory platform in \textbf{Python} using LSTM models for 30-day predictions; integrated Yahoo Finance API, Firebase, and deployed via \textbf{Streamlit}.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+\end{document}

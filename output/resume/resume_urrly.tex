@@ -1,0 +1,71 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+2024 CS graduate and software engineer with 2+ years of production experience building cloud-native web applications and REST APIs in \textbf{.NET/C\#} and \textbf{Python}.
+Comfortable shipping full apps end-to-end using \textbf{AI coding tools} (GitHub Copilot, Claude Code) to accelerate development.
+Strong grasp of \textbf{MVC architecture}, database design, API development, and cloud deployments -- able to demo and explain real, working systems live.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Python, Java, TypeScript (familiar) \\
+\textbf{Web \& APIs:} .NET 8, ASP.NET Core (MVC), REST APIs, Node.js (familiar), Swagger/OpenAPI, API Versioning \\
+\textbf{Frontend:} React (familiar), HTML/CSS, TypeScript \\
+\textbf{AI Dev Tools:} GitHub Copilot, Claude Code, Cursor \\
+\textbf{Cloud \& DevOps:} Azure DevOps, GitHub Actions, AWS (S3, Lambda, SQS, EKS), Docker, Kubernetes, Terraform \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Redis, Query Optimisation \\
+\textbf{Architecture:} MVC, Microservices, CQRS, Event-Driven, OAuth 2.0, JWT
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Built and shipped \textbf{ASP.NET Core MVC (.NET 8)} REST APIs handling \textbf{200K+ weekly requests} with input validation, structured error handling, and \textbf{Swagger/OpenAPI} docs -- demoed and owned end-to-end.
+    \item Co-designed \textbf{RulesRunner}, a cloud-native \textbf{C\# microservice} using \textbf{CQRS} and async \textbf{SQS} queuing, cutting client-side latency by \textbf{83\%} (3000ms → 500ms) with horizontal scaling on \textbf{AWS}.
+    \item Built large-scale async data pipeline handling \textbf{30+ data types} via \textbf{S3}, \textbf{MongoDB}, and signed URL flows, reducing transfer time \textbf{38\%} -- shipped with full ownership from design to production.
+    \item Implemented \textbf{OAuth 2.0 / JWT} auth with \textbf{Okta} on \textbf{Kong API Gateway}; applied API versioning for backward-compatible, multi-client deployments.
+    \item Improved hot-path API response time \textbf{34\%} via \textbf{Redis} caching and \textbf{PostgreSQL / MongoDB} query optimisation; authored idempotent \textbf{C\# migration scripts} for zero-downtime deploys.
+    \item Overhauled \textbf{Azure DevOps} and \textbf{GitHub Actions} CI/CD pipelines with parallel jobs and automated tests, cutting deployment time \textbf{50\%} and build cycles \textbf{33\%}.
+    \item Leveraged \textbf{GitHub Copilot} and \textbf{AI coding agents} throughout development to accelerate scaffolding, code review, and test generation -- shipped production features faster with consistent quality.
+    \item Instrumented cloud services with \textbf{OpenTelemetry} and \textbf{Splunk}; deployed on \textbf{AWS EKS/ECS} using \textbf{Docker} and \textbf{Kubernetes} with rolling, zero-downtime releases.
+    \item Migrated legacy services to \textbf{.NET 8} with modern async/await patterns, cutting technical debt by \textbf{55\%} and improving runtime throughput by \textbf{30\%}.
+    \item Wrote unit and integration tests using \textbf{xUnit/NUnit}; conducted structured code reviews covering architecture, edge cases, and production readiness across the team.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Full-Stack Microservices App} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built and demoed a full cloud-native app with \textbf{5+ Java/Spring Boot microservices}, async \textbf{Kafka} messaging, \textbf{Kong API Gateway}, \textbf{Docker}, and \textbf{Kubernetes} -- end-to-end from DB schema to deployed API.
+    \item Designed \textbf{PostgreSQL} schema, MVC-style REST endpoints, and Kafka consumer group coordination; used \textbf{GitHub Copilot} throughout to accelerate development.
+    \item Load-tested at \textbf{1000+ concurrent transactions} to validate production readiness; all services containerised and deployable from a single \textbf{Docker Compose} configuration.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

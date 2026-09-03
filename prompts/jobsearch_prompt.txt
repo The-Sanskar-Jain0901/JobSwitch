@@ -1,0 +1,20 @@
+Analyze my attached resume — experience, skills, achievements, industry, and seniority — then find the best-fit jobs matching the criteria below.
+
+**Target roles** (backend-first; include broader software roles only if the description strongly emphasizes backend work, APIs, microservices, distributed systems, databases, or server-side ownership):
+Backend Engineer/Developer, Back End Engineer/Developer, Software Engineer/Developer (Backend), Backend Software Engineer/Developer, Associate/Junior/Entry-Level/Engineer I Backend, Software Engineer I/II Backend, Java Backend Developer, Java/Spring Boot Developer, API Engineer, Microservices/Server-Side/Distributed Systems Engineer, Platform/Product/Core Backend Engineer, Application Engineer (Backend), SDE 1/SDE 2, Software Development Engineer, MTS/Member of Technical Staff, Founding Backend/Software Engineer, Full Stack Engineer/Developer
+
+**Preferred locations (in order):** Pune → Hyderabad → Bangalore → Remote (open to above locations)
+
+**Sources to search:** LinkedIn Jobs, Naukri, Indeed, company career pages, Wellfound, Greenhouse, Lever, Ashby, Workday, SmartRecruiters, BambooHR, Recruitee, Teamtailor, Personio, YC Work at a Startup, Remote OK, We Work Remotely, Remotive, Himalayas, and other credible job boards.
+
+**Hard filters — discard any job that fails any of these:**
+1. **Recency:** Posted within the last 7 days.
+2. **Experience:** Roles requiring 0–2 years or "2+ years" are allowed. Discard anything requiring 3 or more years.
+3. **Location:** Must be in Pune, Hyderabad, or Bangalore, or explicitly remote/open to those cities.
+4. **Salary:** Look up the role's compensation at that company on Glassdoor or AmbitionBox. Only include if ₹17 LPA or above. Skip if salary is completely unavailable and cannot be estimated from similar roles at the same company.
+
+**Output:** Return at least 20 jobs in a table with these columns:
+Job Title | Company Name | Location | Direct Application Link | Job Posting Date | Required Experience | Key Skills Required | Salary Range | Hiring Manager/Recruiter Name | Hiring Manager LinkedIn | Company LinkedIn Page | Source
+You can put your output in the "C:\personal\output\searchResult"
+
+Below the table, include a short reason each role matches my resume. Keep results actionable so I can apply immediately.

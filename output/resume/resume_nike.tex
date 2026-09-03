@@ -1,0 +1,75 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Software engineer with 2+ years of hands-on experience building cloud-native microservices and full-stack applications at Verisk Analytics.
+Core strengths in REST API design, event-driven architecture, AWS services (Lambda, S3, SQS/SNS), and modern CI/CD pipelines.
+Proven track record of delivering measurable impact across cross-functional teams, with growing experience applying AI and ML solutions to real engineering problems.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Java, Python, TypeScript, JavaScript \\
+\textbf{Frontend:} React, HTML5, CSS3 \\
+\textbf{Backend:} .NET 8, ASP.NET Core, Spring Boot, REST APIs, Microservices, Domain-Driven Design, Kafka \\
+\textbf{Cloud \& DevOps:} AWS (Lambda, S3, SQS, SNS, EKS, ECS, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, DynamoDB (NoSQL), Elasticsearch, Indexing \& Query Optimisation \\
+\textbf{Testing \& Tools:} xUnit, NUnit, Jest, Azure DevOps, Swagger/OpenAPI, OpenTelemetry, Splunk, Jira \\
+\textbf{Security:} OAuth 2.0, JWT, Okta, Kong Gateway
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Designed \textbf{RulesRunner}, a stateless microservice following \textbf{domain-driven design} and \textbf{CQRS} principles on \textbf{AWS SQS}, decoupling compliance processing from client threads and reducing wait time from \textbf{3000ms to 500ms (83\%)}.
+    \item Architected fault-tolerant event-driven pipelines using \textbf{AWS Lambda}, \textbf{SNS}, and \textbf{S3} with idempotent processing and retry/backoff strategies, ensuring zero message loss across distributed workflows under failure conditions.
+    \item Built \textbf{ASP.NET Core} REST APIs handling \textbf{200K+ weekly requests} with structured error handling, input validation, versioning, and \textbf{OpenAPI/Swagger} contracts aligned to microservices architectural patterns.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong Gateway}, integrating \textbf{Okta JWT} tokens for secure, standards-compliant cross-service authorisation.
+    \item Improved hot-path API response time by \textbf{34\%} using \textbf{Redis/ElastiCache} caching with deliberate TTL invalidation strategies and \textbf{NoSQL} query optimisation on \textbf{MongoDB}.
+    \item Integrated \textbf{Elasticsearch} to power project discovery with multi-filter search across attributes such as category, status, and tags, replacing slow database scans and significantly improving search responsiveness for end users.
+    \item Overhauled \textbf{Azure DevOps} CI/CD pipelines with staged gates, parallel jobs, and automated testing, cutting deployment time by \textbf{50\%} and build cycles by \textbf{33\%}.
+    \item Migrated legacy services to \textbf{.NET 8} with modern async patterns, reducing technical debt by \textbf{55\%} and improving runtime performance by \textbf{30\%} while maintaining full backward compatibility.
+    \item Authored \textbf{infrastructure-as-code} configurations and production-safe migration scripts with idempotent operations enabling zero-downtime deployments on \textbf{Kubernetes}-managed clusters.
+    \item Instrumented services with \textbf{OpenTelemetry} distributed tracing and \textbf{Splunk} dashboards, reducing mean time to diagnose incidents; collaborated cross-functionally with product and QA teams in Agile sprints.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Full-Stack Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a full-stack expense management application with a \textbf{React} frontend and \textbf{5+ Spring Boot} microservices communicating asynchronously via \textbf{Kafka}; routed all traffic through \textbf{Kong API Gateway} for auth and load balancing.
+    \item Containerised all services with \textbf{Docker} and orchestrated deployments on \textbf{Kubernetes}; wrote end-to-end tests with \textbf{Jest} and integration tests simulating \textbf{1000+} transactions to validate reliability under load.
+\end{itemize}
+
+\textbf{Stock Recommendation and Prediction -- AI/ML Application} \hfill Apr 2022 -- Jun 2022
+\begin{itemize}[leftmargin=*]
+    \item Designed and trained \textbf{LSTM}-based time-series models in \textbf{Python} for 30-day stock price forecasting, integrating ML inference into a REST API-backed advisory platform demonstrating hands-on experience with AI/ML data pipelines.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    DevSecOps Engineer \;|\; CI/CD \;|\; Kubernetes \;|\; Terraform \;|\; AI Agents / MCP \\
+    Hyderabad, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{2pt}
+
+\section*{Summary}
+Software engineer with 2+ years delivering secure cloud services, containerised workloads, and automated \textbf{CI/CD} pipelines. Hands-on with \textbf{Azure DevOps}, Git, AWS, Kubernetes/EKS, Docker, Terraform, C\#, Python, and DevSecOps practices grounded in OAuth 2.0, JWT validation, and production observability. Built internal \textbf{AI agents} using the OpenAI API and \textbf{Model Context Protocol (MCP)} integrations.
+
+\section*{Skills}
+\textbf{DevSecOps \& Security:} Secure SDLC, OAuth 2.0, JWT, Okta, Kong Gateway, Input Validation, Secrets Management, Security Gates \\
+\textbf{Cloud \& Containers:} AWS (EKS, ECS, Lambda, S3, SNS, SQS), Kubernetes, Docker, Terraform, Infrastructure as Code \\
+\textbf{CI/CD \& Tools:} Azure DevOps, Git, GitHub, Visual Studio, CI/CD Pipelines, Automated Testing, Swagger/OpenAPI \\
+\textbf{AI \& Automation:} AI Agents, Model Context Protocol (MCP), OpenAI API, Prompt Engineering, Agent Orchestration, REST/JSON \\
+\textbf{Development \& Operations:} C\#, Python, .NET 8, ASP.NET Core, Microservices, Splunk, OpenTelemetry, Troubleshooting
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Overhauled \textbf{Azure DevOps CI/CD} pipelines with staged approvals, parallel jobs, automated tests, and deployment gates, reducing release time by \textbf{50\%} and build cycles by \textbf{33\%}.
+    \item Secured \textbf{ASP.NET Core} services on AWS EKS behind \textbf{Kong Gateway}, integrating \textbf{OAuth 2.0}, Okta-issued JWT validation, and authorization controls for protected cross-service communication.
+    \item Applied \textbf{DevSecOps} practices across design, review, testing, and deployment, including input validation, least-privilege access, secure API contracts, and quality gates.
+    \item Containerised workloads with \textbf{Docker}, orchestrated services on \textbf{Kubernetes/EKS}, and used \textbf{Terraform IaC} for repeatable environment provisioning and lifecycle management.
+    \item Architected event-driven \textbf{AWS Lambda}, SNS, and SQS pipelines with idempotent processing, retry/backoff, and dead-letter handling, ensuring zero message loss during downstream failures.
+    \item Built \textbf{LLM-powered workflow agents} with the \textbf{OpenAI API}, prompt engineering, and custom orchestration to automate Jira ticket creation and task routing across internal teams.
+    \item Developed \textbf{MCP}-based tool integrations that exposed structured capabilities to agents, connecting model-driven workflows with external services through validated REST/JSON contracts.
+    \item Co-designed \textbf{RulesRunner}, a stateless C\#/.NET microservice using CQRS and SQS that reduced client wait time from \textbf{3000ms to 500ms} (\textbf{83\%}) and enabled horizontal scaling.
+    \item Instrumented services with \textbf{OpenTelemetry} and \textbf{Splunk}, accelerating troubleshooting of latency, authentication, deployment, and distributed pipeline failures.
+\end{itemize}
+
+\section*{Projects}
+\resumeSubheading{Internal Workflow Automation Agent}{2025 -- 2026}{}{OpenAI API, MCP, C\#/Python, Jira, REST APIs}
+\begin{itemize}
+    \item Created an agent that interprets task requests and drafts Jira tickets using prompt-engineered OpenAI API calls, context management, validation, and custom workflow orchestration.
+    \item Integrated MCP tools with downstream services and business rules, enabling reusable, controlled agent actions while reducing repetitive manual coordination.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} --- Vishwakarma Institute of Technology, Pune (SPPU) \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

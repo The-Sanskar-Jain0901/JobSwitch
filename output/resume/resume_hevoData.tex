@@ -1,0 +1,67 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=4pt, topsep=3pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    Software Engineer | REST APIs \& Data Integrations \\
+    Hyderabad, Telangana, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\section*{Summary}
+Software engineer with 2+ years of experience building REST APIs, data pipelines, and third-party/SaaS-style integrations in production. Proficient in Java (Spring Boot), Python, TypeScript, and C\#/.NET, with a strong foundation in OOP, data structures, and clean API design. Hands-on experience debugging and optimizing async data pipelines for throughput and reliability, with a track record of shipping smaller features end-to-end from design to testing.
+
+\section*{Key Skills}
+\textbf{Languages:} Java, Python, TypeScript, C\# \\
+\textbf{APIs \& Backend:} REST APIs, JSON, Spring Boot, ASP.NET Core, Microservices, API Versioning, OOP \& Design Principles \\
+\textbf{Data Pipelines \& Integrations:} Async data pipelines, third-party/SaaS integrations, Kafka, AWS SQS/SNS, S3, MongoDB, PostgreSQL \\
+\textbf{Tools \& Practices:} Docker, Kubernetes, Git, CI/CD (Azure DevOps), Unit/Integration Testing (xUnit, NUnit), Debugging \& Profiling, Agile/Scrum
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Built and maintained REST API components with ASP.NET Core handling 200K+ weekly requests, focusing on clean implementation, input validation, structured error handling, and Swagger/OpenAPI documentation for testability.
+    \item Implemented data pipeline integration for Xactimate's import/export across 30+ third-party data types using asynchronous processing, S3 presigned URLs, and MongoDB; debugged and optimized data flow, cutting transfer time by 38\% and data issues by 25\%.
+    \item Co-designed RulesRunner, a stateless microservice applying CQRS and SQS-based async messaging, using OOP and design principles to reduce client wait time from 3000ms to 500ms (83\%) while enabling horizontal scaling.
+    \item Debugged and resolved integration issues across authentication flows (OAuth 2.0/Okta JWT via Kong Gateway) and caching layers (Redis/ElastiCache), improving API response time by 34\%.
+    \item Broke down and documented smaller feature tasks (service boundaries, API contracts, DLQ handling) and optimized MongoDB/PostgreSQL indexing by analyzing slow queries to improve pipeline query performance.
+    \item Wrote unit and integration tests using xUnit/NUnit and participated in code reviews covering logic correctness, edge cases, and production readiness.
+\end{itemize}
+
+\section*{Projects}
+\resumeSubheading{Expense Tracker -- Microservices Application}{Aug 2023 -- Dec 2023}{}{Java, Spring Boot, Kafka, Docker, Kubernetes}
+\begin{itemize}
+    \item Built expense tracker backend using Java/Spring Boot with 5+ microservices, implementing REST API endpoints and asynchronous Kafka-based communication between services, routed through Kong API Gateway.
+    \item Containerized services with Docker and orchestrated with Kubernetes, applying OOP design principles across service boundaries; simulated 1000+ transactions end-to-end for load testing.
+\end{itemize}
+
+\section*{Certifications}
+AWS Certified Cloud Practitioner -- Amazon Web Services \enspace | \enspace Oct 2024
+
+\section*{Education}
+\resumeSubheading{Bachelor of Technology in Computer Engineering}{}{Vishwakarma Institute of Technology, Pune (S.P.P.U)}{2024 \enspace | \enspace 8.8 GPA}
+
+\end{document}

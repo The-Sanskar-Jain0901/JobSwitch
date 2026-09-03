@@ -1,0 +1,69 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend and distributed systems engineer with 2+ years of experience building cloud-native, event-driven infrastructure at Verisk Analytics.
+Deep expertise in designing fault-tolerant, high-throughput distributed systems using \textbf{Kafka}, \textbf{AWS}, and statically typed languages (\textbf{Java}, \textbf{C\#}).
+Proven track record shipping large-scale, production systems with strong ownership, observability, and end-to-end reliability across cloud environments.
+
+\section*{Skills}
+\textbf{Languages:} Java, C\#, Python, Go (familiar) \\
+\textbf{Distributed Systems:} Apache Kafka, Event-Driven Architecture, CQRS, Pub/Sub, Idempotent Processing, Retry/Backoff, DLQ \\
+\textbf{Cloud \& Infrastructure:} AWS (EKS, ECS, Lambda, S3, SNS, SQS, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Networking \& Security:} Kong API Gateway, OAuth 2.0, JWT, Okta, REST APIs, API Versioning \\
+\textbf{Databases \& Storage:} MongoDB, PostgreSQL, MySQL, Redis, Indexing, Query Optimisation \\
+\textbf{Observability \& Tools:} OpenTelemetry, Splunk, xUnit/NUnit, Swagger/OpenAPI, Azure DevOps, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless distributed microservice using \textbf{CQRS} and \textbf{SQS} that decoupled compliance processing from clients, reducing end-to-end latency from \textbf{3000ms to 500ms (83\%)} with horizontal scalability.
+    \item Architected \textbf{event-driven pipelines} with idempotent message processing, configurable retry/backoff strategies, dead-letter queues (DLQ), and \textbf{SNS}-based fan-out for distributed, fault-tolerant consumers.
+    \item Engineered \textbf{AWS Lambda} serverless processing pipelines with zero message loss guarantees under network partitions and failure conditions, aligning with production SLA requirements.
+    \item Built large-scale async data transfer backend for \textbf{Xactimate} handling \textbf{30+ data types} via \textbf{S3 presigned URLs} and \textbf{MongoDB}, reducing transfer time by \textbf{38\%} and data integrity issues by \textbf{25\%}.
+    \item Deployed and operated services on \textbf{AWS EKS} and \textbf{ECS} with container orchestration using \textbf{Kubernetes} and \textbf{Docker}, supporting rolling deployments and zero-downtime releases.
+    \item Built \textbf{ASP.NET Core} REST APIs handling \textbf{200K+ weekly requests}; implemented URL-based versioning for seamless backward-compatible client migrations.
+    \item Improved hot-path API response time by \textbf{34\%} through \textbf{Redis/ElastiCache} caching, connection pooling, and targeted \textbf{MongoDB / PostgreSQL} query and index optimisation.
+    \item Authored \textbf{production-safe, idempotent migration scripts} enabling zero-downtime schema deployments across distributed database clusters.
+    \item Accelerated deployment cycles by \textbf{50\%} and build time by \textbf{33\%} by re-architecting \textbf{Azure DevOps} pipelines with staged gates, parallel jobs, and automated integration tests.
+    \item Instrumented services with \textbf{OpenTelemetry} distributed tracing and \textbf{Splunk} dashboards to achieve deep observability, reducing MTTD for production incidents.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Kafka-Driven Expense Tracker -- Distributed Microservices Platform} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a cloud-native platform with \textbf{5+ Spring Boot (Java) microservices} communicating via \textbf{Apache Kafka} topics for real-time, async event streaming between producers and consumers.
+    \item Designed \textbf{Kafka} producers/consumers with offset management and consumer group coordination; containerised with \textbf{Docker} and orchestrated via \textbf{Kubernetes}, simulating \textbf{1000+ concurrent transactions} for load testing.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

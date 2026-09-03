@@ -1,0 +1,71 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Java Backend Engineer | Microservices | Distributed Systems \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Java and Spring Boot backend engineer with 2+ years of experience building cloud-native microservices, event-driven architectures, and distributed systems at Verisk Analytics.
+Proficient in object-oriented design, message queues, RDBMS and NoSQL databases, and automated testing.
+Consistently delivered production systems in Agile/Scrum teams with measurable improvements in latency, reliability, and deployment velocity.
+
+\section*{Skills}
+\textbf{Languages:} Java 8+, C\#, Python, TypeScript \\
+\textbf{Backend:} Spring Boot, Microservices, REST APIs, Kafka, RabbitMQ, Message Queues (SQS/SNS), Redis \\
+\textbf{Cloud \& DevOps:} GCP, AWS (S3, SNS, SQS, EKS, Lambda), Docker, Kubernetes, CI/CD, Terraform \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis \\
+\textbf{Testing \& Tools:} JUnit, Automated Testing, Swagger, Splunk, Azure DevOps, Jira, Agile/Scrum
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Architected \textbf{RulesRunner}, an event-driven \textbf{microservice} using \textbf{message queues (SQS)} that offloaded compliance checks from the client, reducing wait time from \textbf{3000ms to 500ms} (\textbf{83\%} improvement) and enabling independent scaling.
+    \item Engineered scalable \textbf{REST APIs} serving \textbf{200K+ weekly requests} with structured error handling, input validation, and \textbf{Swagger}-documented contracts in a multi-tiered distributed architecture.
+    \item Reduced data transfer time by \textbf{38\%} by designing an async backend for import/export of \textbf{30+ data types} using \textbf{S3}, \textbf{PostgreSQL}, and \textbf{MongoDB}, applying object-oriented design patterns for extensibility.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis} caching, connection pooling, and targeted \textbf{relational database} query optimisation on hot-path endpoints.
+    \item Eliminated message loss by designing \textbf{SNS/SQS} and Lambda pipelines with idempotent processing, retry/backoff strategies, and dead-letter queues for reliable async delivery.
+    \item Slashed deployment time by \textbf{50\%} by overhauling CI/CD pipelines with staged gates, parallel jobs, and \textbf{automated test integration}, eliminating all manual release steps.
+    \item Accelerated build and test cycle speed by \textbf{33\%} through parallelised \textbf{automated testing}, build caching, and pipeline optimisation in an \textbf{Agile/Scrum} workflow, shipping \textbf{10+ features per quarter}.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} through modernising dependency injection, async patterns, and applying \textbf{object-oriented design} principles.
+    \item Reduced mean time to diagnose production incidents by instrumenting services with structured logging and \textbf{Splunk} dashboards, surfacing error trends and latency spikes in real time.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Full-Stack Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built a full-stack expense tracker using \textbf{Java/Spring Boot} with \textbf{5+ microservices} and async \textbf{Kafka} message queue communication, following \textbf{Agile iterations} and user stories.
+    \item Containerised all services with \textbf{Docker} and wrote \textbf{automated functional tests} with \textbf{JUnit}; simulated \textbf{1000+} transactions end-to-end for performance validation.
+    \item Integrated \textbf{Kong API Gateway} for routing, load balancing, and authentication across the \textbf{distributed multi-tiered} system.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+\end{document}

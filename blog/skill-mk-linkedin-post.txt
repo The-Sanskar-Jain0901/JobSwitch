@@ -1,0 +1,17 @@
+Your AI agent reads the entire instruction manual every time — even when it only needs one page.
+
+That's the hidden cost of SKILL.md files. A developer named Zhou Chang just open-sourced a fix: SKILL.mk — agent skills written in Makefile format.
+
+Why Makefile? Three reasons:
+1. On-demand loading — cut token usage by 85% in one example
+2. Built-in execution order — targets have dependencies, so the agent follows the chain
+3. Per-step tracking — each recipe is independently measurable and git-trackable
+
+Makefiles have been building software for 50 years. Now they might help build better AI agents too.
+
+Deeper dive on my blog: [YOUR_BLOG_LINK]
+Repo: https://github.com/Teaonly/SKILL.mk
+
+Is structured skill loading the next step for AI agents, or is Markdown good enough?
+
+#AIAgents #LLM #DeveloperTools #OpenSource #AgenticAI #CodingAgents

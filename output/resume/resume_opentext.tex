@@ -1,0 +1,69 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Systems-oriented backend engineer with 2+ years building distributed, cloud-native applications at Verisk Analytics.
+Strong in \textbf{database technologies} (MongoDB, PostgreSQL), \textbf{Linux}-based containerised environments, and async \textbf{inter-process communication} patterns using Kafka, SQS, and SNS.
+Delivered fault-tolerant, scalable systems end-to-end with a record of independent ownership, clear technical communication, and zero-downtime production deployments.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Python, Java, C++ (academic) \\
+\textbf{Backend:} .NET 8, ASP.NET Core, Spring Boot, REST APIs, Microservices, Kafka, Redis, CQRS \\
+\textbf{Messaging \& IPC:} Kafka, AWS SQS/SNS, Redis Pub/Sub, Event-Driven Architecture, DLQ, Retry/Backoff \\
+\textbf{Platforms \& DevOps:} Linux, AWS (S3, EKS, ECS, Lambda, ElastiCache), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Indexing, Query Optimisation, Migration Scripting \\
+\textbf{Tools:} OAuth 2.0, JWT, Okta, Kong Gateway, OpenTelemetry, Splunk, Swagger/OpenAPI, Jira
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless microservice using \textbf{CQRS} and \textbf{AWS SQS} for async inter-process communication, offloading compliance checks and reducing latency from \textbf{3000ms to 500ms (83\%)} with horizontal scaling.
+    \item Architected event-driven pipeline with \textbf{idempotent processing}, retry/backoff strategies, DLQ handling, and \textbf{AWS Lambda} triggers -- ensuring zero message loss across distributed processes under failure conditions.
+    \item Authored technical design documentation defining service contracts, IPC patterns via \textbf{SNS} fan-out, and DLQ strategies; aligned engineering and product stakeholders on distributed system behaviour.
+    \item Engineered scalable backend for \textbf{Xactimate's} import/export of \textbf{30+ data types} using async processing, \textbf{S3 presigned URLs}, and \textbf{MongoDB}, reducing transfer time by \textbf{38\%} and data issues by \textbf{25\%}.
+    \item Built REST APIs on \textbf{Linux-based AWS EKS} clusters handling \textbf{200K+ weekly requests} with structured error handling, input validation, and \textbf{Swagger/OpenAPI} documentation.
+    \item Established \textbf{OAuth 2.0} authentication behind \textbf{Kong Gateway} on \textbf{AWS EKS}, integrating \textbf{Okta JWT} tokens with Identity Server for secure cross-service authorisation.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis/ElastiCache} caching, connection pooling, and query optimisation on high-traffic endpoints.
+    \item Optimised \textbf{database indexing strategies} on \textbf{MongoDB} and \textbf{PostgreSQL} by analysing slow-query logs and access patterns, reducing p95 query latency across critical workflows.
+    \item Authored \textbf{production-safe database migration scripts} with idempotent operations and full backward compatibility, enabling zero-downtime deployments.
+    \item Slashed deployment time by \textbf{50\%} and build cycles by \textbf{33\%} by overhauling \textbf{CI/CD pipelines} with staged gates, parallel jobs, and automated test integration on Linux build agents.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Distributed Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{5+ microservices} communicating via async \textbf{Kafka} messaging (IPC), with \textbf{Kong API Gateway} handling routing, auth, and load balancing across services.
+    \item Containerised all services with \textbf{Docker} on Linux and orchestrated deployments using \textbf{Kubernetes}; simulated \textbf{1000+ transactions} end-to-end for load and fault-tolerance testing.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

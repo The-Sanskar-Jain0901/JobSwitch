@@ -1,0 +1,73 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Backend engineer with 2+ years designing and taking end-to-end ownership of distributed systems and async architectures at Verisk Analytics.
+Proven ability to turn ambiguous problems into pragmatic production solutions that balance performance, reliability, and long-term maintainability.
+Thrives in fast-paced, cross-functional teams; bias toward action, clear tradeoff thinking, and a growing curiosity for applying AI tools to engineering problems.
+
+\section*{Skills}
+\textbf{Languages:} C\#, Python, Java, TypeScript \\
+\textbf{Backend:} .NET 8, ASP.NET Core, REST APIs, Microservices, Kafka, Redis, Async Pipelines \\
+\textbf{Distributed Systems:} AWS SQS, SNS, Lambda, Event-driven Architectures, Idempotency, Async Task Processing \\
+\textbf{Cloud \& DevOps:} AWS (S3, EKS, ECS), Docker, Kubernetes, Terraform, CI/CD \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB \\
+\textbf{Tools:} xUnit, Postman, Swagger, Splunk, Jira, Bitbucket
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+\begin{itemize}[leftmargin=*]
+    \item Designed and owned \textbf{RulesRunner}, an async task-offloading microservice on \textbf{AWS SQS} that decoupled compliance processing from client threads — taking an ambiguous performance problem to a production solution that cut wait time from \textbf{3000ms to 500ms} (\textbf{83\%}).
+    \item Architected fault-tolerant async pipelines on \textbf{AWS SNS}, Lambda, and S3 with idempotent processing and retry/backoff, eliminating message loss and ensuring reliable delivery under partial failure across distributed workflows.
+    \item Built \textbf{ASP.NET Core} REST APIs serving \textbf{200K+} weekly requests with structured error handling, input validation, and \textbf{Swagger}-documented contracts, maintaining high reliability and clear end-to-end ownership.
+    \item Improved API response time by \textbf{34\%} by introducing \textbf{Redis} caching with deliberate TTL-based invalidation, making explicit consistency-vs-latency tradeoffs on hot-path endpoints under production load.
+    \item Cut technical debt by \textbf{55\%} migrating legacy services to \textbf{.NET 8} with modernised async patterns; prioritised high-impact changes to maximise team velocity without sacrificing long-term maintainability.
+    \item Accelerated \textbf{xUnit} test cycle by \textbf{33\%} through parallelised testing and build caching; slashed deployment time by \textbf{50\%} via overhauled \textbf{CI/CD} pipelines, enabling the team to ship \textbf{10+} features per quarter.
+    \item Reduced mean time to diagnose incidents by instrumenting \textbf{Kubernetes}-deployed services with structured logging and \textbf{Splunk} dashboards, surfacing latency spikes and async pipeline failures in real time.
+    \item Led code reviews and collaborated cross-functionally to unblock engineers, enforce clean extensible design, and align backend implementations with product requirements across Agile sprints.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Distributed Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Owned architecture end-to-end across \textbf{5+} microservices with async \textbf{Kafka} communication, \textbf{Kong API Gateway} for routing and auth, and \textbf{Docker} containerisation; stress-tested with \textbf{1000+} simulated transactions.
+    \item Designed data layer using \textbf{PostgreSQL} for transactional consistency and \textbf{MongoDB} for activity logs; wrote unit and integration tests achieving \textbf{80\%+} coverage, balancing correctness with development velocity.
+\end{itemize}
+\textbf{Stock Recommendation and Prediction} \hfill Apr 2022 -- Jun 2022
+\begin{itemize}[leftmargin=*]
+    \item Built stock advisory platform in \textbf{Python} using LSTM models for 30-day price predictions; applied text processing and time-series forecasting pipelines, demonstrating hands-on curiosity in AI-driven features and data engineering.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+
+\section*{Education}
+
+\textbf{Bachelor of Technology in Computer Engineering} \\
+Vishwakarma Institute of Technology, Pune (S.P.P.U) \hfill 2024 \\
+CGPA: 8.8
+
+\end{document}

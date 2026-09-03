@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Full-stack engineer with 2+ years turning vague, underspecified problems into shipped production features at Verisk Analytics -- spanning \textbf{React/JavaScript} UIs, \textbf{C\#/.NET} and \textbf{Java/Spring Boot} services, and an \textbf{LLM-powered agent} built on the \textbf{OpenAI API}.
+Comfortable reasoning about build-vs-buy and LLM-vs-deterministic tradeoffs, making independent UX calls, and shipping with high agency rather than waiting for a fully-scoped ticket.
+Uses \textbf{Claude Code} daily as a core part of the workflow.
+
+\section*{Skills}
+\textbf{Languages \& Web:} C\#, Java, JavaScript, TypeScript, HTML5, CSS3, Python \\
+\textbf{Frontend:} React, REST/JSON API consumption, independent UX iteration \\
+\textbf{LLM \& Agentic AI:} OpenAI API, Prompt Engineering, Non-Determinism Handling, Context Management, Agent Orchestration \\
+\textbf{Backend:} .NET 8/ASP.NET Core, Spring Boot, REST APIs, Microservices, CQRS, Kafka, Redis \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, Lambda, ElastiCache), Docker, Kubernetes, CI/CD \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, query optimization \\
+\textbf{AI Coding Tools:} Claude Code (daily use for implementation, debugging, refactoring)
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Shipped \textbf{RulesRunner} from an underspecified "checkout feels slow" complaint to a production microservice offloading rule checks asynchronously via \textbf{AWS SQS}, cutting client wait time from \textbf{3000ms to 500ms (83\%)} without a fully scoped ticket.
+    \item Designed a prompt-engineered \textbf{Jira} ticket-creation agent on the \textbf{OpenAI API}, handling prompt drift and non-deterministic outputs with validation and context-passing logic that reliably routed real task requests.
+    \item Built \textbf{REST APIs} (\textbf{ASP.NET Core}/\textbf{Java Spring Boot}) serving \textbf{200K+ weekly requests}, documenting contracts in \textbf{Swagger/OpenAPI} for downstream teams to integrate against.
+    \item Weighed build-vs-buy and latency-vs-complexity tradeoffs when choosing \textbf{CQRS} and event-driven \textbf{SNS/SQS} patterns over synchronous calls, pushing back on requests that added complexity without user-facing benefit.
+    \item Reduced technical debt by \textbf{55\%} and lifted runtime performance by \textbf{30\%} by migrating legacy services to \textbf{.NET 8} on my own initiative, without a dedicated migration ticket.
+    \item Improved API response time by \textbf{34\%} through \textbf{Redis} caching and query optimization, iterating directly on hot-path endpoints after noticing user-facing lag.
+    \item Adopted \textbf{Claude Code} daily as a core part of the workflow, using it to implement, debug, and refactor features while reviewing every AI-generated change before merge.
+    \item Partnered with product and QA in \textbf{Agile} ceremonies and structured code reviews, translating ambiguous stakeholder asks into scoped, shippable increments.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Internal Workflow Automation Agent} \hfill 2025 -- 2026
+\begin{itemize}[leftmargin=*]
+    \item Developed an \textbf{LLM-based agent} on the \textbf{OpenAI API} that parses task requests and drafts \textbf{Jira} tickets, designing prompt templates and context-passing logic to handle model non-determinism.
+    \item Connected agent output to downstream backend services, reducing manual coordination for real operational requests without a pre-defined spec.
+\end{itemize}
+
+\textbf{Expense Tracker -- Full-Stack Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Picked up frontend work on a \textbf{React}/JavaScript UI without waiting for a formal design handoff, consuming REST/JSON APIs from \textbf{5+ Spring Boot} microservices.
+    \item Containerized services with \textbf{Docker}, orchestrated via \textbf{Kubernetes}, and load-tested \textbf{1000+} simulated transactions end-to-end.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

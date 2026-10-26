@@ -1,72 +1,55 @@
-                                             Sanskar Jain
-    Integration Developer | C# / .NET 8 | Event-Driven APIs | Azure DevOps CI/CD | Hyderabad, India
-                +91 90216 20156 | sanskarjain0901@gmail.com | linkedin.com/in/sanskar-jain0901
+                                               Sanskar Jain
+             Backend Software Engineer | C# / .NET | AWS | JavaScript / React | Hyderabad, India
+                 +91 90216 20156 | sanskarjain0901@gmail.com | linkedin.com/in/sanskar-jain0901
 
 Professional Summary
-Software Engineer with 2+ years at Verisk Analytics building C#/.NET 8 integration services: event-driven
-queue pipelines, versioned REST APIs behind an API gateway, and Azure DevOps CI/CD. Writes the design
-docs for what they build, debugs production issues, reviews code, and mentors junior engineers. Uses GitHub
-Copilot daily.
+Backend-leaning full stack engineer with 2+ years building service-oriented, event-driven systems and REST APIs on AWS
+at Verisk Analytics, covering new services and legacy modernization. Built and run a multi-tenant React/TypeScript
+payroll SaaS from scratch for 15+ businesses; works across backend, frontend, and databases in cross-functional teams.
 Technical Skills
-Languages & Data Formats: C#, SQL, Python, JSON, XML
-Integration & APIs: REST APIs, Swagger/OpenAPI, API Versioning, Kong API Gateway, Event-Driven
-Architecture, Microservices, CQRS, AWS SQS/SNS/Lambda, Apache Kafka
-.NET: .NET 8, ASP.NET Core, ASP.NET MVC, Web API 2, .NET Framework, Entity Framework, Dependency
-Injection
-CI/CD & Cloud: Azure DevOps Pipelines, Git, Terraform CDK (CDKTF), Docker, Kubernetes, AWS (EKS, EC2,
-Lambda, S3, ElastiCache, CloudWatch)
-Security & Observability: OAuth 2.0, JWT, Okta, OpenTelemetry, Splunk, CloudWatch
-Data, Testing & AI: MongoDB, PostgreSQL, Redis, xUnit, NUnit, Multithreading, GitHub Copilot, Claude Code,
-OpenAI API, MCP
+Languages: C#, JavaScript, TypeScript, Java, Python, SQL
+Backend & Architecture: .NET 8, ASP.NET Core, .NET Framework, Service-Oriented Architecture, Microservices,
+REST APIs, Async Programming, Multithreading, LINQ, Spring Boot, Swagger/OpenAPI
+Frontend: React 18, HTML5, CSS3, Vite, TailwindCSS, TanStack React Query, Axios
+Cloud & Messaging: AWS (EC2, Lambda, SQS, SNS, S3, EKS, ElastiCache), Kafka, Docker, Kubernetes, Kong Gateway,
+Azure DevOps
+Databases: MongoDB, PostgreSQL, Redis, Elasticsearch, Indexing and Query Tuning
+Security, Testing & AI Tooling: OAuth 2.0, JWT, Okta, xUnit, NUnit, Claude Code, GitHub Copilot, OpenAI API
 Professional Experience
-Verisk Analytics                                                                                  Hyderabad, India
-Software Engineer II                                                                            Apr 2026 – Present
-Software Engineer I                                                                            Jul 2024 – Mar 2026
-Software Engineering Intern                                                                    Jan 2024 – Jun 2024
-• Designed event-driven integration pipelines on AWS SQS, SNS, and Lambda with idempotent consumers,
-  retry/backoff, and dead-letter queues, processing about 500 production messages a day across eu-west-1 and
-  us-west-2.
-• Co-designed RulesRunner, a stateless C# microservice using CQRS and an SQS-backed worker that cut user
-  wait time from about 3 s to 0.5 s; authored the design docs for service boundaries, API contracts, and dead-letter
-  queue handling.
+Verisk Analytics                                                                                       Hyderabad, India
+Software Engineer II                                                                                 Apr 2026 – Present
+Software Engineer I                                                                                 Jul 2024 – Mar 2026
+• Co-designed and built RulesRunner, a stateless .NET microservice that moved compliance checks off the client onto
+  an AWS SQS-backed worker, cutting user wait time from about 3 s to 0.5 s and allowing horizontal scaling.
+• Designed event-driven pipelines on SQS, SNS, and Lambda with idempotent consumers, retry/backoff, and dead-letter
+  queues, handling about 500 production messages a day; wrote the design docs for service boundaries and APIs.
 • Built the backend for Xactimate import/export across 30+ data types using asynchronous processing, S3 presigned
-  URLs, MongoDB, and XML parsing in C#; transfers became 38% faster.
-• Developed ASP.NET Core Web API services on .NET 8 with Entity Framework, serving about 200K
-  requests a week, with URL-based versioning across 16 v2 endpoints and Swagger/OpenAPI docs.
-• Secured services with OAuth 2.0 and Okta-issued JWTs on AWS EKS behind Kong API Gateway for 6 of
-  15+ platform services, and moved 4 client applications from Forms Authentication to JWT bearer auth with
-  token revocation over a shared Redis session store.
-• Reworked Azure DevOps CI/CD pipelines with staged gates and parallel jobs, roughly halving deployment
-  time, and deployed several applications to AWS production as infrastructure as code with Terraform CDK
-  (CDKTF).
-• Migrated legacy .NET Framework services (ASP.NET MVC, Web API 2) to .NET 8, including 2 migration
-  scripts that moved 1M+ records each.
-• Diagnosed multithreading defects and flaky tests, supported production issues 2–3 times a year, and cut
-  hot-endpoint response times by about 34% with Redis caching and MongoDB/PostgreSQL indexing; integrated
-  OpenTelemetry into an application and worked with CloudWatch and Splunk alerts and metrics.
-• Reached 90% code coverage with xUnit/NUnit tests, reviewed code across multiple scrum teams, and mentored
-  4 junior engineers.
-• Use GitHub Copilot and Claude Code daily, reviewing all generated code before merge; built a Python agent
-  on the OpenAI API that drafts and routes 30–50 Jira tickets a week, and have worked with MCP servers for
-  Atlassian, Splunk, and Dynatrace.
+  URLs, and MongoDB; transfers became ∼38% faster and related customer tickets fell by roughly a quarter.
+• Added URL-based versioning across 16 v2 endpoints and Swagger/OpenAPI docs to ASP.NET Core REST APIs
+  handling ∼200K requests a week.
+• Cut hot-endpoint response times by ∼34% through ElastiCache caching, connection pooling, and index tuning on
+  MongoDB and PostgreSQL, and used Elasticsearch to bring down search latency.
+• Rolled out OAuth 2.0 with Okta-issued JWTs on AWS EKS behind Kong API Gateway for 6 of the platform’s 15+
+  services, integrating with the existing Identity Server flow.
+• Migrated 4 client applications from Forms Authentication to JWT bearer auth over a shared Redis session store, with
+  token revocation so logout ends the session everywhere.
+• Moved legacy .NET Framework services (ASP.NET MVC, Web API 2) to .NET 8 and reworked Azure DevOps
+  pipelines with staged gates and parallel jobs, roughly halving deployment time; services run on AWS EC2 and EKS in
+  eu-west-1 and us-west-2 with biweekly releases.
+• Built an internal agent in Python on the OpenAI API that drafts and routes 30–50 Jira tickets a week; use Claude
+  Code and GitHub Copilot daily, reviewing all generated code before merge; mentored 4 junior engineers.
+Software Engineering Intern                                                                         Jan 2024 – Jun 2024
 Projects
-Attendance & Payroll SaaS (sole developer)                                                Jul 2026 – Present
-• Shipped a multi-tenant payroll and attendance product used by 15+ small businesses: Java 17/Spring Boot
-  REST API, PostgreSQL, JWT auth with role-based access, and a React/TypeScript UI.
-   Expense Tracker – Microservices Application                                          Aug 2023 – Dec 2023
-• Developed five Spring Boot microservices communicating over Apache Kafka behind Kong API Gateway,
-  containerized with Docker and run on Kubernetes.
-
-
-
-
-                                                         1
-Education & Certifications
-B.Tech in Computer Engineering, Vishwakarma Institute of Technology, Pune   2020 – 2024 | CGPA 8.8/10
-AWS Certified Cloud Practitioner, Amazon Web Services                                        Oct 2024
-
-
-
-
-                                                  2
+Attendance & Payroll SaaS (sole developer) | sanskar-engineers-payroll-ui.onrender.com                 Jul 2026 – Present
+• Built from scratch a multi-tenant payroll and attendance product used by 15+ small businesses on Spring Boot (Java
+   17), React + TypeScript, and PostgreSQL, deployed on Render; tenant isolation via shared-schema org_id and
+   Hibernate filters, with JWT auth and 3-role RBAC.
+• Wrote a payroll engine for monthly, daily, and hourly pay with prorated mid-month rate changes, overtime, and advances;
+   finalized records are locked against retroactive edits.
+    Expense Tracker                                                                                      Aug – Dec 2023
+Five Spring Boot microservices with Kafka and Kong API Gateway, a React frontend in JavaScript, HTML, and
+CSS, containerized with Docker and run on Kubernetes.
+Education & Certifications
+B.Tech in Computer Engineering, Vishwakarma Institute of Technology, Pune                  2020 – 2024 | CGPA: 8.8/10
+AWS Certified Cloud Practitioner, Amazon Web Services                                                       Oct 2024
 

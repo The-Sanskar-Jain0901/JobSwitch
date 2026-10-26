@@ -1,0 +1,98 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Integration Developer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={C-Sharp, dotNET 8, Event-Driven Integration, REST APIs, Azure DevOps CI/CD}, pdfkeywords={C-Sharp, dotNET 8, Integration, Event-Driven, REST APIs, JSON, XML, Azure DevOps, CI/CD, Microservices, GitHub Copilot}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Integration Developer \;|\; C\# / .NET 8 \;|\; Event-Driven APIs \;|\; Azure DevOps CI/CD \;|\; Hyderabad, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Software Engineer with \textbf{2+ years} at Verisk Analytics building \textbf{C\#}/\textbf{.NET 8} integration services: \textbf{event-driven} queue pipelines, versioned \textbf{REST APIs} behind an API gateway, and \textbf{Azure DevOps} \textbf{CI/CD}. Writes design docs, debugs production issues, reviews code, and mentors juniors. Uses \textbf{GitHub Copilot} daily.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages \& Data Formats:} C\#, SQL, Python, JSON, XML \\
+\textbf{Integration \& APIs:} REST APIs, Swagger/OpenAPI, API Versioning, Kong API Gateway, Event-Driven Architecture, Microservices, CQRS, AWS SQS/SNS/Lambda, Apache Kafka \\
+\textbf{.NET:} .NET 8, ASP.NET Core, ASP.NET MVC, Web API 2, .NET Framework, Entity Framework, Dependency Injection \\
+\textbf{CI/CD \& Cloud:} Azure DevOps Pipelines, Git, Terraform CDK (CDKTF), Docker, Kubernetes, AWS (EKS, EC2, Lambda, S3, ElastiCache, CloudWatch) \\
+\textbf{Security \& Observability:} OAuth 2.0, JWT, Okta, OpenTelemetry, Splunk, CloudWatch \\
+\textbf{Data, Testing \& AI:} MongoDB, PostgreSQL, Redis, xUnit, NUnit, Multithreading, GitHub Copilot, Claude Code, OpenAI API
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Hyderabad, India \\
+\textbf{Software Engineer II} \hfill Apr 2026 -- Present \\
+\textbf{Software Engineer I} \hfill Jul 2024 -- Mar 2026 \\
+\textbf{Software Engineering Intern} \hfill Jan 2024 -- Jun 2024
+
+\begin{itemize}[leftmargin=*]
+    \item Designed \textbf{event-driven} integration pipelines on \textbf{AWS SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent consumers, retry/backoff, and dead-letter queues, processing about \textbf{500 production messages a day} across \textbf{eu-west-1} and \textbf{us-west-2}.
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{C\#} microservice using \textbf{CQRS} and an \textbf{SQS}-backed worker that cut user wait time from about \textbf{3 s to 0.5 s}; authored the design docs for service boundaries, API contracts, and dead-letter queue handling.
+    \item Built the backend for Xactimate import/export across \textbf{30+} data types using asynchronous processing, \textbf{S3} presigned URLs, \textbf{MongoDB}, and \textbf{XML} parsing in \textbf{C\#}; transfers became \textbf{38\%} faster.
+    \item Developed \textbf{ASP.NET Core} \textbf{Web API} services on \textbf{.NET 8} with \textbf{Entity Framework}, serving about \textbf{200K requests a week}, with \textbf{URL-based versioning} across \textbf{16 v2 endpoints} and \textbf{Swagger/OpenAPI} docs.
+    \item Secured services with \textbf{OAuth 2.0} and \textbf{Okta}-issued \textbf{JWTs} on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+} platform services, and moved \textbf{4 client applications} from Forms Authentication to \textbf{JWT} bearer auth with token revocation over a shared \textbf{Redis} session store.
+    \item Reworked \textbf{Azure DevOps} \textbf{CI/CD} pipelines with staged gates and parallel jobs, roughly halving deployment time, and deployed several applications to \textbf{AWS} production as infrastructure as code with \textbf{Terraform CDK (CDKTF)}.
+    \item Migrated legacy \textbf{.NET Framework} services (\textbf{ASP.NET MVC}, \textbf{Web API 2}) to \textbf{.NET 8}, with \textbf{2 migration scripts} moving \textbf{1M+ records} each.
+    \item Diagnosed \textbf{multithreading} defects and flaky tests, supported production issues \textbf{2--3 times a year}, and cut hot-endpoint response times by about \textbf{34\%} with \textbf{Redis} caching and \textbf{MongoDB}/\textbf{PostgreSQL} indexing; integrated \textbf{OpenTelemetry} into an application and worked with \textbf{CloudWatch} and \textbf{Splunk} alerts and metrics.
+    \item Reached \textbf{90\% code coverage} with \textbf{xUnit}/\textbf{NUnit} tests, reviewed code across multiple scrum teams, and mentored \textbf{4 junior engineers}.
+    \item Use \textbf{GitHub Copilot} and \textbf{Claude Code} daily, reviewing all generated code before merge; built a \textbf{Python} agent on the \textbf{OpenAI API} that drafts and routes \textbf{30--50 Jira} tickets a week.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS (sole developer)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant payroll and attendance product used by \textbf{15+ small businesses}: \textbf{Java 17}/\textbf{Spring Boot} \textbf{REST} API, \textbf{PostgreSQL}, \textbf{JWT} auth with role-based access, and a \textbf{React}/\textbf{TypeScript} UI.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed five \textbf{Spring Boot} microservices communicating over \textbf{Apache Kafka} behind \textbf{Kong API Gateway}, containerized with \textbf{Docker} and run on \textbf{Kubernetes}.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner}, Amazon Web Services \hfill Oct 2024
+
+\end{document}

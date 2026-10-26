@@ -1,0 +1,76 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Software Engineer \;|\; Java / Spring Boot \;|\; AWS \;|\; Scalable Cloud Services \\
+    Hyderabad, Telangana, India \\
+    \href{tel:9021620156}{9021620156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Summary}
+Software Engineer with 2+ years of hands-on experience building reliable, secure, and high-throughput backend services in \textbf{Java}/\textbf{Spring Boot} on \textbf{AWS} at Verisk Analytics.
+Strong problem-solving skills across complex distributed systems, delivering scalable and testable code aligned to system architecture guidance in Agile teams.
+Collaborates closely with senior developers, product managers, and stakeholders to transform requirements into incrementally delivered product enhancements.
+Experienced with \textbf{MySQL}/\textbf{Redis} data storage, \textbf{CI/CD} automation, \textbf{Splunk} monitoring, and AI-assisted development workflows with prompt engineering.
+
+\section*{Skills}
+\textbf{Languages:} Java 17, C\#, Python, SQL \\
+\textbf{Backend \& Frameworks:} Spring Boot, Spring Framework, Spring Data JPA, Hibernate, REST APIs, Microservices, Event-Driven Architecture, Kafka, Design Patterns (SOLID) \\
+\textbf{Cloud:} AWS (S3, SNS, SQS, EKS, ECS, Lambda, ElastiCache), Docker, Kubernetes, Terraform \\
+\textbf{Data Storage:} MySQL, PostgreSQL, MongoDB, Redis, Query Optimization, Indexing \\
+\textbf{CI/CD \& Tools:} Git, Maven, Jenkins, Azure DevOps, Application Deployment, Swagger/OpenAPI \\
+\textbf{Monitoring \& QA:} Splunk, OpenTelemetry, JUnit 5, Mockito, Code Reviews, Production Support, Agile Scrum \\
+\textbf{AI Tooling:} AI-Assisted Development (Claude Code), Prompt Engineering, OpenAI API Integration
+
+\section*{Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II, Hyderabad, India}
+
+\begin{itemize}[leftmargin=*]
+    \item Designed \textbf{RulesRunner}, an event-driven \textbf{Java 17} / \textbf{Spring Boot} microservice on \textbf{AWS} using \textbf{CQRS} and \textbf{SQS}, reducing client wait time from \textbf{3000ms to 500ms (83\%)} while enabling horizontal scaling.
+    \item Collaborated with senior developers, product managers, and stakeholders to translate high-level requirements into testable, incrementally shipped backend features aligned to system architecture guidance.
+    \item Built production \textbf{REST APIs} with \textbf{Spring Boot}/\textbf{Spring MVC} handling \textbf{200K+ weekly requests}, applying \textbf{SOLID} design patterns, structured error handling, input validation, and \textbf{Swagger/OpenAPI} documentation.
+    \item Modeled and optimized relational data with \textbf{Spring Data JPA}/\textbf{Hibernate}, tuning queries and indexes across \textbf{MySQL}, \textbf{PostgreSQL}, and \textbf{MongoDB}, and improved API response time by \textbf{34\%} via \textbf{Redis} caching.
+    \item Engineered a scalable import/export pipeline for \textbf{30+ data types} on \textbf{AWS} using async processing and \textbf{S3} presigned URLs, cutting transfer time by \textbf{38\%} and user-reported issues by \textbf{25\%}.
+    \item Overhauled \textbf{CI/CD} pipelines (\textbf{Jenkins}/Azure DevOps) with \textbf{Maven} builds, staged gates, and parallel jobs, cutting deployment time by \textbf{50\%} and build cycles by \textbf{33\%}; managed \textbf{Git}-based branching workflows.
+    \item Adopted \textbf{Claude Code} with structured prompt engineering for day-to-day implementation, debugging, and refactoring, reviewing all AI-generated code before merge to accelerate delivery without sacrificing quality.
+    \item Achieved \textbf{85\%+} test coverage using \textbf{JUnit 5}/\textbf{Mockito}; participated in structured \textbf{code reviews} and tracked sprints in \textbf{Jira} across \textbf{Agile Scrum} boards, shipping \textbf{10+ features per quarter}.
+    \item Provided \textbf{production support} for live services, reducing mean time to diagnose incidents by \textbf{40\%} through structured logging and \textbf{Splunk} dashboards on \textbf{Docker}/\textbf{Kubernetes} deployments.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Java Spring Boot Microservices} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Architected \textbf{5+} independently deployable \textbf{Spring Boot} microservices with async \textbf{Kafka} messaging, modeling domain entities with \textbf{Spring Data JPA}/\textbf{Hibernate} and clean, SOLID-driven service layering.
+    \item Containerised services with \textbf{Docker} and orchestrated with \textbf{Kubernetes}, integrating \textbf{Kong API Gateway} for routing/auth and validating end-to-end flow with \textbf{1000+} simulated transactions.
+\end{itemize}
+
+\textbf{Internal Workflow Automation Agent} \hfill 2025 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Built an internal automation agent using the \textbf{OpenAI API} with custom prompt engineering and orchestration to auto-create and route \textbf{Jira} tickets, reducing manual triage effort for the team.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

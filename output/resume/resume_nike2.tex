@@ -1,0 +1,98 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+\hypersetup{pdftitle={Sanskar Jain - Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Engineer, API-First, React, AWS, Lambda, S3, Elasticsearch, Microservices}, pdfkeywords={API-First, REST, Microservices, React, TypeScript, AWS, Lambda, S3, Elasticsearch, Infrastructure as Code, CI/CD, xUnit, NUnit, OpenAI API, AI}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Software Engineer \;|\; API-First Services \;|\; React \& TypeScript \;|\; AWS \;|\; Hyderabad, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Software engineer with \textbf{2+ years} building versioned, API-first \textbf{REST} services and event-driven \textbf{microservices} on \textbf{AWS}, plus a \textbf{React}/\textbf{TypeScript} product used by 15+ small businesses. Writes design docs for service boundaries and API contracts, works across teams through code review and mentoring, and has built an \textbf{OpenAI API} agent in production use.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} C\#, TypeScript, Java, Python, SQL \\
+\textbf{Backend \& Frontend:} .NET 8, ASP.NET Core, REST APIs, Swagger/OpenAPI, Spring Boot, React \\
+\textbf{AWS \& Infrastructure:} Lambda, S3, SQS, SNS, EKS, ElastiCache, Terraform CDK (CDKTF), Docker, Kubernetes, Kong API Gateway \\
+\textbf{Data \& Search:} Elasticsearch, MongoDB, PostgreSQL, Redis, Apache Kafka \\
+\textbf{CI/CD \& Testing:} Azure DevOps Pipelines, xUnit, NUnit \\
+\textbf{Auth \& AI:} OAuth 2.0, JWT, Okta, OpenAI API, MCP servers, Claude Code, GitHub Copilot
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Hyderabad, India \\
+\textbf{Software Engineer II} \hfill Apr 2026 -- Present \\
+\textbf{Software Engineer I} \hfill Jul 2024 -- Mar 2026
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{.NET} microservice that moved compliance checks off the client onto an \textbf{SQS}-backed worker, cutting user wait time from about 3\,s to 0.5\,s and allowing horizontal scaling.
+    \item Built the Xactimate import/export backend across \textbf{30+ data types} using asynchronous processing, \textbf{S3} presigned URLs, and \textbf{MongoDB}; transfers became \textbf{38\%} faster and related customer tickets fell by roughly a quarter.
+    \item Added URL-based versioning across \textbf{16 v2 endpoints} and \textbf{Swagger/OpenAPI} docs to \textbf{ASP.NET Core} \textbf{REST} APIs handling about \textbf{200K requests a week}, so front-end clients could adopt changes without breaking.
+    \item Designed event-driven pipelines on \textbf{SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent consumers, retry/backoff, and dead-letter queues, handling about \textbf{500 production messages a day}; wrote the design docs for service boundaries and API contracts.
+    \item Cut hot-endpoint response times by \textbf{34\%} through \textbf{ElastiCache} caching, connection pooling, and index tuning on \textbf{MongoDB} and \textbf{PostgreSQL}, and used \textbf{Elasticsearch} to reduce search latency.
+    \item Rolled out \textbf{OAuth 2.0} with Okta-issued \textbf{JWTs} on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+} platform services, and migrated 4 client applications from Forms Authentication to JWT bearer auth with token revocation.
+    \item Migrated legacy \textbf{.NET Framework} services (ASP.NET MVC, Web API 2) to \textbf{.NET 8}, reworked \textbf{Azure DevOps} \textbf{CI/CD} pipelines with staged gates and parallel jobs to roughly halve deployment time, and deployed multiple applications to \textbf{AWS} production as infrastructure as code with \textbf{CDKTF}.
+    \item Wrote \textbf{xUnit} and \textbf{NUnit} tests to \textbf{90\%} coverage, mentored \textbf{4 junior engineers}, and reviewed code across multiple scrum teams.
+    \item Built a \textbf{Python} agent on the \textbf{OpenAI API} with custom orchestration and prompt engineering that drafts and routes \textbf{30--50 Jira tickets a week}; use \textbf{Claude Code}, \textbf{GitHub Copilot}, and \textbf{MCP} servers daily, reviewing all generated code before merge.
+\end{itemize}
+
+\textbf{Software Engineering Intern} \hfill Jan 2024 -- Jun 2024
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Platform (sole developer)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Built and run a multi-tenant payroll product for \textbf{15+ small businesses}, with a \textbf{React} and \textbf{TypeScript} front end consuming a \textbf{Spring Boot} (\textbf{Java 17}) \textbf{REST} API over \textbf{PostgreSQL}, deployed with \textbf{Docker} on Render.
+    \item Isolated tenants through a shared-schema \texttt{org\_id} with Hibernate filters, and secured access with \textbf{JWT} 15-minute access tokens, revocable refresh tokens, and 3-role RBAC.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed five \textbf{Spring Boot} microservices with \textbf{Apache Kafka} messaging and \textbf{Kong API Gateway}, containerized with \textbf{Docker} and run on \textbf{Kubernetes}.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner}, Amazon Web Services \hfill Oct 2024
+
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \textbf{#1} \hfill #2 \\
+  #3 \hfill #4 \\
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Sanskar Jain}} \\
+    .NET Software Engineer \;|\; ASP.NET MVC \;|\; C\# \;|\; SQL Server / T-SQL \;|\; Web Applications \\
+    Hyderabad, India \enspace | \enspace 9021620156 \enspace | \enspace
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+\end{center}
+
+\vspace{2pt}
+
+\section*{Summary}
+C\# and .NET software engineer with 2+ years evaluating requirements, drafting technical specifications with effort estimates, and building production web applications and REST APIs using \textbf{ASP.NET Core MVC}, \textbf{SQL Server/T-SQL}, and \textbf{JavaScript}-based UI layers at Verisk Analytics. Comfortable across \textbf{.NET Framework} and modern \textbf{.NET} codebases, writing clean, testable, maintainable code with active \textbf{peer code reviews} and Agile delivery. Hands-on in database design, stored procedures, and diagnosing live production issues.
+
+\section*{Skills}
+\textbf{Languages \& Web:} C\#, JavaScript, TypeScript, HTML/CSS, JSON, AJAX, jQuery, Bootstrap \\
+\textbf{Frameworks \& Platforms:} .NET Framework, .NET 8, ASP.NET, ASP.NET Core MVC, MVC, Web API, Web Forms (familiarity), REST APIs, Microservices \\
+\textbf{Databases:} SQL Server 2012/2016, T-SQL, Stored Procedures, Database Design, PostgreSQL, MySQL, MongoDB \\
+\textbf{Dev Tools:} Visual Studio 2015+, Azure DevOps (TFS), Git, Swagger, Postman, Docker \\
+\textbf{Practices:} Agile/Scrum, Technical Specifications \& Estimation, Peer Code Reviews, Production Support, CI/CD
+
+\section*{Experience}
+\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
+\begin{itemize}
+    \item Evaluated new and modified feature requests from business analysts and architects, drafting \textbf{technical design specifications} and \textbf{high-level time estimates} that scoped work for \textbf{ASP.NET Core MVC} and \textbf{Web API} deliverables.
+    \item Maintained and modernised \textbf{ASP.NET MVC} and \textbf{Web API 2} applications on \textbf{.NET Framework} alongside new \textbf{.NET 8} services, applying consistent \textbf{C\#} design patterns across both stacks for a shared codebase.
+    \item Built \textbf{RulesRunner}, a decoupled server-side microservice that offloaded compliance logic from the client layer, reducing wait time from \textbf{3000ms to 500ms} (\textbf{83\%}) using clean, testable software design.
+    \item Engineered a scalable import/export backend for \textbf{Xactimate} supporting \textbf{30+ data types} using async \textbf{C\#} and \textbf{SQL Server}-backed data pipelines, reducing data transfer time by \textbf{38\%} and production issues by \textbf{25\%}.
+    \item Wrote and tuned \textbf{T-SQL} queries, \textbf{stored procedures}, and indexing strategies on \textbf{SQL Server} and PostgreSQL, improving hot-path query performance by \textbf{34\%} through database design and access-pattern analysis.
+    \item Triaged and resolved \textbf{production environment} issues in real time using \textbf{Splunk} dashboards with structured logging, reducing mean time to diagnose incidents across services.
+    \item Conducted active \textbf{peer code reviews} and maintained \textbf{reference documentation} and API contracts, enforcing best practices for clean, readable, maintainable code across the team in an \textbf{Agile} environment.
+    \item Overhauled \textbf{CI/CD pipelines} in \textbf{Azure DevOps (TFS)} with staged gates, parallel jobs, and automated test integration, cutting deployment time by \textbf{50\%} and build cycles by \textbf{33\%}.
+    \item Eliminated message loss by designing \textbf{AWS SNS}/Lambda pipelines with idempotent processing and retry/backoff handling, shipping \textbf{10+ features per quarter} with strong ownership from design through production.
+\end{itemize}
+
+\section*{Projects}
+
+\resumeSubheading{Expense Tracker -- Full-Stack Web Application}{Aug 2023 -- Dec 2023}{}{C\#, JavaScript/TypeScript, SQL, Docker, Kong API Gateway}
+\begin{itemize}
+    \item Built a full-stack web application with \textbf{5+ microservices}, a \textbf{JavaScript/TypeScript} UI layer consuming \textbf{REST/JSON} APIs and \textbf{AJAX} calls, and \textbf{SQL}-backed persistence; containerised with \textbf{Docker}.
+    \item Integrated \textbf{Kong API Gateway} for routing, load balancing, and auth; authored technical specifications and reference documentation covering data models and API contracts, simulating \textbf{1000+ end-to-end transactions}.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} --- Vishwakarma Institute of Technology, Pune (SPPU) \hfill 2024 \;|\; CGPA: 8.8
+
+\end{document}

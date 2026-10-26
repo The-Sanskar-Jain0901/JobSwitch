@@ -1,0 +1,98 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+% Ligature suppression needs a different mechanism per engine, so this
+% compiles under pdfLaTeX (Overleaf's default) as well as XeLaTeX/LuaLaTeX.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Engineer, Java / Microservices / Messaging Systems}, pdfkeywords={Java, Spring Boot, C-Sharp, dotNET 8, Python, SQL, Microservices, Kafka, AWS, Kubernetes, Redis, MongoDB, REST API, React, Agile}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[itemize]{leftmargin=*, itemsep=1.5pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Software Engineer \;|\; Java / Spring Boot \;|\; Microservices \;|\; AWS / Kubernetes \\
+    \vspace{2pt}
+    Hyderabad, Telangana, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\vspace{3pt}
+
+\section*{Professional Summary}
+Software Engineer with \textbf{2+ years} of experience building scalable \textbf{Java}/\textbf{Spring Boot} microservices, \textbf{RESTful APIs}, and messaging-driven, high-volume transaction processing systems at Verisk Analytics.
+Strong \textbf{SQL} development and query optimization across relational and \textbf{NoSQL} (\textbf{MongoDB}, \textbf{Redis}) datastores, with \textbf{microservices} on \textbf{AWS}/\textbf{Kubernetes} and interactive front-ends in \textbf{React}.
+Strong verbal communication and analytical problem-solving skills in \textbf{Agile/Scrum} teams; proven record of cutting latency by \textbf{83\%} and sustaining \textbf{500+ messages/day} with zero message loss.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} Java, C\#, Python, SQL, TypeScript, JavaScript \\
+\textbf{Backend \& Messaging:} Spring Boot, Spring Data JPA/Hibernate, .NET 8, REST APIs, Microservices, Event-Driven Architecture, High-Volume Transaction Processing, Apache Kafka, AWS SQS, AWS SNS, CQRS, Idempotency, Retry/Backoff, Dead-Letter Queues, API Versioning \\
+\textbf{Databases:} SQL, PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Query Optimization, Indexing, Schema Design \\
+\textbf{Cloud \& DevOps:} AWS (EKS, ECS, Lambda, S3, ElastiCache, CloudWatch), Docker, Kubernetes, Terraform, CI/CD, Azure DevOps Pipelines, Linux/CLI \\
+\textbf{Frontend:} React 18, TypeScript, Axios, TanStack React Query, HTML, CSS \\
+\textbf{Security \& API Tooling:} OAuth 2.0, JWT, OpenID Connect (OIDC), Okta, Kong API Gateway, Role-Based Access Control (RBAC), Swagger/OpenAPI \\
+\textbf{Practices \& Tools:} Agile/Scrum, Git, Azure DevOps, Jira, Confluence, Code Review, Technical Design Documentation, Unit \& Integration Testing (JUnit, xUnit, NUnit), Production Support
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{Java}/\textbf{Spring Boot} microservice using \textbf{CQRS} and \textbf{AWS SQS} messaging that offloaded compliance checks from the client, reducing wait time from \textbf{3000ms to 500ms (83\% improvement)} while enabling horizontal scaling.
+    \item Architected fault-tolerant, event-driven messaging pipelines with idempotent processing, retry/backoff strategies, and \textbf{AWS Lambda} consumers for high-volume transaction workloads, sustaining \textbf{500+ production messages daily} with zero message loss under failure conditions.
+    \item Built high-throughput \textbf{Spring Boot} \textbf{RESTful APIs} serving \textbf{200K+ weekly requests} with structured error handling, input validation, and \textbf{Swagger/OpenAPI} documentation; implemented URL-based versioning across \textbf{16 v2 endpoints} for backward compatibility.
+    \item Tuned \textbf{SQL} query performance and indexing across \textbf{PostgreSQL} and \textbf{MongoDB}, and improved API response time by \textbf{34\%} via a \textbf{Redis}/\textbf{Amazon ElastiCache} caching layer and connection pooling on hot-path endpoints.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS}/\textbf{Kubernetes} behind \textbf{Kong API Gateway} for \textbf{6 of 15+ platform services}, integrating \textbf{Okta}-issued \textbf{JWT} tokens for secure cross-service authorization; slashed deployment time by \textbf{50\%} overhauling \textbf{CI/CD} pipelines with staged gates and parallel jobs.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Production Platform} \hfill Jul 2026 -- Present \\
+Live: \href{https://sanskar-engineers-payroll-ui.onrender.com/login}{sanskar-engineers-payroll-ui.onrender.com}
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant \textbf{SaaS} to production, now serving \textbf{15+ client organizations}, built end-to-end as sole engineer on \textbf{Spring Boot} (\textbf{Java 17}), an interactive \textbf{React} + \textbf{TypeScript} front end, and \textbf{PostgreSQL}.
+    \item Protected the API with \textbf{Spring Security} and \textbf{JWT} -- \textbf{15-minute} access tokens, revocable \textbf{7-day} refresh tokens, and \textbf{role-based access control} across \textbf{3 roles}; designed a transaction-processing engine with \textbf{3 calculation models} and a \textbf{409 Conflict} rule guarding finalized records.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10
+
+\end{document}

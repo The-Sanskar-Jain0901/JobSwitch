@@ -1,0 +1,96 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+\hypersetup{pdftitle={Sanskar Jain - Java Full Stack Developer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Java Full Stack Developer, Spring Boot/React/AWS}, pdfkeywords={Java, Spring Boot, Hibernate, React, JavaScript, REST APIs, Microservices, PostgreSQL, MongoDB, Maven, Git, Docker, Kubernetes, AWS, CI/CD, TDD, Agile}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Java Full Stack Developer \;|\; Spring Boot \& React \;|\; AWS \;|\; Hyderabad, Telangana, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Full stack developer with \textbf{2+ years} building \textbf{Java}/\textbf{Spring Boot} \textbf{REST APIs} and \textbf{microservices} on \textbf{AWS}, backed by \textbf{PostgreSQL} and \textbf{MongoDB}, plus a \textbf{React} frontend in my own projects. Ship in \textbf{Agile} biweekly releases with \textbf{CI/CD}, \textbf{TDD}, and \textbf{90\% test coverage}. Work independently on design-to-production features and mentor junior engineers.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} Java 17, JavaScript, TypeScript, SQL, Python, C\# \\
+\textbf{Backend \& APIs:} Spring Boot, Spring Data JPA/Hibernate, REST APIs, Microservices, Event-Driven Architecture, Swagger/OpenAPI \\
+\textbf{Frontend:} React 18, JavaScript, TypeScript, HTML, CSS \\
+\textbf{Databases:} PostgreSQL, MongoDB, Redis, Elasticsearch, Query Optimization \\
+\textbf{Cloud \& DevOps:} AWS (EC2, EKS, Lambda, S3, SQS, SNS), Docker, Kubernetes, CI/CD, Azure DevOps, Maven, Git \\
+\textbf{Practices:} Test-Driven Development, Unit/Integration Testing, Code Review, Agile/Scrum, Jira, GitHub Copilot, Claude Code
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Hyderabad, India \\
+\textbf{Software Engineer II} \hfill Apr 2026 -- Present \\
+\textbf{Software Engineer I} \hfill Jul 2024 -- Mar 2026
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{Java}/\textbf{Spring Boot} microservice that moved compliance checks off the client onto an \textbf{SQS}-backed worker, cutting user wait time from about \textbf{3\,s to 0.5\,s}, and wrote the design docs covering service boundaries, API contracts, and DLQ handling.
+    \item Developed \textbf{Java}/\textbf{Spring Boot} \textbf{REST APIs} handling ${\sim}$\textbf{200K requests a week}, adding \textbf{URL-based versioning} across \textbf{16 v2 endpoints} with \textbf{Swagger/OpenAPI} documentation.
+    \item Engineered the backend for \textbf{Xactimate} import/export across \textbf{30+ data types} using asynchronous processing, \textbf{S3} presigned URLs, and \textbf{MongoDB}, making transfers ${\sim}$\textbf{38\%} faster and reducing related customer tickets by roughly a quarter.
+    \item Designed \textbf{event-driven} pipelines on \textbf{SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent consumers, retries, and dead-letter queues, processing ${\sim}$\textbf{500 production messages a day}.
+    \item Tuned \textbf{PostgreSQL} and \textbf{MongoDB} indexes, applied \textbf{Elasticsearch} to cut search latency, and added \textbf{Redis} caching for ${\sim}$\textbf{34\%} faster hot endpoints; wrote \textbf{2 migration scripts} moving \textbf{1M+ records} each.
+    \item Rolled out \textbf{OAuth 2.0} with Okta-issued \textbf{JWTs} on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+ platform services}, and ran services on \textbf{AWS EC2} across multiple regions with \textbf{Docker} and \textbf{Kubernetes}.
+    \item Reworked \textbf{Azure DevOps} \textbf{CI/CD} pipelines with staged gates and parallel \textbf{Maven} build jobs, roughly halving deployment time, and supported \textbf{biweekly releases} plus production support 2--3 times a year.
+    \item Wrote unit and integration tests reaching \textbf{90\% code coverage} using \textbf{TDD}, reviewed code across multiple \textbf{Agile} scrum teams, and mentored \textbf{4 junior engineers}.
+    \item Built an internal \textbf{Python} agent on the \textbf{OpenAI API} that drafts and routes \textbf{30--50 Jira tickets a week}; use \textbf{GitHub Copilot} and \textbf{Claude Code} daily, reviewing all generated code before merge.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS (sole developer) -- Java 17, Spring Boot, React, TypeScript} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Owned design, build, deployment, and support of a multi-tenant \textbf{SaaS} used by \textbf{15+ small businesses}, with a \textbf{Spring Boot} backend on \textbf{PostgreSQL}, \textbf{Hibernate} filters for tenant isolation, and a \textbf{React 18}/\textbf{TypeScript} frontend built with \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}.
+    \item Secured the app with \textbf{JWT} auth, revocable refresh tokens, and 3-role access control, and implemented a payroll engine for monthly, daily, and hourly pay with proration, overtime, and advances.
+\end{itemize}
+
+\textbf{Expense Tracker -- Spring Boot Microservices, Kafka, React} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Created five \textbf{Spring Boot} microservices with \textbf{Apache Kafka} and \textbf{Kong API Gateway}, plus a \textbf{React} frontend of 9+ \textbf{JavaScript} components, containerized with \textbf{Docker} and run on \textbf{Kubernetes}.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner}, Amazon Web Services \hfill Oct 2024
+
+\end{document}

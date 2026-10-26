@@ -1,0 +1,100 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\pagestyle{empty}
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - .NET Backend Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Engineer II, C-Sharp / .NET 8 / ASP.NET / SQL / REST APIs}, pdfkeywords={C-Sharp, dotNET 8, ASP.NET MVC, ASP.NET Core, Web API, SQL, REST API, JSON, JavaScript, Azure DevOps, CI/CD, Agile, Secure Coding}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Backend Software Engineer \;|\; C\#/.NET \;|\; ASP.NET \;|\; SQL \;|\; REST APIs \\
+    \vspace{2pt}
+    Hyderabad, Telangana, India \;|\;
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Backend Software Engineer with \textbf{2+ years} of experience building and modernizing \textbf{C\#}/\textbf{.NET 8}, \textbf{ASP.NET MVC}, and \textbf{ASP.NET Core} REST API services at Verisk Analytics, a product-based technology company.
+Strong in object-oriented design, \textbf{SQL} and data modeling, testing, secure authentication, and \textbf{Azure DevOps} CI/CD, with \textbf{83\%} lower latency, \textbf{200K+ weekly API requests}, and \textbf{50\%} faster deployments.
+Also ships \textbf{JavaScript}/\textbf{React} frontends and collaborates daily in Agile teams.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages \& Frontend:} C\#, SQL, Java, Python, JavaScript, TypeScript, HTML, CSS, React 18, Axios, OOP, Data Structures \& Algorithms \\
+\textbf{.NET \& Backend:} .NET 8, .NET Framework, ASP.NET Core, ASP.NET MVC, Web API 2, REST APIs, JSON, Microservices, Swagger/OpenAPI, API Versioning, Spring Boot \\
+\textbf{Databases:} SQL, PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Data Modeling, Indexing, Query Optimization, Database Migrations \\
+\textbf{Testing \& Quality:} xUnit, NUnit, Unit Testing, Integration Testing, Test Automation, Code Coverage, Code Review, Debugging \\
+\textbf{DevOps \& Cloud:} Azure DevOps Pipelines, CI/CD, AWS (S3, SNS, SQS, Lambda, EKS), Docker, Kubernetes, Terraform, Git \\
+\textbf{Security \& Practices:} Secure Coding, OAuth 2.0, JWT, Okta, RBAC, Agile/Scrum, SAFe, Kanban, Jira, Technical Design Docs, AI-Assisted Development
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} by migrating legacy \textbf{.NET Framework} services (\textbf{ASP.NET MVC}, \textbf{Web API 2}) to \textbf{.NET 8} with modern \textbf{async/await} patterns.
+    \item Built \textbf{ASP.NET Core} REST APIs serving \textbf{200K+ weekly requests} with \textbf{JSON} contracts, model validation, structured error handling, and \textbf{Swagger/OpenAPI} documentation; shipped \textbf{URL-based API versioning} across \textbf{16 v2 endpoints}.
+    \item Secured single sign-out across \textbf{4 client applications} by migrating \textbf{Forms Authentication} to \textbf{JWT bearer authentication} over a \textbf{Redis} session store, cutting the post-logout token replay window from \textbf{7 days} to \textbf{under 1 second}.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+ platform services} using \textbf{Okta}-issued \textbf{JWT} tokens.
+    \item Improved API response time by \textbf{34\%} via \textbf{Redis} caching and query optimization, tuned \textbf{PostgreSQL}/\textbf{MongoDB} indexes, and wrote \textbf{2 idempotent migration scripts} moving \textbf{1M+ records each}.
+    \item Slashed deployment time by \textbf{50\%} and build cycles by \textbf{33\%} by overhauling \textbf{Azure DevOps} CI/CD pipelines with staged gates, parallel jobs, and automated testing.
+    \item Co-designed \textbf{RulesRunner}, a stateless microservice using \textbf{CQRS} and \textbf{AWS SQS} that offloaded compliance checks from the client, cutting wait time from \textbf{3000ms to 500ms (83\% improvement)}.
+    \item Reached \textbf{90\% code coverage} with \textbf{xUnit}/\textbf{NUnit} tests, validated changes through code reviews, and authored technical design documents.
+    \item Built an \textbf{OpenAI API} workflow agent that auto-routes \textbf{30--50 Jira tickets per week}, and use \textbf{Claude Code} daily with full code review.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Production Platform} \hfill Jul 2026 -- Present \\
+Live: \href{https://sanskar-engineers-payroll-ui.onrender.com/login}{sanskar-engineers-payroll-ui.onrender.com}
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant \textbf{SaaS} to production serving \textbf{15+ client organizations}, built end-to-end as sole engineer with a \textbf{React 18} + \textbf{TypeScript} frontend, \textbf{Spring Boot} \textbf{REST API}, and \textbf{PostgreSQL}.
+    \item Secured the API with \textbf{JWT}, \textbf{role-based access control} across \textbf{3 roles}, and shared-schema tenant isolation, and deployed the \textbf{Docker}-containerized app to \textbf{Render}.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed \textbf{5+ Spring Boot microservices} with \textbf{Kafka} and \textbf{PostgreSQL}, plus a \textbf{React} frontend of \textbf{9+ reusable components} in \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}; deployed with \textbf{Docker} and \textbf{Kubernetes}.
+\end{itemize}
+
+\section*{Certifications \& Education}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune, India \hfill 2020 -- 2024 \;|\; CGPA: 8.8/10
+
+\end{document}

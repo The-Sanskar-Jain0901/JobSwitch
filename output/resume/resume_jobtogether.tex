@@ -1,73 +1,96 @@
 \documentclass[a4paper,10pt]{article}
 
-\usepackage[left=0.65in,right=0.65in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
 \usepackage{enumitem}
 \usepackage{titlesec}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - .NET Developer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Engineer II, C-Sharp / ASP.NET Core / Web API / Entity Framework / Microservices}, pdfkeywords={C-Sharp, dotNET 8, ASP.NET Core, Web API, Entity Framework, LINQ, Microservices, REST API, Azure DevOps, CI/CD, xUnit, NUnit, Git, Agile}}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{3pt}{1pt}
-\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
 
 \begin{document}
 
 \begin{center}
     {\LARGE \textbf{Sanskar Jain}} \\
-    Hyderabad, Telangana, India \\
-    \href{tel:9021620156}{9021620156} \;|\;
+    \vspace{2pt}
+    .NET Developer \;|\; C\#, ASP.NET Core, Web API, Microservices \;|\; Hyderabad, Telangana, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
     \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
-    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
 \end{center}
 
-\vspace{1pt}
+\section*{Professional Summary}
+Software Engineer with \textbf{2+ years} of production \textbf{C\#}/\textbf{.NET 8} experience building \textbf{ASP.NET Core} \textbf{Web API} services, \textbf{Entity Framework} data access, and \textbf{microservices} in \textbf{Agile/Scrum} teams.
+Applies \textbf{object-oriented} design, \textbf{design patterns}, and clean code practices, secures APIs with \textbf{OAuth 2.0}/\textbf{JWT}, and automates delivery through \textbf{Azure DevOps} \textbf{CI/CD}. Strong debugger and communicator, comfortable collaborating remotely with cross-functional stakeholders.
 
-\section*{Summary}
-Backend and platform engineer with 2+ years of experience building distributed systems, cloud-native infrastructure, and high-reliability production services at Verisk Analytics.
-Deep expertise in \textbf{Kubernetes}, \textbf{AWS}, event-driven architecture, and observability engineering using \textbf{OpenTelemetry} and \textbf{Splunk}.
-Proven track record of owning complex projects end-to-end, improving system reliability, and collaborating in globally distributed Agile teams.
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} C\#, SQL, TypeScript, JavaScript, HTML, CSS \\
+\textbf{Backend \& Frameworks:} .NET 8, ASP.NET Core, Web API, ASP.NET MVC, Web API 2, .NET Framework, Entity Framework, LINQ, Dependency Injection, REST APIs, API Versioning, Swagger/OpenAPI, async/await \\
+\textbf{Design \& Architecture:} Object-Oriented Programming, SOLID Principles, Design Patterns (CQRS, Repository, Factory), Microservices, Event-Driven Architecture, Clean Code, Technical Design Documentation \\
+\textbf{Databases:} PostgreSQL, MongoDB, Elasticsearch, Relational Database Design, Query Optimization, Indexing, Database Migrations, Redis \\
+\textbf{Security:} OAuth 2.0, JWT, Okta, Kong API Gateway, Secure Coding, Role-Based Access Control \\
+\textbf{DevOps \& Cloud:} Azure DevOps, CI/CD Pipelines, Git, Docker, Kubernetes, AWS (SQS, SNS, Lambda, S3, EKS) \\
+\textbf{Testing \& Practices:} xUnit, NUnit, TDD, Unit/Integration Testing, Debugging, Troubleshooting, Code Review, Agile/Scrum
+\end{sloppypar}
 
-\section*{Skills}
-\textbf{Languages:} Python, Golang, C\#, Java \\
-\textbf{Distributed Systems:} Microservices, Event-Driven Architecture, Kafka, SQS/SNS, CQRS, Async Processing, Idempotency \\
-\textbf{Kubernetes \& Cloud:} Kubernetes (EKS, ECS, Helm, Namespaces, RBAC), Docker, AWS (S3, Lambda, ElastiCache, SQS, SNS), Terraform, CI/CD \\
-\textbf{Observability:} OpenTelemetry, Splunk, Prometheus, SLI/SLO Definition, Distributed Tracing, On-Call, Incident Response \\
-\textbf{CI/CD \& Automation:} Azure DevOps, Staged Pipelines, Parallel Jobs, Automated Testing, Infrastructure-as-Code \\
-\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Redis, Indexing, Query Optimization \\
-\textbf{Security:} OAuth 2.0, JWT, Okta, Kong Gateway, API Versioning \\
-\textbf{Testing \& Practices:} xUnit, NUnit, Code Review, Version Control, Swagger/OpenAPI, Jira
-
-\section*{Experience}
+\section*{Professional Experience}
 
 \textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
-\textbf{Software Engineer II, Hyderabad, India}
+\textbf{Software Engineer II} \hfill Hyderabad, India
 
 \begin{itemize}[leftmargin=*]
-    \item Co-designed \textbf{RulesRunner}, a stateless microservice using \textbf{CQRS} and \textbf{AWS SQS} that offloaded compliance checks asynchronously, reducing end-to-end latency from \textbf{3000ms to 500ms (83\%)}; deployed via \textbf{Helm charts} on \textbf{EKS} with namespace isolation, RBAC policies, and resource quotas for multi-tenant safety.
-    \item Architected \textbf{event-driven pipelines} with idempotent processing, retry/backoff strategies, DLQ handling, and \textbf{AWS Lambda} ensuring zero message loss under failure conditions across distributed consumers.
-    \item Authored technical design documentation defining service boundaries, API contracts, and \textbf{SNS}-based event publishing patterns; estimated technical scope, identified delivery risks, and drove end-to-end execution across globally distributed teams.
-    \item Engineered scalable import/export backend for \textbf{Xactimate} handling \textbf{30+ data types} with async processing, \textbf{S3 presigned URLs}, and \textbf{MongoDB}, reducing transfer time by \textbf{38\%} and error rate by \textbf{25\%}.
-    \item Defined \textbf{SLIs/SLOs} and error budgets for production services; participated in \textbf{on-call rotations}, triaged alerts via \textbf{Prometheus} and \textbf{Splunk} dashboards, and used \textbf{OpenTelemetry} distributed tracing to significantly reduce MTTR.
-    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong Gateway} and \textbf{Istio} service mesh, integrating \textbf{Okta JWT tokens} with Identity Server for policy-enforced, secure cross-service communication.
-    \item Improved API response time by \textbf{34\%} via \textbf{Redis/ElastiCache} caching, connection pooling, and query optimisation on hot-path endpoints serving \textbf{200K+ weekly requests}.
-    \item Overhauled \textbf{Azure DevOps} CI/CD pipelines with staged gates, parallel jobs, and automated testing -- slashing deployment time by \textbf{50\%} and build cycles by \textbf{33\%}.
-    \item Optimised \textbf{database indexing strategies} on \textbf{MongoDB} and \textbf{PostgreSQL} to improve query performance, analysing slow queries and access patterns for high-scale production workloads.
-    \item Developed \textbf{Python} automation scripts for infrastructure provisioning, data pipeline validation, and operational tooling; built a \textbf{Golang}-based internal CLI for service health checks and deployment orchestration across environments.
-    \item Participated in structured \textbf{code reviews} covering architecture, edge cases, and production readiness; maintained high engineering standards across distributed team.
+    \item Developed \textbf{ASP.NET Core} \textbf{Web API} services in \textbf{C\#} applying \textbf{SOLID}, \textbf{dependency injection}, and \textbf{Repository}/\textbf{Factory} patterns with \textbf{Entity Framework} and \textbf{LINQ}, serving \textbf{200K+ weekly requests} with model validation, \textbf{URL-based versioning} across \textbf{16 v2 endpoints}, and \textbf{Swagger/OpenAPI} docs.
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{.NET} microservice using \textbf{CQRS} and \textbf{AWS SQS} that cut client wait time from \textbf{3000ms to 500ms (83\%)}, authoring the technical design for service boundaries, API contracts, and dead-letter handling.
+    \item Architected fault-tolerant \textbf{event-driven} pipelines with idempotent processing, retry/backoff, \textbf{AWS SNS} publishing, and \textbf{Lambda} consumers, sustaining \textbf{500+ production messages daily} with zero message loss.
+    \item Tuned slow queries by analyzing \textbf{SQL}/\textbf{MongoDB} access patterns, adding \textbf{indexes}, \textbf{Redis} caching, and connection pooling (\textbf{34\%} faster API responses), and shipped \textbf{2 idempotent migration scripts} moving \textbf{1M+ records} each with zero downtime.
+    \item Modernized legacy \textbf{.NET Framework} services (\textbf{ASP.NET MVC}, \textbf{Web API 2}) to \textbf{.NET 8} with \textbf{async/await}, cutting technical debt by \textbf{55\%} and improving runtime performance by \textbf{30\%}.
+    \item Secured APIs by establishing \textbf{OAuth 2.0} with \textbf{Okta} \textbf{JWT} tokens on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+} services, and migrating \textbf{Forms Authentication} to \textbf{JWT} bearer auth over \textbf{Redis} sessions, shrinking the post-logout token replay window from \textbf{7 days to under 1 second}.
+    \item Strengthened quality through \textbf{TDD} with \textbf{xUnit}/\textbf{NUnit} tests at \textbf{90\% code coverage}, \textbf{Git} pull-request \textbf{code reviews}, and root-cause \textbf{debugging} of production incidents; \textbf{mentored 4 junior engineers}.
+    \item Overhauled \textbf{Azure DevOps} \textbf{CI/CD} pipelines with staged gates, parallel jobs, and automated tests, cutting deployment time by \textbf{50\%} and build cycles by \textbf{33\%} across \textbf{biweekly} \textbf{Agile/Scrum} releases.
 \end{itemize}
 
 \section*{Projects}
 
-\textbf{Expense Tracker -- Cloud-Native Microservices Platform} \hfill Aug 2023 -- Dec 2023
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Production Platform} \hfill Jul 2026 -- Present
 \begin{itemize}[leftmargin=*]
-    \item Built a distributed expense tracker using \textbf{Spring Boot} with \textbf{5+ microservices}, async \textbf{Kafka} communication, and \textbf{Kong API Gateway} for routing and authentication.
-    \item Containerised all services with \textbf{Docker} and orchestrated deployments using \textbf{Kubernetes}; simulated \textbf{1000+ concurrent transactions} end-to-end for reliability and load testing.
-    \item Implemented service-level health checks and structured logging to replicate production observability practices.
+    \item Shipped end-to-end, as sole engineer, a multi-tenant \textbf{SaaS} serving \textbf{15+ client organizations}, pairing a \textbf{TypeScript}/\textbf{React 18} UI with \textbf{REST} APIs, a relational \textbf{PostgreSQL} schema, \textbf{JWT} security, and \textbf{Docker} deployment.
 \end{itemize}
 
-\section*{Certifications}
-\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{5+} \textbf{REST} microservices with \textbf{Kong} routing and \textbf{Kubernetes} orchestration plus a \textbf{JavaScript}/\textbf{HTML}/\textbf{CSS} UI of \textbf{9+} components, validated with \textbf{1000+} simulated transactions.
+\end{itemize}
 
-\section*{Education}
-\textbf{B.Tech in Computer Engineering} -- Vishwakarma Institute of Technology, Pune \hfill 2024 \;|\; CGPA: 8.8
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
 
 \end{document}

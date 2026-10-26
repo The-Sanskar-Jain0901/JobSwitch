@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+\hypersetup{pdftitle={Sanskar Jain - Java Developer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Core Java, Spring Boot, Hibernate, REST APIs, JavaScript, React}, pdfkeywords={Java, Core Java, Spring Boot, Hibernate, MVC, REST APIs, JavaScript, CSS, React, PostgreSQL, SQL, Git, Docker, Kubernetes, AWS}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Java Developer \;|\; Spring Boot \;|\; Hibernate \;|\; REST APIs \;|\; React \;|\; Hyderabad, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Java developer with \textbf{2+ years} of professional experience building web applications and \textbf{REST APIs} with \textbf{Java 17} and \textbf{Spring Boot} at Verisk Analytics, plus a full-stack \textbf{Spring Boot}/\textbf{React} product built and run solo. Follows established development processes: design docs, code review, tests, and \textbf{CI/CD} gates.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} Core Java, Java 8+ (Lambdas, Streams), Java 17, SQL, JavaScript, TypeScript, HTML, CSS, Python \\
+\textbf{Java Frameworks \& Web:} Spring Boot, Spring Security, Spring Data JPA, Hibernate, JSP, Servlets, MVC Pattern, REST APIs, Swagger/OpenAPI, Object-Oriented Design, Design Patterns (CQRS, Repository, Factory) \\
+\textbf{Frontend:} React, JavaScript, TypeScript, HTML, CSS \\
+\textbf{Databases:} PostgreSQL, MongoDB, Redis, Query Optimization \\
+\textbf{Tools, CI/CD \& Cloud:} IntelliJ IDEA, Git, Bitbucket, Maven, Azure DevOps Pipelines, Docker, Kubernetes, AWS (EKS, EC2, Lambda, S3, SQS, SNS) \\
+\textbf{Security \& Testing:} OAuth 2.0, JWT, RBAC, JUnit, Unit/Integration Testing, Debugging, Code Review, Agile/Scrum, Jira
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Hyderabad, India \\
+\textbf{Software Engineer II} \hfill Apr 2026 -- Present \\
+\textbf{Software Engineer I} \hfill Jul 2024 -- Mar 2026 \\
+\textbf{Software Engineering Intern} \hfill Jan 2024 -- Jun 2024
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{Java 17}/\textbf{Spring Boot} microservice using \textbf{CQRS} and an \textbf{AWS SQS}-backed worker to take compliance checks off the client, cutting user wait time from about \textbf{3 s to 0.5 s}; wrote the design docs for service boundaries, API contracts, and dead-letter queue handling.
+    \item Built \textbf{Spring Boot} \textbf{REST APIs} handling about \textbf{200K requests a week}, versioned \textbf{16 v2 endpoints} by URL, and documented them with \textbf{Swagger/OpenAPI}; used \textbf{Java 8+ lambdas} and \textbf{streams} for collection processing.
+    \item Developed the backend for Xactimate import/export across \textbf{30+} data types, serving \textbf{Windows} and \textbf{macOS} applications, using asynchronous processing, \textbf{S3} presigned URLs, and \textbf{MongoDB}; transfers became \textbf{38\%} faster.
+    \item Tuned hot endpoints with \textbf{Redis} caching, connection pooling, and indexing on \textbf{PostgreSQL} and \textbf{MongoDB}, cutting response times by about \textbf{34\%}.
+    \item Secured services with \textbf{OAuth 2.0} and \textbf{Okta}-issued \textbf{JWTs} on \textbf{AWS EKS} for \textbf{6 of 15+} platform services, and moved \textbf{4 client applications} from Forms Authentication to \textbf{JWT} bearer auth with token revocation.
+    \item Designed \textbf{event-driven} pipelines on \textbf{SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent consumers, retry/backoff, and dead-letter queues, processing about \textbf{500 messages a day}.
+    \item Worked with \textbf{JSP} and \textbf{Servlets} on web applications following the \textbf{MVC} pattern, and reworked \textbf{Azure DevOps} pipelines with staged gates, roughly halving deployment time.
+    \item Reached \textbf{90\% code coverage} with \textbf{JUnit} unit and integration tests, reviewed code across multiple scrum teams, handled production issues \textbf{2--3 times a year}, and mentored \textbf{4 junior engineers}.
+    \item Use \textbf{IntelliJ IDEA}, \textbf{GitHub Copilot}, and \textbf{Claude Code} daily, with source control on \textbf{Git}/\textbf{Bitbucket} for over a year, reviewing all generated code before merge.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS (sole developer) -- Java 17, Spring Boot, React} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant payroll and attendance product used by \textbf{15+ small businesses}: \textbf{Spring Boot} \textbf{REST} API with \textbf{Hibernate} tenant filters and \textbf{PostgreSQL}, \textbf{JWT} auth with 3-role \textbf{RBAC}, and a \textbf{React}/\textbf{TypeScript} UI.
+    \item Wrote the payroll engine for monthly, daily, and hourly pay with prorated rate changes and overtime; finalized records are locked against retroactive edits.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application (Java, Spring Boot, React)} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed five \textbf{Spring Boot} microservices with \textbf{Apache Kafka} and \textbf{PostgreSQL}, plus a \textbf{React} UI in \textbf{JavaScript}, \textbf{HTML}, and \textbf{CSS}; containerized with \textbf{Docker} and run on \textbf{Kubernetes}.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner}, Amazon Web Services \hfill Oct 2024
+
+\end{document}

@@ -1,0 +1,91 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.55in,right=0.55in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+
+\hypersetup{pdftitle={Sanskar Jain - Backend Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Backend Software Engineer, Distributed Systems}, pdfkeywords={C-Sharp, dotNET, Java, Backend, Distributed Systems, Microservices, MongoDB, PostgreSQL, MySQL, Data Structures, Algorithms, Performance Tuning, Claude Code}}
+
+\pagestyle{empty}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Backend Software Engineer \;|\; C\#/.NET \;|\; Java \;|\; Distributed Systems \;|\; Hyderabad, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Backend engineer with \textbf{2+ years} at Verisk Analytics owning scalable web services and event-driven systems for the \textbf{Xactimate} product in \textbf{C\#/.NET 8} and \textbf{Java}. Cut latency by \textbf{83\%}, served \textbf{200K+ weekly requests}, with strong \textbf{DSA} (\textbf{500+ LeetCode}), \textbf{multithreading}, and daily \textbf{agentic development} using \textbf{Claude Code}.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages \& Frameworks:} C\#, .NET 8, ASP.NET Core, Web API, Java, Spring Boot, Python, SQL, REST APIs, Microservices, Design Patterns (CQRS, Repository, Factory) \\
+\textbf{Fundamentals:} Data Structures, Algorithms (500+ LeetCode Problems), Multithreading \& Concurrency (Task Parallel Library, async/await, locks, thread-safe design, concurrency debugging), OOD \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Elasticsearch, Query Optimization, Indexing, Schema Design, Data Migration \\
+\textbf{Distributed Systems \& Cloud:} AWS (S3, SQS, SNS, Lambda, EKS, ElastiCache), Kafka, Redis, Event-Driven Architecture, Docker, Kubernetes, Terraform, CI/CD, Azure DevOps \\
+\textbf{Performance, Testing \& Security:} Performance Tuning, Caching, Unit/Integration/Automation Testing (xUnit, NUnit), OAuth 2.0, JWT, Okta, Secure Coding, Code Review \\
+\textbf{AI-Assisted Development:} Claude Code, GitHub Copilot, OpenAI API, Agent Orchestration
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+\begin{itemize}
+    \item Architected \textbf{RulesRunner}, a stateless, event-driven microservice on \textbf{CQRS} and \textbf{AWS SQS}/\textbf{SNS} that offloaded compliance checks from the client, cutting wait time from \textbf{3000ms to 500ms (83\%)} and sustaining \textbf{500+ production messages daily} with idempotent retries and dead-letter queues.
+    \item Built \textbf{ASP.NET Core} web services handling \textbf{200K+ weekly requests} with \textbf{Swagger/OpenAPI} docs, and shipped \textbf{URL-based versioning} across \textbf{16 v2 endpoints} for backward-compatible client migration.
+    \item Engineered an asynchronous import/export backend for \textbf{30+ data types} using \textbf{Amazon S3} presigned URLs and \textbf{MongoDB}, reducing transfer time by \textbf{38\%} and customer-reported issues by \textbf{25\%}.
+    \item Tuned hot-path endpoints with \textbf{Redis}/\textbf{ElastiCache} caching and slow-query analysis, improving API response time by \textbf{34\%}; applied \textbf{MongoDB}/\textbf{PostgreSQL} indexing and \textbf{Elasticsearch} to cut search latency.
+    \item Produced \textbf{2 idempotent migration scripts} moving \textbf{1M+ records each}, enabling zero-downtime deployments.
+    \item Applied deep \textbf{multithreading} expertise using \textbf{Task}-based parallelism, \textbf{async/await}, and \textbf{lock} synchronization to build thread-safe services and diagnose concurrency issues in high-throughput code paths.
+    \item Secured single sign-out across \textbf{4 client applications} by migrating \textbf{Forms Authentication} to \textbf{JWT} over a \textbf{Redis} session store (replay window \textbf{7 days to under 1 second}); set up \textbf{OAuth 2.0} with \textbf{Okta} on \textbf{AWS EKS}.
+    \item Modernized legacy \textbf{.NET Framework} (\textbf{ASP.NET MVC}, \textbf{Web API 2}) services to \textbf{.NET 8} with async/await, cutting technical debt by \textbf{55\%} and boosting performance \textbf{30\%}; overhauled \textbf{Azure DevOps} CI/CD to slash deployment time by \textbf{50\%}.
+    \item Adopted \textbf{Claude Code} and \textbf{GitHub Copilot} daily for implementation, debugging, and refactoring, reviewing all generated code before merge; built an \textbf{OpenAI API} agent routing \textbf{30--50 Jira tickets weekly}.
+    \item Reached \textbf{90\% code coverage} with \textbf{xUnit}/\textbf{NUnit} unit and integration tests, and mentored \textbf{4 junior engineers} through design docs and code reviews.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Production Platform} \hfill Jul 2026 -- Present
+\begin{itemize}
+    \item Shipped a multi-tenant backend to production for \textbf{15+ client organizations} on \textbf{Spring Boot} (\textbf{Java 17}) and \textbf{PostgreSQL}, enforcing tenant isolation with \textbf{Hibernate} filters and a \textbf{ThreadLocal} tenant context, and \textbf{JWT} role-based access across \textbf{3 roles}.
+    \item Designed a payroll engine supporting \textbf{3 salary models} with prorated rate changes and overtime, guarded by conflict checks against retroactive edits, plus a scheduled attendance backfill job.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}
+    \item Developed \textbf{5+ Spring Boot} microservices with \textbf{Kafka} messaging and \textbf{Kong} API Gateway, containerized on \textbf{Docker}/\textbf{Kubernetes} and load tested with \textbf{1000+ simulated transactions}.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner}, Amazon Web Services \hfill Oct 2024
+
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\setlength{\parindent}{0pt}
+
+\hypersetup{pdftitle={Sanskar Jain - Java Backend Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Java Software Engineer, Spring Boot / REST APIs}, pdfkeywords={Java, Java 8, Java 17, Java 21, Spring Boot, Spring Framework, JUnit, REST API, Microservices, Terraform, CI/CD, Cloud, Agile, SAFe}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Software Engineer \;|\; Java / Spring Boot \;|\; REST APIs \;|\; Cloud \\
+    \vspace{2pt}
+    Hyderabad, Telangana, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\vspace{1pt}
+
+\section*{Professional Summary}
+Software Engineer with \textbf{2+ years} of experience delivering high-quality, well-tested \textbf{Java}/\textbf{Spring Boot} \textbf{REST APIs} and distributed \textbf{microservices} in production at Verisk Analytics, complemented by hands-on \textbf{Java 17}/\textbf{Spring Boot} development shipping a multi-tenant SaaS platform end-to-end.
+Proficient in \textbf{Spring Boot}, \textbf{Spring Security}, \textbf{Spring Data JPA/Hibernate}, and modern \textbf{Java (8/11/17/21)}, with strong fundamentals in \textbf{JUnit}-based testing, \textbf{Agile/Scrum}/\textbf{SAFe} delivery, and independent ownership from design through production support -- comfortable with minimal supervision and upskilling quickly on new technologies.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} Java (8, 11, 17, 21), C\#, Python, TypeScript, JavaScript, SQL \\
+\textbf{Backend \& Frameworks:} Spring Boot, Spring Security, Spring Data JPA/Hibernate, .NET 8, ASP.NET Core, REST APIs, Microservices, API Versioning, React 18 \\
+\textbf{Testing \& Quality:} JUnit, xUnit, NUnit, Unit Testing, Integration Testing, Test Automation, Code Review, 90\% Test Coverage \\
+\textbf{Architecture \& Patterns:} Microservices Architecture, Event-Driven Architecture, CQRS, Multi-Tenant SaaS, Repository/Factory Patterns, Idempotency, Retry/Backoff, Dead-Letter Queues, Caching Strategies \\
+\textbf{Cloud \& DevOps:} AWS (S3, SNS, SQS, EKS, ECS, Lambda, ElastiCache, CloudWatch), Docker, Kubernetes, Terraform, CI/CD, Azure DevOps Pipelines, Apache Kafka, Redis \\
+\textbf{Security \& Databases:} OAuth 2.0, OIDC, JWT, Okta, RBAC, PostgreSQL, MongoDB, MySQL, Elasticsearch, Schema Design, Query Optimization \\
+\textbf{Practices \& Tools:} Agile/Scrum, SAFe (Scaled Agile Framework), Git, Jira, Confluence, Swagger/OpenAPI, Technical Design Documentation
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{Java}-based microservice using \textbf{CQRS} and \textbf{AWS SQS} with idempotent, retry/backoff-driven event processing, reducing wait time from \textbf{3000ms to 500ms (83\% improvement)} while sustaining \textbf{500+ messages daily} with zero message loss.
+    \item Built \textbf{REST APIs} (\textbf{Java}/\textbf{Spring Boot}) serving \textbf{200K+ weekly requests} with structured error handling, model validation, and \textbf{Swagger/OpenAPI} documentation; implemented \textbf{URL-based API versioning} across \textbf{16 v2 endpoints} for backward compatibility.
+    \item Improved API response time by \textbf{34\%} through \textbf{Redis}/\textbf{Amazon ElastiCache} caching, connection pooling, and query optimization on hot-path endpoints.
+    \item Slashed deployment time by \textbf{50\%} and build cycles by \textbf{33\%} by overhauling \textbf{CI/CD} pipelines (\textbf{Azure DevOps}) with staged gates, parallel jobs, and automated testing.
+    \item Wrote unit and integration tests (\textbf{JUnit}/\textbf{xUnit}/\textbf{NUnit}) to reach \textbf{90\% code coverage}, and participated in structured \textbf{code reviews} covering architecture, edge cases, and production readiness for every feature shipped.
+    \item Delivered features within a \textbf{SAFe (Scaled Agile Framework)} environment during the first year on the team, participating in \textbf{PI planning}, sprint reviews, and cross-team dependency management alongside standard \textbf{Agile/Scrum} ceremonies.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Production Platform (Java/Spring Boot)} \hfill Jul 2026 -- Present \\
+Live: \href{https://sanskar-engineers-payroll-ui.onrender.com/login}{sanskar-engineers-payroll-ui.onrender.com}
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant attendance and payroll \textbf{SaaS} to production, now serving \textbf{15+ client organizations}, built end-to-end as sole engineer on \textbf{Spring Boot 4} (\textbf{Java 17}), \textbf{React 18} + \textbf{TypeScript}, and \textbf{PostgreSQL}, validated with \textbf{JUnit} test suites.
+    \item Protected the API with \textbf{Spring Security} and \textbf{JWT} -- \textbf{15-minute} access tokens, revocable \textbf{7-day} refresh tokens persisted server-side, and \textbf{role-based access control} across \textbf{3 roles} via \texttt{@PreAuthorize}.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application (Java/Spring Boot)} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed an expense tracking platform using \textbf{Java} and \textbf{Spring Boot} with \textbf{5+ microservices}, asynchronous \textbf{Apache Kafka} messaging, and \textbf{Kong API Gateway}; containerized with \textbf{Docker} on \textbf{Kubernetes} and validated with \textbf{JUnit} test suites across \textbf{1000+ simulated transactions}.
+\end{itemize}
+
+\section*{Certifications \& Education}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune, India \hfill 2020 -- 2024 \;|\; CGPA: 8.8/10
+
+\end{document}

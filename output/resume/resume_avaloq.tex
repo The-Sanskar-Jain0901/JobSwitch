@@ -1,0 +1,95 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Engineer, C-Sharp / Java / SQL, Root Cause Analysis}, pdfkeywords={C-Sharp, Java, SQL, Root Cause Analysis, Bug Fixing, Code Optimization, Technical Support, Business Analysts, Microservices, REST API, Agile, Data Migration}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Software Engineer \;|\; C\#/.NET, Java, SQL \;|\; Root Cause Analysis \& Optimization \;|\; Hyderabad, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Software Engineer with a B.Tech in Computer Engineering and \textbf{2+ years} at Verisk Analytics (an insurance and financial-services data platform) developing new features from internal and external requirements in \textbf{C\#/.NET} and \textbf{Java}, and maintaining production systems through \textbf{root cause analysis}, \textbf{bug fixing}, and \textbf{code optimization}.
+Analytical, quality-conscious problem solver who supports business analysts and customers technically, works well in cross-functional teams, and is eager to learn new platforms and complete certification training.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} C\#, Java, SQL, Python, TypeScript, JavaScript \\
+\textbf{Backend \& Frameworks:} .NET 8, .NET Framework, ASP.NET Core, ASP.NET MVC, Web API 2, Spring Boot, REST APIs, Microservices, Event-Driven Architecture, OOP, Design Patterns, Data Structures \& Algorithms \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB, SQL Server, T-SQL, Query Optimization, Indexing, Data Migration \\
+\textbf{Debugging \& Quality:} Root Cause Analysis, Bug Fixing, Performance Tuning, Unit/Integration Testing (xUnit, NUnit), Code Review, Production Support \\
+\textbf{Cloud \& Tools:} AWS (EC2, EKS, Lambda, SQS, SNS, S3), Docker, Redis, Git, Azure DevOps, CI/CD, Jira, Confluence, Swagger/OpenAPI \\
+\textbf{Security \& Practices:} OAuth 2.0, JWT, Role-Based Access Control, Agile/Scrum, Technical Documentation, AI-Assisted Development (GitHub Copilot, Claude Code)
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Developed new features from internal and external requirements, authoring technical designs and co-designing \textbf{RulesRunner}, a decoupled \textbf{C\#} microservice that cut client wait time from \textbf{3000ms to 500ms (83\%)}, and a \textbf{30+ data type} import/export backend that cut customer-reported issues \textbf{25\%}.
+    \item Performed \textbf{root cause analysis} and \textbf{bug fixing} on live systems (2--3 production support cycles yearly), tracing failures through logs, queries, and concurrency behavior and shipping fixes in \textbf{biweekly releases}.
+    \item Optimized code and data access by tuning \textbf{SQL}, \textbf{PostgreSQL}, and \textbf{MongoDB} indexes and adding \textbf{Redis} caching, cutting API response time \textbf{34\%}; migrated legacy \textbf{.NET Framework} (\textbf{ASP.NET MVC}, \textbf{Web API 2}) services to \textbf{.NET 8} for \textbf{30\%} faster runtime.
+    \item Produced \textbf{2 production-safe migration scripts} moving \textbf{1M+ records each} with idempotent operations and backward compatibility, preserving data integrity with zero downtime.
+    \item Provided technical assistance to business analysts and client teams through \textbf{Swagger/OpenAPI} contracts and \textbf{URL-based API versioning} across \textbf{16 v2 endpoints}, keeping existing integrations stable during migration.
+    \item Secured services with \textbf{OAuth 2.0}/\textbf{JWT} authentication across \textbf{6 platform services} and token revocation across \textbf{4 client apps}, shrinking the post-logout replay window from \textbf{7 days to under 1 second}.
+    \item Maintained quality with \textbf{90\% code coverage}, peer \textbf{code reviews}, and \textbf{Azure DevOps} \textbf{CI/CD} gates (deployment time down \textbf{50\%}), and mentored \textbf{4 junior engineers} as a collaborative team player.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Production Web Application (Java 17, Spring Boot, React)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant application to \textbf{15+ client organizations}, implementing a rule-driven payroll engine for \textbf{3 salary models} with prorated rate changes and safeguards against edits to finalized records, on \textbf{PostgreSQL}.
+\end{itemize}
+
+\textbf{Expense Tracker -- Transaction Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed \textbf{5+} \textbf{Java}/\textbf{Spring Boot} microservices with \textbf{PostgreSQL} persistence, validated by \textbf{1000+} simulated end-to-end transactions.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\end{document}

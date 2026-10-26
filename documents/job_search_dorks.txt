@@ -1,0 +1,34 @@
+1)Naukri
+2)Instahyre
+3)Greenhouse/Ashby/Lever - (site:boards.greenhouse.io OR site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com OR site:jobs.lever.co OR site:apply.workable.com) ("Pune" OR "Hyderabad" OR "India") ("Software Engineer" OR "Backend Engineer" OR "SDE" OR "Developer" OR "Fullstack Engineer" OR "Full Stack Developer") (".NET" OR "C#" OR "Spring Boot" OR "Java") -Principal -Lead -Director
+
+4)Workday - (site:myworkdayjobs.com OR site:jobs.smartrecruiters.com OR site:icims.com) ("Pune" OR "Hyderabad" OR "India") ("Software Engineer" OR "Backend Engineer" OR "SDE" OR "Developer" OR "Fullstack Engineer" OR "Full Stack Developer") (".NET" OR "C#" OR "Spring Boot" OR "Java") -Principal -Lead -Director
+
+5)Protocol Ai
+
+6)Indeed - title:("Backend Engineer" OR ".NET" OR "Software Engineer") AND ("AWS" OR "Microservices") -WinForms -WPF -Desktop -"0-1 years"
+
+7)LinkedIn - 
+	1) (".NET" OR "C#") AND ("AWS" OR "Cloud") AND ("Backend" OR "Microservices")
+	2) "hiring" AND (".NET" OR "C#") AND ("AWS" OR "Microservices") ("Hyderabad" OR "Pune" OR "Remote")
+
+8)(site:://oraclecloud.com) ("Pune" OR "Hyderabad" OR "India") ("Software Engineer" OR "Backend Engineer" OR "SDE" OR "Developer" OR "Fullstack Engineer" OR "Full Stack Developer") (".NET" OR "C#" OR "Spring Boot" OR "Java") -Principal -Lead -Director
+
+(site:careers.* OR site:*/careers/* OR site:*/career/*) ("Pune" OR "Hyderabad" OR "India") ("Software Engineer" OR "Backend Engineer" OR "SDE" OR "Developer" OR "Fullstack Engineer" OR "Full Stack Developer") (".NET" OR "C#" OR "Spring Boot" OR "Java") -Principal -Lead -Director
+
+
+(site:jobs.*) ("Pune" OR "Hyderabad" OR "India") ("Software Engineer" OR "Backend Engineer" OR "SDE" OR "Developer" OR "Fullstack Engineer" OR "Full Stack Developer") (".NET" OR "C#" OR "Spring Boot" OR "Java") -Principal -Lead -Director
+
+(site:talent.*) ("Pune" OR "Hyderabad" OR "India") ("Software Engineer" OR "Backend Engineer" OR "SDE" OR "Developer" OR "Fullstack Engineer" OR "Full Stack Developer") (".NET" OR "C#" OR "Spring Boot" OR "Java") -Principal -Lead -Director
+
+"Powered by eightfold.ai" inurl:job ("Pune" OR "Hyderabad" OR "India" OR "Bangalore") ("Software Engineer" OR "Backend Engineer" OR "SDE" OR "Developer" OR "Fullstack Engineer" OR "Full Stack Developer") (".NET" OR "C#" OR "Spring Boot" OR "Java") -Principal -Lead -Director
+
+Google for Jobs - .NET backend engineer jobs Hyderabad OR Pune OR India
+
+
+
+Hi [Name],
+
+I need a referral for the [role] role (Job ID: [job id]). 
+
+Thanks.

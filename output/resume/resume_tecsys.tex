@@ -1,0 +1,100 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Full-Stack Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Full-Stack Software Engineer, C-Sharp / dotNET 8 / React / TypeScript / PostgreSQL}, pdfkeywords={C-Sharp, dotNET 8, ASP.NET Core, REST API, Entity Framework, React, TypeScript, JavaScript, PostgreSQL, SQL, Agile}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Full-Stack Software Engineer \;|\; C\#, .NET 8, React, TypeScript \;|\; Hyderabad, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Software Engineer with \textbf{2+ years} at Verisk Analytics building \textbf{REST} APIs on \textbf{.NET 8} and modernizing legacy \textbf{.NET Framework} applications, alongside a \textbf{React}/\textbf{TypeScript} full-stack product built and run as sole developer. Comfortable debugging unfamiliar code, tuning \textbf{PostgreSQL} queries, and using \textbf{AI-assisted development} tools with every change reviewed before merge.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} C\#, Java, SQL, TypeScript, JavaScript, HTML, CSS \\
+\textbf{Backend \& ORM:} .NET 8, ASP.NET Core, ASP.NET MVC, ASP.NET Web API 2, .NET Framework, Entity Framework, Hibernate, Spring Boot, REST APIs, Swagger/OpenAPI, CQRS \\
+\textbf{Frontend:} React 18, TypeScript, JavaScript, HTML, CSS \\
+\textbf{Data:} PostgreSQL, MongoDB, Redis, Query Optimization, Indexing \\
+\textbf{Engineering Tools:} Azure DevOps, Git, Jira, Docker, CI/CD, Code Review \\
+\textbf{Security \& Cloud:} OAuth 2.0, JWT, Okta, AWS (EKS, SQS, SNS, Lambda) \\
+\textbf{Testing \& Practices:} xUnit, NUnit, TDD, Dependency Injection, LINQ, SOLID, Multithreading, Agile/Scrum, AI-Assisted Development (Claude Code, GitHub Copilot)
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Hyderabad, India \\
+\textbf{Software Engineer II} \hfill Apr 2026 -- Present \\
+\textbf{Software Engineer I} \hfill Jul 2024 -- Mar 2026
+
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{ASP.NET Core} \textbf{Web API} services on \textbf{.NET 8} with \textbf{Entity Framework} and \textbf{SQL} persistence, handling \textbf{${\sim}$200K requests a week}, with \textbf{URL-based versioning} across \textbf{16 v2 endpoints} and \textbf{Swagger/OpenAPI} docs.
+    \item Migrated legacy \textbf{.NET Framework} services (\textbf{ASP.NET MVC}, \textbf{Web API 2}) to \textbf{.NET 8} and wrote \textbf{2 migration scripts} moving \textbf{1M+ records} each.
+    \item Tuned hot endpoints through \textbf{Redis} caching, connection pooling, and \textbf{indexing} on \textbf{MongoDB} and \textbf{PostgreSQL}, reducing response times by ${\sim}$\textbf{34\%}.
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{C\#} microservice using \textbf{CQRS} and an \textbf{AWS SQS}-backed worker that cut user wait time from about \textbf{3 s to 0.5 s}; authored the design docs for service boundaries and API contracts.
+    \item Applied \textbf{dependency injection}, \textbf{LINQ}, and \textbf{SOLID} principles with a \textbf{TDD} approach, writing \textbf{xUnit}/\textbf{NUnit} tests that reached \textbf{90\% coverage}.
+    \item Rolled out \textbf{OAuth 2.0} with \textbf{Okta}-issued \textbf{JWT}s on \textbf{AWS EKS} for \textbf{6 of 15+} services, and moved \textbf{4 client applications} from \textbf{Forms Authentication} to \textbf{JWT} bearer auth over a shared \textbf{Redis} session store with token revocation.
+    \item Designed event-driven pipelines on \textbf{AWS SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent consumers, retry/backoff, and dead-letter queues, processing about \textbf{500 messages a day}.
+    \item Diagnosed \textbf{multithreading} and concurrency defects in \textbf{C\#}, supported production issues in a biweekly \textbf{Agile/Scrum} release cycle, and reworked \textbf{Azure DevOps} \textbf{CI/CD} pipelines, roughly halving deployment time.
+    \item Reviewed code across multiple scrum teams through \textbf{Git} pull requests and mentored \textbf{4 junior engineers}.
+    \item Wrote a \textbf{Python} agent on the OpenAI API that drafts and routes \textbf{30--50 Jira} tickets a week; use \textbf{Claude Code} and \textbf{GitHub Copilot} daily to understand code and deliver changes, reviewing all generated output before merge.
+\end{itemize}
+
+\textbf{Software Engineering Intern} \hfill Jan 2024 -- Jun 2024
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS (sole developer)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant payroll and attendance product used by \textbf{15+ small businesses}, pairing a \textbf{TypeScript}/\textbf{React 18} UI with a \textbf{Spring Boot} (\textbf{Java 17}) \textbf{REST} API, \textbf{Hibernate}, \textbf{PostgreSQL}, and \textbf{Docker} deployment.
+    \item Isolated tenants through a shared-schema \textbf{org\_id} with \textbf{Hibernate} filters, and secured the API with \textbf{JWT} access tokens, revocable refresh tokens, and 3-role access control.
+\end{itemize}
+
+\noindent\textbf{Expense Tracker -- Microservices Application} \hfill Aug -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Created \textbf{5} \textbf{REST} microservices with a \textbf{HTML}/\textbf{CSS}/\textbf{JavaScript} front end of \textbf{9+} reusable components.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner}, Amazon Web Services \hfill Oct 2024
+
+\end{document}

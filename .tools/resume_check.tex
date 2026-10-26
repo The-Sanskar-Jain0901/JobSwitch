@@ -1,73 +1,98 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[a4paper,10pt]{article}
 
-\usepackage[margin=0.5in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage[hidelinks]{hyperref}
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
 \usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
 
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
-\setlist[itemize]{leftmargin=12pt, itemsep=1pt, topsep=1pt, parsep=0pt, partopsep=0pt}
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
 
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\hypersetup{pdftitle={Sanskar Jain - Full-Stack Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Full-Stack Engineer, Java, Spring Boot, React, SQL, REST APIs}, pdfkeywords={Java, Spring Boot, React, JavaScript, TypeScript, SQL, PostgreSQL, REST API, Full-Stack, CI/CD, Git, Agile, Microservices}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
 \titlespacing*{\section}{0pt}{5pt}{2pt}
-
-\newcommand{\resumeSubheading}[4]{%
-  \textbf{#1} \hfill #2 \\
-  #3 \hfill #4 \\
-}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
 
 \begin{document}
 
 \begin{center}
-    {\Large \textbf{Sanskar Jain}} \\
-    DevSecOps Engineer \;|\; CI/CD \;|\; Kubernetes \;|\; Terraform \;|\; AI Agents / MCP \\
-    Hyderabad, India \enspace | \enspace 9021620156 \enspace | \enspace
-    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \enspace | \enspace
-    \href{https://www.linkedin.com/in/sanskar-jain0901/}{LinkedIn}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Full-Stack Software Engineer \;|\; Java \;|\; Spring Boot \;|\; React \;|\; SQL \;|\; Hyderabad, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
 \end{center}
 
-\vspace{2pt}
+\section*{Professional Summary}
+Full-stack engineer with a \textbf{B.Tech in Computer Engineering} and \textbf{2+ years} of professional experience building \textbf{Java}/\textbf{Spring Boot} services, \textbf{RESTful APIs}, and \textbf{SQL} data layers, plus a production \textbf{React}/\textbf{TypeScript} SaaS used by \textbf{15+ organizations}.
+Contributes across the full lifecycle (design docs, coding, testing, \textbf{CI/CD} deployment, production support) in \textbf{Agile} teams with \textbf{Git}-based code reviews.
 
-\section*{Summary}
-Software engineer with 2+ years delivering secure cloud services, containerised workloads, and automated \textbf{CI/CD} pipelines. Hands-on with \textbf{Azure DevOps}, Git, AWS, Kubernetes/EKS, Docker, Terraform, C\#, Python, and DevSecOps practices grounded in OAuth 2.0, JWT validation, and production observability. Built internal \textbf{AI agents} using the OpenAI API and \textbf{Model Context Protocol (MCP)} integrations.
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} Java 17, JavaScript (ES6+), TypeScript, SQL, Python \\
+\textbf{Backend \& APIs:} Spring Boot, Spring Security, Hibernate, RESTful API Design, API Versioning, GraphQL, Swagger/OpenAPI, Middleware/Filters, Microservices, Asynchronous Programming \\
+\textbf{Databases:} PostgreSQL, Schema Design, Indexing, Query Optimization, Database Migrations, MongoDB, Redis \\
+\textbf{Frontend:} React 18, React Hooks, TanStack React Query, Axios, Vite, TailwindCSS, HTML, CSS, Responsive UI, Reusable Components \\
+\textbf{Tools \& Cloud:} Git, CI/CD, Azure DevOps, Docker, Kubernetes, AWS (EKS, Lambda, SQS, SNS), Terraform CDK \\
+\textbf{Practices:} Agile/Scrum, Technical Design Documents, Code Review, Unit/Integration Testing, Debugging, AI-Assisted Development (Claude Code, GitHub Copilot)
+\end{sloppypar}
 
-\section*{Skills}
-\textbf{DevSecOps \& Security:} Secure SDLC, OAuth 2.0, JWT, Okta, Kong Gateway, Input Validation, Secrets Management, Security Gates \\
-\textbf{Cloud \& Containers:} AWS (EKS, ECS, Lambda, S3, SNS, SQS), Kubernetes, Docker, Terraform, Infrastructure as Code \\
-\textbf{CI/CD \& Tools:} Azure DevOps, Git, GitHub, Visual Studio, CI/CD Pipelines, Automated Testing, Swagger/OpenAPI \\
-\textbf{AI \& Automation:} AI Agents, Model Context Protocol (MCP), OpenAI API, Prompt Engineering, Agent Orchestration, REST/JSON \\
-\textbf{Development \& Operations:} C\#, Python, .NET 8, ASP.NET Core, Microservices, Splunk, OpenTelemetry, Troubleshooting
+\section*{Professional Experience}
 
-\section*{Experience}
-\resumeSubheading{Verisk Analytics}{Jan 2024 -- Present}{Software Engineer II}{Hyderabad, India}
-\begin{itemize}
-    \item Overhauled \textbf{Azure DevOps CI/CD} pipelines with staged approvals, parallel jobs, automated tests, and deployment gates, reducing release time by \textbf{50\%} and build cycles by \textbf{33\%}.
-    \item Secured \textbf{ASP.NET Core} services on AWS EKS behind \textbf{Kong Gateway}, integrating \textbf{OAuth 2.0}, Okta-issued JWT validation, and authorization controls for protected cross-service communication.
-    \item Applied \textbf{DevSecOps} practices across design, review, testing, and deployment, including input validation, least-privilege access, secure API contracts, and quality gates.
-    \item Containerised workloads with \textbf{Docker}, orchestrated services on \textbf{Kubernetes/EKS}, and used \textbf{Terraform IaC} for repeatable environment provisioning and lifecycle management.
-    \item Architected event-driven \textbf{AWS Lambda}, SNS, and SQS pipelines with idempotent processing, retry/backoff, and dead-letter handling, ensuring zero message loss during downstream failures.
-    \item Built \textbf{LLM-powered workflow agents} with the \textbf{OpenAI API}, prompt engineering, and custom orchestration to automate Jira ticket creation and task routing across internal teams.
-    \item Developed \textbf{MCP}-based tool integrations that exposed structured capabilities to agents, connecting model-driven workflows with external services through validated REST/JSON contracts.
-    \item Co-designed \textbf{RulesRunner}, a stateless C\#/.NET microservice using CQRS and SQS that reduced client wait time from \textbf{3000ms to 500ms} (\textbf{83\%}) and enabled horizontal scaling.
-    \item Instrumented services with \textbf{OpenTelemetry} and \textbf{Splunk}, accelerating troubleshooting of latency, authentication, deployment, and distributed pipeline failures.
+\textbf{Verisk Analytics} \hfill Hyderabad, India \\
+\textbf{Software Engineer II} \hfill Apr 2026 -- Present \\
+\textbf{Software Engineer I} \hfill Jul 2024 -- Mar 2026 \\
+\textbf{Software Engineering Intern} \hfill Jan 2024 -- Jun 2024
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{Java 17}/\textbf{Spring Boot} microservice using \textbf{CQRS} and \textbf{AWS SQS} to offload compliance checks, cutting wait time from \textbf{3000ms to 500ms (83\%)} and enabling horizontal scaling.
+    \item Built \textbf{RESTful} and \textbf{GraphQL} APIs serving \textbf{200K+ weekly requests} with validation, error-handling middleware, and \textbf{Swagger} docs, and versioned \textbf{16 v2 endpoints} so existing clients kept working.
+    \item Tuned \textbf{MongoDB}/\textbf{PostgreSQL} indexes and queries, added \textbf{Redis} caching to cut API response time by \textbf{34\%}, and wrote \textbf{2 idempotent migration scripts} moving \textbf{1M+ records each} with zero downtime.
+    \item Authored technical design documents covering service boundaries and API contracts, then took features through peer design reviews and \textbf{Git} code reviews across multiple scrum teams in \textbf{biweekly} Agile releases.
+    \item Wrote unit and integration tests reaching \textbf{90\% code coverage}, reworked \textbf{Azure DevOps} \textbf{CI/CD} pipelines to halve deployment time, and deployed applications to \textbf{AWS} with \textbf{CDKTF}.
+    \item Engineered fault-tolerant \textbf{asynchronous} pipelines on \textbf{SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent processing and retry/backoff, handling \textbf{500+ messages daily}, and debugged production issues \textbf{2--3 times per year}.
+    \item Secured \textbf{6 of 15+ platform services} on \textbf{AWS EKS} with \textbf{OAuth 2.0} and \textbf{JWT}.
+    \item Mentored \textbf{4 junior engineers}, used \textbf{Claude Code} and \textbf{GitHub Copilot} daily while reviewing all generated code before merge, and wrote a \textbf{Python} \textbf{OpenAI API} agent that routes \textbf{30--50 Jira tickets per week}.
 \end{itemize}
 
 \section*{Projects}
-\resumeSubheading{Internal Workflow Automation Agent}{2025 -- 2026}{}{OpenAI API, MCP, C\#/Python, Jira, REST APIs}
-\begin{itemize}
-    \item Created an agent that interprets task requests and drafts Jira tickets using prompt-engineered OpenAI API calls, context management, validation, and custom workflow orchestration.
-    \item Integrated MCP tools with downstream services and business rules, enabling reusable, controlled agent actions while reducing repetitive manual coordination.
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Platform (Java 17, Spring Boot, React 18, TypeScript, PostgreSQL)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Shipped a full-stack multi-tenant \textbf{SaaS} to production as sole engineer for \textbf{15+ client organizations}, with a \textbf{React 18} frontend in \textbf{JavaScript}/\textbf{TypeScript} using \textbf{Vite}, \textbf{TailwindCSS}, and \textbf{TanStack React Query} for a responsive UI.
+    \item Implemented \textbf{Axios} interceptors for transparent \textbf{JWT} refresh and role-based access, backed by \textbf{Spring Security}, a \textbf{REST} API, and tenant isolation enforced through \textbf{Hibernate} filters.
+    \item Modeled the \textbf{PostgreSQL} schema and a payroll engine supporting \textbf{3 salary models} with prorated rate changes and overtime, rejecting edits to finalized records with \textbf{409 Conflict}.
 \end{itemize}
 
-\section*{Certifications}
-\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+\textbf{Expense Tracker -- Microservices Application (Java, Spring Boot, React, PostgreSQL)} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed \textbf{5+} \textbf{Spring Boot} microservices with \textbf{Kafka} and \textbf{PostgreSQL} plus an \textbf{HTML}/\textbf{CSS} \textbf{React} frontend of \textbf{9+ reusable components}, containerized with \textbf{Docker} and orchestrated on \textbf{Kubernetes}.
+\end{itemize}
 
-\section*{Education}
-\textbf{B.Tech in Computer Engineering} --- Vishwakarma Institute of Technology, Pune (SPPU) \hfill 2024 \;|\; CGPA: 8.8
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
 
 \end{document}

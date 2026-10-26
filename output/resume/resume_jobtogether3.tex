@@ -1,0 +1,99 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Backend Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Backend Software Engineer, C-Sharp / Python / Java / dotNET 8 / Microservices / Testing}, pdfkeywords={C-Sharp, Python, Java, TypeScript, dotNET 8, REST API, Microservices, Unit Testing, Integration Testing, CI/CD, Debugging, Code Review}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Backend Software Engineer \;|\; C\#, Python, Java, TypeScript \;|\; Hyderabad, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Backend engineer with \textbf{2+ years} at Verisk Analytics building production \textbf{REST} APIs and \textbf{microservices} on \textbf{.NET 8} and \textbf{AWS}, with a focus on debugging, performance tuning, \textbf{unit/integration testing}, and \textbf{code review}. Has modernized legacy services, mentored junior engineers, solved \textbf{500+} data structures and algorithms problems, and works with \textbf{AI coding tools} while reviewing every change before merge.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} C\#, Python, Java, TypeScript, JavaScript, SQL \\
+\textbf{Backend \& APIs:} .NET 8, ASP.NET Core, ASP.NET Web API 2, .NET Framework, Spring Boot, REST APIs, Microservices, CQRS, Swagger/OpenAPI, Entity Framework \\
+\textbf{Testing \& Quality:} xUnit, NUnit, TDD, Unit/Integration Testing, Code Review, Dependency Injection, SOLID, Data Structures \& Algorithms \\
+\textbf{Distributed Systems \& Cloud:} AWS (EKS, SQS, SNS, Lambda), Event-Driven Architecture, Redis, Multithreading, Docker \\
+\textbf{Data:} PostgreSQL, MongoDB, Query Optimization, Indexing \\
+\textbf{Engineering Tools:} Azure DevOps, Git, CI/CD, Jira, OAuth 2.0, JWT, AI-Assisted Development (Claude Code, GitHub Copilot)
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Hyderabad, India \\
+\textbf{Software Engineer II} \hfill Apr 2026 -- Present \\
+\textbf{Software Engineer I} \hfill Jul 2024 -- Mar 2026
+
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{ASP.NET Core} \textbf{Web API} services on \textbf{.NET 8} with \textbf{Entity Framework} and \textbf{SQL} persistence, handling \textbf{${\sim}$200K requests a week}, with \textbf{URL-based versioning} across \textbf{16 v2 endpoints} and \textbf{Swagger/OpenAPI} docs.
+    \item Wrote \textbf{xUnit}/\textbf{NUnit} unit and integration tests reaching \textbf{90\% coverage}, applying \textbf{TDD}, \textbf{dependency injection}, and \textbf{SOLID} principles to keep business logic testable.
+    \item Diagnosed \textbf{multithreading} and concurrency defects in \textbf{C\#}, investigated \textbf{flaky tests}, and traced production issues to root cause while supporting production in a biweekly release cycle.
+    \item Tuned hot endpoints through \textbf{Redis} caching, connection pooling, and \textbf{indexing} on \textbf{MongoDB} and \textbf{PostgreSQL}, reducing response times by ${\sim}$\textbf{34\%}.
+    \item Migrated legacy \textbf{.NET Framework} services (\textbf{ASP.NET MVC}, \textbf{Web API 2}) to \textbf{.NET 8} and wrote \textbf{2 migration scripts} moving \textbf{1M+ records} each.
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{C\#} microservice using \textbf{CQRS} and an \textbf{AWS SQS}-backed worker that cut user wait time from about \textbf{3 s to 0.5 s}; authored the design docs for service boundaries and API contracts.
+    \item Designed event-driven pipelines on \textbf{AWS SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent consumers, retry/backoff, and dead-letter queues, processing about \textbf{500 messages a day}.
+    \item Reviewed code across multiple scrum teams through \textbf{Git} pull requests, mentored \textbf{4 junior engineers}, and reworked \textbf{Azure DevOps} \textbf{CI/CD} pipelines, roughly halving deployment time.
+    \item Rolled out \textbf{OAuth 2.0} with \textbf{Okta}-issued \textbf{JWT}s on \textbf{AWS EKS} for \textbf{6 of 15+} services, and moved \textbf{4 client applications} from \textbf{Forms Authentication} to \textbf{JWT} bearer auth with token revocation.
+    \item Wrote a \textbf{Python} agent on the OpenAI API that drafts and routes \textbf{30--50 Jira} tickets a week; use \textbf{Claude Code} and \textbf{GitHub Copilot} daily, reviewing all generated code before merge.
+\end{itemize}
+
+\textbf{Software Engineering Intern} \hfill Jan 2024 -- Jun 2024
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS (sole developer)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant payroll and attendance product used by \textbf{15+ small businesses}, built on \textbf{Spring Boot} (\textbf{Java 17}), \textbf{PostgreSQL}, \textbf{TypeScript}/\textbf{React}, and \textbf{Docker}, with \textbf{JWT} auth and role-based access.
+    \item Handled payroll edge cases such as prorated mid-month rate changes, overtime, and advances, and locked finalized records against retroactive edits.
+\end{itemize}
+
+\noindent\textbf{Expense Tracker -- Microservices Application} \hfill Aug -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Created \textbf{5} \textbf{REST} microservices on \textbf{Spring Boot} with \textbf{Kafka} messaging, containerized with \textbf{Docker}.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune \hfill 2020 -- 2024 \;|\; CGPA 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner}, Amazon Web Services \hfill Oct 2024
+
+\end{document}

@@ -1,0 +1,93 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Engineer, C-Sharp / dotNET / ASP.NET MVC / Web API}, pdfkeywords={C-Sharp, dotNET, ASP.NET MVC, Web API, TypeScript, JavaScript, SQL Server, T-SQL, n-tier Architecture, SOLID, Design Patterns, OAuth2, OpenID Connect, SOA, Agile, Scrum, TFS}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Software Engineer \;|\; C\#/.NET, ASP.NET MVC \& Web API \;|\; Hyderabad, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Software Engineer with \textbf{2+ years} developing end-to-end web applications on the \textbf{Microsoft stack} -- \textbf{C\#}, \textbf{ASP.NET Core MVC}, \textbf{Web API}, and \textbf{SQL}-backed services -- at Verisk Analytics, with production REST APIs built on \textbf{n-tier}, \textbf{SOLID}-driven architecture.
+Working knowledge of \textbf{TypeScript}/\textbf{JavaScript} UI layers, \textbf{OAuth 2.0}/\textbf{OpenID Connect} authentication, and \textbf{service-oriented}/microservices design, backed by structured code review and \textbf{Agile/Scrum} delivery.
+Strong communicator who converts business problems into technical designs, troubleshoots performance via query optimization, and writes clean, testable code validated by unit tests.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages \& Web:} C\#, TypeScript, JavaScript, HTML5, CSS3, SQL, T-SQL \\
+\textbf{Backend \& Frameworks:} .NET 8, .NET Framework, ASP.NET Core MVC, ASP.NET MVC, Web API 2, REST APIs, N-Tier Architecture, OOP, SOLID Principles, Design Patterns (Creational, Structural, Behavioral -- Factory, Repository, CQRS) \\
+\textbf{Databases:} SQL Server, PostgreSQL, MySQL, MongoDB, T-SQL, Query Optimization, Database Design \\
+\textbf{Security \& Identity:} OAuth 2.0, OpenID Connect (OIDC), JWT, Okta, Role-Based Access Control, Session Management, Token Revocation \\
+\textbf{Architecture:} Microservices, Service-Oriented Architecture (SOA), Event-Driven Architecture, CQRS \\
+\textbf{Dev Tools \& Testing:} Visual Studio, Azure DevOps (TFS), Git, xUnit, NUnit, Unit/Integration Testing, Swagger/OpenAPI, Postman \\
+\textbf{Practices:} Agile/Scrum, Code Review (Raise, Resolve, Close), Technical Documentation, CI/CD, AI-Assisted Development (Claude Code, GitHub Copilot)
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Designed and delivered \textbf{ASP.NET Core MVC} \textbf{REST} APIs on an \textbf{n-tier} architecture serving \textbf{200K+ weekly requests}, with structured error handling, model validation, and \textbf{Swagger/OpenAPI} contracts.
+    \item Built \textbf{RulesRunner}, a decoupled \textbf{C\#} microservice applying \textbf{CQRS} and \textbf{SOLID}-driven design patterns to cut client wait time from \textbf{3000ms to 500ms (83\%)} while enabling horizontal scaling.
+    \item Established \textbf{OAuth 2.0}/\textbf{OpenID Connect} authentication on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+} \textbf{service-oriented} platform services, integrating \textbf{Okta}-issued \textbf{JWT} tokens for cross-service authorization.
+    \item Secured single sign-out across \textbf{4 client applications} by migrating legacy \textbf{Forms Authentication} to \textbf{JWT} bearer auth over a centralized \textbf{Redis} session store, adding dual-layer revocation that shrank the post-logout replay window from \textbf{7 days to under 1 second}.
+    \item Raised, resolved, and closed \textbf{peer code reviews} while maintaining reference \textbf{technical documentation} and API contracts, enforcing clean, maintainable \textbf{.NET} codebases across the team.
+    \item Cut technical debt \textbf{55\%} and improved runtime \textbf{30\%} migrating legacy \textbf{.NET Framework} (\textbf{ASP.NET MVC}, \textbf{Web API 2}) to \textbf{.NET 8}, and tuned \textbf{SQL}/\textbf{MongoDB} indexing plus \textbf{Redis} caching to cut API response time \textbf{34\%}.
+    \item Overhauled \textbf{CI/CD} pipelines in \textbf{Azure DevOps (TFS)} with staged gates and parallel jobs to cut deployment time \textbf{50\%}, writing \textbf{xUnit}/\textbf{NUnit} tests to reach \textbf{90\% code coverage} in \textbf{Agile/Scrum} delivery.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Expense Tracker -- Service-Oriented Microservices Application} \hfill Aug 2023 -- Dec 2023 \\
+\textit{Java, Spring Boot, TypeScript, JavaScript, SQL, Docker}
+\begin{itemize}[leftmargin=*]
+    \item Developed \textbf{5+} independently deployable, \textbf{n-tier} microservices with \textbf{REST/JSON} APIs, \textbf{SQL}-backed persistence, and a \textbf{TypeScript}/\textbf{JavaScript} UI of \textbf{9+} reusable components, routed through \textbf{Kong API Gateway}.
+    \item Containerized services with \textbf{Docker}; simulated \textbf{1000+ transactions} end-to-end for load and resilience testing, and authored technical specifications covering data models and API contracts.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\end{document}

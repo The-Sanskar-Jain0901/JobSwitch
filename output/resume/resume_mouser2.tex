@@ -1,0 +1,92 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - .NET Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={.NET Software Engineer, C-Sharp / ASP.NET MVC / SQL Server}, pdfkeywords={C-Sharp, ASP.NET, MVC, dotNET Framework, ASP.NET Core, JavaScript, SQL Server, T-SQL, Stored Procedures, JSON, AJAX, TFS, Agile, Code Review, Production Support}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    .NET Software Engineer \;|\; C\#, ASP.NET MVC \& Core, SQL Server \;|\; Hyderabad, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+.NET Software Engineer with \textbf{2+ years} at Verisk Analytics developing, testing, and deploying web applications on the \textbf{Microsoft stack} -- \textbf{C\#}, \textbf{ASP.NET MVC}, \textbf{ASP.NET Core MVC}, \textbf{.NET Framework}, \textbf{Web API}, and \textbf{SQL}-backed services -- with hands-on \textbf{production support} for live issues.
+Drafts technical designs from business requests, writes clean, testable code through peer \textbf{code reviews}, and partners with analysts, architects, designers, and QA in \textbf{Agile/Scrum} teams.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages \& Web:} C\#, JavaScript, TypeScript, HTML5, CSS3, JSON, AJAX, SQL, T-SQL \\
+\textbf{Backend \& Frameworks:} .NET 8, .NET Framework, ASP.NET MVC, ASP.NET Core MVC, Web API 2, REST APIs, Microservices, OOP, SOLID Principles, Design Patterns (Factory, Repository, CQRS) \\
+\textbf{Frontend \& UI:} React 18, JavaScript, TypeScript, HTML, CSS, TailwindCSS, Responsive UI Development, Axios \\
+\textbf{Databases:} SQL Server, T-SQL, Stored Procedures, Database Design, Query Optimization, Indexing, PostgreSQL, MySQL, MongoDB \\
+\textbf{Dev Tools \& Testing:} Visual Studio, Azure DevOps (TFS), Git, CI/CD, xUnit, NUnit, Unit/Integration Testing, Swagger/OpenAPI, Postman \\
+\textbf{Practices:} Agile/Scrum, Technical Specifications \& Estimation, Code Review, Reference Documentation, Production Support, AI-Assisted Development (Claude Code, GitHub Copilot)
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Evaluated new and modified feature requests from business analysts and architects, authoring \textbf{technical design documents} that defined service boundaries, API contracts, and \textbf{high-level time estimates} before implementation.
+    \item Built \textbf{ASP.NET Core MVC} REST APIs serving \textbf{200K+ weekly requests}, with \textbf{JSON} contracts, model validation, structured error handling, and \textbf{Swagger/OpenAPI} documentation, while maintaining \textbf{ASP.NET MVC} and \textbf{Web API 2} applications on \textbf{.NET Framework}.
+    \item Co-designed \textbf{RulesRunner}, a decoupled \textbf{C\#} microservice applying \textbf{CQRS} and clean, testable design to cut client wait time from \textbf{3000ms to 500ms (83\%)}, and engineered \textbf{Xactimate} import/export for \textbf{30+ data types}, trimming transfer time \textbf{38\%} and customer issues \textbf{25\%}.
+    \item Tuned database indexing and queries across \textbf{SQL}, \textbf{PostgreSQL}, and \textbf{MongoDB} and added \textbf{Redis} caching to cut API response time \textbf{34\%}; wrote \textbf{2 migration scripts} moving \textbf{1M+ records each} with idempotent, zero-downtime operations.
+    \item Cut technical debt \textbf{55\%} and lifted runtime performance \textbf{30\%} by migrating legacy \textbf{.NET Framework} services (\textbf{ASP.NET MVC}, \textbf{Web API 2}) to \textbf{.NET 8} with async/await patterns.
+    \item Resolved \textbf{production environment} issues reported in live systems (2--3 support cycles yearly) alongside \textbf{biweekly releases}, and mentored \textbf{4 junior engineers} through design, debugging, and release readiness.
+    \item Raised, resolved, and closed \textbf{peer code reviews} and maintained \textbf{reference documentation}, enforcing clean, readable, maintainable code and reaching \textbf{90\% coverage} with \textbf{xUnit}/\textbf{NUnit} tests.
+    \item Overhauled \textbf{CI/CD} pipelines in \textbf{Azure DevOps (TFS)} with staged gates and parallel jobs, cutting deployment time \textbf{50\%} and build cycles \textbf{33\%}.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Production Web Application} \hfill Jul 2026 -- Present \\
+\textit{Java, React 18, TypeScript, JavaScript, PostgreSQL, Docker}
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant web application used by \textbf{15+ client organizations}, owning the \textbf{UI development} process end-to-end: \textbf{React} + \textbf{TypeScript} screens, \textbf{AJAX} (Axios) calls to \textbf{JSON} REST APIs, and \textbf{PostgreSQL} schema design.
+    \item Implemented a business-rule payroll engine for \textbf{3 salary models} with role-based access and token-refresh security, containerized with \textbf{Docker} and deployed to production.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\end{document}

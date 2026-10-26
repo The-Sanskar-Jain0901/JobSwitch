@@ -1,0 +1,95 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Java Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Java Software Engineer, Spring Boot, REST APIs, SQL}, pdfkeywords={Java, Java 8, Spring Boot, Spring Framework, Multithreading, Collections, REST API, JSON, SQL, Microservices, Maven, GitHub, Linux, Unit Testing, Secure Coding, Agile, SDLC}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Java Software Engineer \;|\; Spring Boot, REST APIs, SQL, Multithreading \;|\; Hyderabad, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Java Software Engineer with \textbf{2+ years} designing, coding, testing, and debugging commercial-grade \textbf{Java}/\textbf{Spring Boot} services and \textbf{REST} APIs (\textbf{JSON}) backed by \textbf{SQL} databases, with strong \textbf{object-oriented} design, \textbf{multithreading}, and \textbf{Collections} fundamentals.
+Translates business requirements into technical specifications, follows secure coding, \textbf{unit testing}, and documentation standards, and troubleshoots production issues across the full \textbf{SDLC} in \textbf{Agile} teams.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages \& Core Java:} Java 8+, Java 17, Object-Oriented Programming, Multithreading \& Concurrency, Collections, Data Structures \& Algorithms, SQL, C\#, Python, JavaScript \\
+\textbf{Frameworks \& Services:} Spring Framework, Spring Boot, Spring Security, Spring Data JPA/Hibernate, REST APIs, JSON, Web Services, Microservices, Design Patterns (Factory, Repository, CQRS) \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB, SQL, Schema Design, Query Optimization, Indexing, Database Migrations \\
+\textbf{Build \& Platforms:} Maven, Git, GitHub, Linux/CLI, Docker, AWS (EC2, EKS, Lambda, S3), CI/CD, Azure DevOps Pipelines \\
+\textbf{Quality \& Security:} Unit \& Integration Testing (xUnit, NUnit), Code Review, Secure Coding, OAuth 2.0, JWT, Role-Based Access Control, Technical Documentation \\
+\textbf{Practices:} Agile/Scrum, SDLC, Troubleshooting \& Production Support, Swagger/OpenAPI, Jira, AI-Assisted Development (GitHub Copilot, Claude Code)
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Analyzed business requirements and authored technical design documents defining service boundaries, API contracts, and error handling, then co-designed \textbf{RulesRunner}, a stateless \textbf{Java}/\textbf{Spring Boot} microservice that cut client wait time from \textbf{3000ms to 500ms (83\%)}.
+    \item Built \textbf{Spring Boot} \textbf{REST} APIs exchanging \textbf{JSON} and serving \textbf{200K+ weekly requests}, applying \textbf{object-oriented} design, \textbf{SOLID} principles, validation, structured error handling, and \textbf{Swagger/OpenAPI} documentation.
+    \item Resolved \textbf{multithreading} and concurrency issues in production services, using thread-safe design, locking, and asynchronous processing to keep high-volume pipelines reliable at \textbf{500+ messages daily} with zero message loss.
+    \item Wrote \textbf{SQL}, tuned indexes and queries across \textbf{PostgreSQL} and \textbf{MongoDB}, and added \textbf{Redis} caching to cut API response time \textbf{34\%}; produced \textbf{2 migration scripts} moving \textbf{1M+ records each} with zero downtime.
+    \item Strengthened application security with \textbf{OAuth 2.0}/\textbf{JWT} authentication on \textbf{AWS EKS} for \textbf{6 platform services} and token revocation across \textbf{4 client apps}, following secure coding standards and code review gates.
+    \item Reached \textbf{90\% code coverage} with unit and integration tests, solved \textbf{500+} data structure and algorithm problems, and handled production issues (2--3 support cycles yearly) alongside \textbf{biweekly releases}.
+    \item Overhauled \textbf{Azure DevOps} \textbf{CI/CD} pipelines to cut deployment time \textbf{50\%}, and mentored \textbf{4 junior engineers} on code, testing, and documentation practices.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Full-Stack Production Product (Java 17, Spring Boot, React)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Defined requirements, wrote specifications, and shipped a multi-tenant \textbf{Spring Boot}/\textbf{Java 17} application with \textbf{React} UI and \textbf{PostgreSQL} to \textbf{15+ client organizations}, secured with \textbf{Spring Security}/\textbf{JWT}, built with \textbf{Maven}, and deployed via \textbf{Docker}.
+\end{itemize}
+
+\textbf{Expense Tracker -- Spring Boot Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed \textbf{5+} \textbf{Java}/\textbf{Spring Boot} microservices with \textbf{REST/JSON} APIs and \textbf{PostgreSQL} persistence, validated by \textbf{1000+} simulated end-to-end transactions.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\end{document}

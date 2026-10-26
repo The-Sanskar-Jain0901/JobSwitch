@@ -1,0 +1,101 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.65in,right=0.65in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+% Ligature suppression needs a different mechanism per engine, so this
+% compiles under pdfLaTeX (Overleaf's default) as well as XeLaTeX/LuaLaTeX.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+
+% A literal '#' here throws "Illegal parameter number", hence C-Sharp.
+\hypersetup{pdftitle={Sanskar Jain - Software Developer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Developer, .NET / Java}, pdfkeywords={C-Sharp, dotNET, Java, Spring Boot, Microservices, REST API, SQL, Docker, Kubernetes, CI/CD, Git, Azure, Agile, DevOps, Design Patterns, System Design}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{1pt}
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=0.5pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    Software Developer \;|\; C\#/.NET \;|\; Java/Spring Boot \;|\; Microservices \;|\; REST APIs \\
+    Hyderabad, Telangana, India \\
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\vspace{1pt}
+
+\section*{Professional Summary}
+Software Developer with \textbf{2+ years} of experience designing, developing, and maintaining enterprise-grade applications in \textbf{C\#/.NET} and \textbf{Java/Spring Boot} at Verisk Analytics.
+Skilled in building scalable \textbf{microservices}, \textbf{REST APIs}, and event-driven systems using \textbf{design patterns}, SQL/NoSQL databases, and \textbf{Docker}/\textbf{Kubernetes}, with hands-on \textbf{CI/CD} and \textbf{Agile/Scrum} delivery.
+Actively uses \textbf{AI-assisted development tools} (Claude Code, OpenAI API) to accelerate coding, debugging, and test creation while maintaining code quality through structured review.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} C\#, Java, Python, TypeScript, JavaScript, SQL \\
+\textbf{Backend \& Frameworks:} .NET 8, .NET Framework, ASP.NET Core, ASP.NET MVC, Web API 2, Spring Boot, Spring Security, Spring Data JPA/Hibernate, REST APIs, Microservices, Web Services, Multithreading \& Asynchronous Processing, Data Structures \& Algorithms \\
+\textbf{Design \& Architecture:} Object-Oriented Design, Software Design Patterns (CQRS, Repository, Factory, SOLID), Event-Driven Architecture, Multi-Tenant SaaS, System Design, Technical Design Documentation \\
+\textbf{Databases:} MongoDB, PostgreSQL, MySQL, Elasticsearch, Schema Design, Indexing, Query Optimization \\
+\textbf{Cloud \& DevOps:} Microsoft Azure, Azure DevOps Pipelines, AWS, Docker, Kubernetes, CI/CD, Terraform, Git, GitHub, Linux/CLI, OAuth 2.0/JWT/OIDC, RBAC, Secure Coding \\
+\textbf{Testing, AI \& Practices:} xUnit, NUnit, Test Automation, Code Review, AI-Assisted Development (Claude Code, OpenAI API), Agile/Scrum, Jira, Confluence, Swagger/OpenAPI
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{C\#/.NET} microservice using \textbf{CQRS} and \textbf{AWS SQS} that offloaded compliance checks from the client, reducing wait time from \textbf{3000ms to 500ms (83\% improvement)} while enabling horizontal scaling.
+    \item Authored technical design documentation defining service boundaries, API contracts, and \textbf{system design} for dead-letter queue (\textbf{DLQ}) handling and event publishing patterns consumed by downstream services.
+    \item Architected fault-tolerant, \textbf{asynchronous} event-driven pipelines with idempotent processing, retry/backoff strategies, and \textbf{AWS Lambda} consumers, sustaining \textbf{500+ production messages daily} with zero message loss.
+    \item Built \textbf{ASP.NET Core} \textbf{REST APIs} serving \textbf{200K+ weekly requests}, applying \textbf{object-oriented design patterns}, structured error handling, model validation, and \textbf{Swagger/OpenAPI} documentation.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind Kong API Gateway for \textbf{6 of 15+ platform services}, integrating \textbf{Okta}-issued \textbf{JWT} tokens for secure cross-service authorization and \textbf{RBAC}.
+    \item Improved API response time by \textbf{34\%} through \textbf{Redis} caching, connection pooling, and \textbf{SQL}/\textbf{NoSQL} query optimization across \textbf{PostgreSQL} and \textbf{MongoDB}, and applied \textbf{Elasticsearch} to cut search latency.
+    \item Slashed deployment time by \textbf{50\%} and build cycles by \textbf{33\%} by overhauling \textbf{Azure DevOps CI/CD} pipelines with staged gates, parallel jobs, and automated testing; managed \textbf{Git}-based branching workflows.
+    \item Adopted \textbf{AI-assisted development} (\textbf{Claude Code}, \textbf{OpenAI API}) for feature implementation and debugging, reviewing all generated code before merge; wrote \textbf{xUnit}/\textbf{NUnit} tests reaching \textbf{90\% code coverage}.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Production Platform (Java)} \hfill Jul 2026 -- Present \\
+Live: \href{https://sanskar-engineers-payroll-ui.onrender.com/login}{sanskar-engineers-payroll-ui.onrender.com}
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant attendance and payroll \textbf{SaaS} to production, serving \textbf{15+ client organizations}, built end-to-end as sole engineer on \textbf{Spring Boot 4} (\textbf{Java 17}), \textbf{React 18}/TypeScript, and \textbf{PostgreSQL}.
+    \item Enforced tenant isolation with a shared-schema discriminator and \textbf{Hibernate} filters, and protected the API with \textbf{Spring Security}/\textbf{JWT} \textbf{RBAC} across \textbf{3 roles}, deploying the \textbf{Docker}-containerized backend to Render with managed PostgreSQL on Supabase.
+\end{itemize}
+
+\textbf{Expense Tracker -- Java Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed an expense tracking platform using \textbf{Java} and \textbf{Spring Boot} with \textbf{5+ microservices}, asynchronous \textbf{Apache Kafka} messaging, and Kong API Gateway; containerized with \textbf{Docker} and orchestrated on \textbf{Kubernetes}, simulating \textbf{1000+ transactions} for load testing.
+\end{itemize}
+
+\section*{Certifications \& Education}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024 \\
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10
+
+\end{document}

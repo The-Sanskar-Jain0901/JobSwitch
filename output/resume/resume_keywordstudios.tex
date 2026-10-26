@@ -1,0 +1,102 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\pagestyle{empty}
+
+\hypersetup{pdftitle={Sanskar Jain - Software Engineer (DevOps / Platform) Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Software Engineer II, DevOps / Platform / AWS}, pdfkeywords={DevOps, Platform Engineering, AWS, EKS, Kubernetes, Docker, CI/CD, Terraform, Linux, Python, Shell, Git, Observability}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Software Engineer \;|\; DevOps \& Platform \;|\; AWS \;|\; Kubernetes \;|\; CI/CD \\
+    \vspace{2pt}
+    Hyderabad, Telangana, India \;|\;
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Software Engineer with \textbf{2+ years} of experience building, automating, and operating cloud-native services on \textbf{AWS} (\textbf{EKS}, \textbf{Lambda}, \textbf{SQS}, \textbf{SNS}) at Verisk Analytics.
+Hands-on with \textbf{CI/CD}, \textbf{Docker}, \textbf{Kubernetes}, \textbf{Terraform}, and observability tooling, having halved deployment time and cut build cycles by 33\%.
+Strong debugging and troubleshooting skills, CLI-first workflow, and end-to-end ownership from design documentation through production support.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{CI/CD \& Automation:} Azure DevOps Pipelines, GitHub Actions, CI/CD, Build \& Release Automation, Pipeline Optimization, Automated Testing, Test Infrastructure \\
+\textbf{Cloud \& Containers:} AWS (EKS, ECS, Lambda, S3, SNS, SQS, ElastiCache, CloudWatch), Docker, Kubernetes, Helm, kubectl \\
+\textbf{Infrastructure as Code:} Terraform, AWS CDK \\
+\textbf{Scripting \& Languages:} Python, Shell/CLI, C\#, Java, TypeScript, SQL \\
+\textbf{Linux \& Tooling:} Linux/Unix, Git, Bash, CLI Tools, VS Code, IntelliJ, Jira, Confluence, Swagger/OpenAPI \\
+\textbf{Monitoring, Logging \& Troubleshooting:} OpenTelemetry, Splunk, AWS CloudWatch, Distributed Tracing, Log Analysis, Root-Cause Analysis, Debugging \\
+\textbf{Backend \& Practices:} .NET 8, Spring Boot, REST APIs, Microservices, Kafka, Redis, PostgreSQL, OAuth 2.0, Agile/Scrum, Code Review
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Slashed deployment time by \textbf{50\%} and build cycles by \textbf{33\%} by overhauling \textbf{Azure DevOps} CI/CD pipelines with staged gates, parallel jobs, and automated testing.
+    \item Established \textbf{OAuth 2.0} authentication on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+ platform services}, integrating \textbf{Okta}-issued \textbf{JWT} tokens for secure cross-service authorization.
+    \item Diagnosed production issues across distributed services using \textbf{Splunk} logs, \textbf{OpenTelemetry} tracing, and \textbf{AWS CloudWatch}, driving root-cause fixes and cutting customer-reported issues by \textbf{25\%} on Xactimate import/export.
+    \item Architected fault-tolerant \textbf{event-driven} pipelines on \textbf{AWS SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent processing, retry/backoff, and dead-letter queues, sustaining \textbf{500+ production messages daily} with zero message loss.
+    \item Co-designed \textbf{RulesRunner}, a stateless microservice that offloaded compliance checks to \textbf{AWS SQS}, reducing wait time from \textbf{3000ms to 500ms (83\% improvement)} and enabling horizontal scaling.
+    \item Built an internal \textbf{workflow automation agent} on the \textbf{OpenAI API} that auto-creates and routes \textbf{30--50 Jira tickets per week}, eliminating repetitive manual triage for the engineering team.
+    \item Produced \textbf{2 idempotent migration scripts} moving \textbf{1M+ records each}, enabling zero-downtime deployments.
+    \item Cut technical debt by \textbf{55\%} and improved runtime performance by \textbf{30\%} by migrating legacy \textbf{.NET Framework} services to \textbf{.NET 8}; improved API response time by \textbf{34\%} via \textbf{Redis}/\textbf{ElastiCache} caching.
+    \item Reached \textbf{90\% code coverage} with \textbf{xUnit}/\textbf{NUnit} tests and authored technical design documents (service boundaries, API contracts, DLQ handling) to align teams.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Production Platform} \hfill Jul 2026 -- Present \\
+Live: \href{https://sanskar-engineers-payroll-ui.onrender.com/login}{sanskar-engineers-payroll-ui.onrender.com}
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant \textbf{SaaS} to production serving \textbf{15+ client organizations}, owning the full lifecycle as sole engineer on \textbf{Spring Boot} (\textbf{Java 17}), \textbf{React}, and \textbf{PostgreSQL}.
+    \item Deployed the \textbf{Docker}-containerized backend and SPA to \textbf{Render} with managed \textbf{PostgreSQL} on \textbf{Supabase}, and automated daily attendance backfill with a \textbf{Spring @Scheduled} job plus cron fallback.
+\end{itemize}
+
+\textbf{Expense Tracker -- Microservices Application} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Built \textbf{5+ Spring Boot microservices} with \textbf{Apache Kafka} messaging and \textbf{Kong API Gateway}; containerized all services with \textbf{Docker} and orchestrated deployments on \textbf{Kubernetes}, simulating \textbf{1000+ transactions} for load and resilience testing.
+\end{itemize}
+
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\section*{Education}
+\textbf{B.Tech in Computer Engineering}, Vishwakarma Institute of Technology, Pune, India \hfill 2020 -- 2024 \;|\; CGPA: 8.8/10
+
+\end{document}

@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{iftex}
+\usepackage[none]{hyphenat}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ATS parsers mis-read f-ligatures ("Confluence" -> "Conuence") and split
+% hyphenated line breaks, so both are disabled at the cost of looser spacing.
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont       = lmroman10-bold.otf,
+    ItalicFont     = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+    Ligatures      = NoCommon
+  ]
+\fi
+\sloppy
+\raggedbottom
+
+\hypersetup{pdftitle={Sanskar Jain - Backend Software Engineer Resume}, pdfauthor={Sanskar Jain}, pdfsubject={Backend Software Engineer, Java/Spring Boot/AWS}, pdfkeywords={Java, Spring Boot, Microservices, REST API, SQL, AWS, ECS, S3, Lambda, Kafka, Docker, Kubernetes, CI/CD, Agile}}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sanskar Jain}} \\
+    \vspace{2pt}
+    Backend Software Engineer \;|\; Java \& Spring Boot \;|\; Microservices \;|\; AWS \;|\; Hyderabad, Telangana, India \\
+    \vspace{2pt}
+    \href{tel:+919021620156}{+91 90216 20156} \;|\;
+    \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sanskar-jain0901/}{linkedin.com/in/sanskar-jain0901}
+\end{center}
+
+\section*{Professional Summary}
+Backend Software Engineer with \textbf{2+ years} of experience building cloud-native \textbf{Java}/\textbf{Spring Boot} microservices and \textbf{RESTful APIs} backed by optimized \textbf{SQL} databases on \textbf{AWS}.
+Cut latency by \textbf{83\%}, served \textbf{200K+ weekly API requests}, and sustained \textbf{500+ daily events} with zero message loss, delivering clean, tested code (\textbf{90\% coverage}) in \textbf{Agile} sprints.
+Hands-on with \textbf{Apache Kafka}, \textbf{Docker}/\textbf{Kubernetes}, and \textbf{CI/CD} pipelines. B.Tech in Computer Engineering.
+
+\section*{Technical Skills}
+\begin{sloppypar}
+\noindent
+\textbf{Languages:} Java 11+, Java 17, SQL, Python, C\#, TypeScript, JavaScript \\
+\textbf{Backend \& APIs:} Spring Boot, Spring Framework, Spring Security, Spring Data JPA/Hibernate, REST APIs, Microservices Architecture, Event-Driven Architecture, Swagger/OpenAPI, API Versioning \\
+\textbf{AWS Cloud:} EC2, ECS, EKS, Lambda, S3, SQS, SNS, ElastiCache, CloudWatch \\
+\textbf{Databases \& SQL:} PostgreSQL, MySQL, MongoDB, Elasticsearch, Schema Design, Query Optimization, Indexing, Database Migrations \\
+\textbf{Messaging \& Caching:} Apache Kafka, AWS SQS, AWS SNS, Redis \\
+\textbf{DevOps:} Docker, Kubernetes, Terraform, CI/CD, Azure DevOps Pipelines, Maven, Git, Linux/CLI \\
+\textbf{Quality \& Practices:} Unit Testing (xUnit/NUnit), Integration Testing, Code Review, Agile/Scrum, Jira, AI-Assisted Development (GitHub Copilot, Claude Code)
+\end{sloppypar}
+
+\section*{Professional Experience}
+
+\textbf{Verisk Analytics} \hfill Jan 2024 -- Present \\
+\textbf{Software Engineer II} \hfill Hyderabad, India
+
+\begin{itemize}[leftmargin=*]
+    \item Co-designed \textbf{RulesRunner}, a stateless \textbf{Java}/\textbf{Spring Boot} microservice using \textbf{CQRS} and \textbf{AWS SQS} that offloaded compliance checks from the client, cutting wait time from \textbf{3000ms to 500ms (83\%)} while enabling horizontal scaling.
+    \item Built \textbf{Java}/\textbf{Spring Boot} \textbf{RESTful APIs} serving \textbf{200K+ weekly requests} with validation, structured error handling, \textbf{Swagger/OpenAPI} docs, and \textbf{URL-based versioning} across \textbf{16 v2 endpoints} for backward compatibility.
+    \item Architected fault-tolerant \textbf{event-driven} pipelines on \textbf{AWS SQS}, \textbf{SNS}, and \textbf{Lambda} with idempotent processing, retry/backoff, and dead-letter queues, sustaining \textbf{500+ messages daily} with zero message loss.
+    \item Engineered a backend for \textbf{Xactimate} import/export of \textbf{30+ data types} using async processing, \textbf{Amazon S3} presigned URLs, and \textbf{MongoDB}, reducing transfer time by \textbf{38\%} and customer-reported issues by \textbf{25\%}.
+    \item Tuned \textbf{SQL}/\textbf{PostgreSQL} and \textbf{MongoDB} indexing from slow-query analysis, added \textbf{Redis}/\textbf{ElastiCache} caching (\textbf{34\%} faster API responses), and shipped \textbf{2 idempotent migration scripts} moving \textbf{1M+ records each} with zero downtime.
+    \item Deployed \textbf{OAuth 2.0} on \textbf{AWS EKS} behind \textbf{Kong API Gateway} for \textbf{6 of 15+ platform services}, integrating \textbf{Okta} \textbf{JWT} tokens, and deployed and monitored services on \textbf{AWS EC2}.
+    \item Overhauled \textbf{Azure DevOps} \textbf{CI/CD} pipelines with staged gates and parallel jobs, slashing deployment time by \textbf{50\%} and build cycles by \textbf{33\%}, and migrated legacy services to modern async patterns, cutting technical debt by \textbf{55\%}.
+    \item Wrote unit and integration tests reaching \textbf{90\% code coverage}, joined code reviews in Agile sprints, and used \textbf{GitHub Copilot} and \textbf{Claude Code} daily, reviewing all generated code before merge.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Attendance \& Payroll SaaS -- Multi-Tenant Platform (Java 17, Spring Boot 4, PostgreSQL)} \hfill Jul 2026 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Shipped a multi-tenant \textbf{Spring Boot}/\textbf{Java 17} \textbf{REST API} with \textbf{PostgreSQL} schema design and \textbf{Hibernate} tenant filtering to production for \textbf{15+ client organizations}, secured with \textbf{Spring Security}, \textbf{JWT}, and role-based access, and deployed via \textbf{Docker}.
+\end{itemize}
+
+\textbf{Expense Tracker -- Event-Driven Microservices Application (Java, Spring Boot, Kafka)} \hfill Aug 2023 -- Dec 2023
+\begin{itemize}[leftmargin=*]
+    \item Developed \textbf{5+} \textbf{Spring Boot} microservices with \textbf{Apache Kafka} messaging, \textbf{PostgreSQL}, and \textbf{Kong API Gateway}; containerized with \textbf{Docker}, orchestrated on \textbf{Kubernetes}, and load-tested with \textbf{1000+ transactions}.
+\end{itemize}
+
+\section*{Education \& Certifications}
+\textbf{B.Tech in Computer Engineering} \hfill 2020 -- 2024 \\
+Vishwakarma Institute of Technology, Pune, India \hfill CGPA: 8.8/10 \\
+\textbf{AWS Certified Cloud Practitioner} \hfill Amazon Web Services \;|\; Oct 2024
+
+\end{document}

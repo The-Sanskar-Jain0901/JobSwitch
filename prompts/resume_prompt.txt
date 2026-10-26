@@ -1,33 +1,29 @@
-Prompt:
 I am attaching:
-1. My resume or LinkedIn profile
+1. My baseline resume (the only source of truth for my experience)
 2. A job description
 
-Act as an ATS resume expert, recruiter, and hiring manager.
+Act as a hiring manager for this role who reads a lot of resumes and is sceptical of inflated ones.
 
-Tasks:
-1. Analyze my profile for experience, skills, achievements, and strengths.
-2. Analyze the job description for required skills, keywords, responsibilities, and role expectations.
-3. Create a highly tailored, ATS-friendly one-page Harvard-style resume in LaTeX.
-4. Identify gaps, then produce a revised resume that fills those gaps, and list exactly what you changed.
+Task: adapt my baseline resume to this job description.
 
-Resume requirements:
-- STRICT ONE PAGE ONLY — this is a hard constraint, not a guideline. The compiled PDF must fit entirely on a single page. If content overflows, cut or condense ruthlessly: shorten bullets, reduce the summary to 3 lines, drop older or less relevant roles. Do not reduce font size below 10pt or margins below 0.5in to compensate. There must be no second page under any circumstance.
-- Clean, minimalist, ATS-safe layout with no tables, icons, columns, or graphics
-- Header with name, role-focused headline, and contact details
-- 4 to 5 line professional summary tailored to the role (reduce to 3 lines if space is tight)
-- Key skills section after summary, grouped by relevance and prioritized by JD keywords
-- Reverse chronological experience with 3 to 4 impact-focused bullets per role (cut to 2 bullets for older roles if needed to stay on one page)
-- Include projects only if they strengthen fit for the role and space allows
-- Keep education concise — one line per degree
-- Ensure my resume includes at least 12 strong, ATS-friendly bullet points highlighting technical skills, ownership, achievements, and measurable impact across experience and projects.
+Hard rules:
+- Use ONLY content from the baseline. Do not add any technology, tool, framework, skill, metric, responsibility, or achievement that is not already there. If the JD asks for something I don't have, leave it out and list it under Gaps.
+- Keep every title, company, and date exactly as written in the baseline.
+- Keep the tone plain and specific. Vary verbs. Do not add percentages or numbers that aren't in the baseline, and do not make every bullet end in a metric. Avoid words like "architected", "spearheaded", "slashed", "championed".
+- Do not restructure the resume. Allowed changes are:
+  1. Reorder bullets within a role so the most relevant come first.
+  2. Rewrite the summary (3–4 lines) to speak to this role, using only facts from the baseline.
+  3. Reorder skills so the most relevant lines come first; remove skills that are irrelevant to this role. Do not add skills.
+  4. Lightly reword at most 3 bullets to use the JD's terminology where it describes the same thing (e.g. "message queue" vs "SQS"). Meaning must stay identical.
+  5. Trim or drop bullets and project lines to fit one page.
+- Headline under my name may change to match the role family, but must still be true (e.g. "Backend Software Engineer | C# / .NET | AWS").
 
-Each experience bullet must use a strong action verb, include measurable impact, and align with the job requirements.
+Format:
+- STRICT ONE PAGE. Font not below 10pt, margins not below 0.5in. If it overflows, cut bullets, do not shrink.
+- Clean ATS-safe layout: no tables, columns, icons, or graphics.
+- Output as LaTeX using my existing template structure.
 
-After the resume, provide:
-1. Keywords Added: important JD keywords you included
-2. Match Score: estimated ATS match percentage
-3. Gaps: missing skills or weaker areas for this role
-4. Gap Fixes: for each gap identified, describe exactly what change you made to the resume to address it — which section was updated, what was added or reworded, and why. If a gap cannot be addressed without fabricating experience, explicitly state that and suggest how the candidate could address it (e.g., a side project, certification, or course).
-
-Goal: produce a resume that passes ATS filters, feels highly relevant to recruiters, and improves shortlist chances for this specific job.
+After the resume, give me:
+1. Changes made: each change, one line each (reordered X, reworded Y, dropped Z).
+2. Gaps: JD requirements I don't meet, stated plainly. Do not suggest wording to cover them. If relevant, suggest one concrete way to build the experience (side project, cert, course).
+3. Fit check: in two or three sentences, is this role a realistic match for my level and stack, or a stretch? Be direct.

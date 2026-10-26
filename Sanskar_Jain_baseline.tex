@@ -1,0 +1,90 @@
+% Sanskar Jain -- Baseline Resume
+% Compile with: pdflatex Sanskar_Jain_baseline.tex
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern}  % uncomment on Overleaf or a full TeX install for crisper fonts
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\pagestyle{empty}
+\setlength{\parskip}{0pt}
+
+% Section headings: small caps, rule underneath
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\vspace{-6pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+% Tight bullet lists
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, parsep=0pt, topsep=2pt, label=\textbullet}
+
+% Role line: title left, dates right
+\newcommand{\role}[2]{\noindent\textbf{#1}\hfill #2\par}
+\newcommand{\org}[2]{\noindent\textbf{\large #1}\hfill #2\par\vspace{1pt}}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE\bfseries Sanskar Jain}\\[3pt]
+  Backend Software Engineer \,|\, C\# / .NET \,|\, AWS\\[2pt]
+  Hyderabad, India \,|\, +91 90216 20156 \,|\,
+  \href{mailto:sanskarjain0901@gmail.com}{sanskarjain0901@gmail.com} \,|\,
+  \href{https://linkedin.com/in/sanskar-jain0901}{linkedin.com/in/sanskar-jain0901} \,|\,
+  \href{https://github.com/your-handle}{github.com/your-handle}
+\end{center}
+
+% ---------- Summary ----------
+\section{Summary}
+Backend engineer with 2+ years building and running .NET services on AWS at Verisk Analytics, working on the Xactimate import/export platform. Most of that time has gone into event-driven microservices, authentication and identity (OAuth 2.0, Okta, JWT), and API performance. Comfortable owning a feature from design document through production support. Outside work, built and run a multi-tenant payroll SaaS used by 15+ small businesses.
+
+% ---------- Skills ----------
+\section{Technical Skills}
+\textbf{Languages:} C\#, Java, SQL, TypeScript, Python\\
+\textbf{Backend:} .NET 8 / ASP.NET Core, .NET Framework (MVC, Web API 2), REST APIs and versioning, Spring Boot\\
+\textbf{Cloud and infrastructure:} AWS (EKS, Lambda, SQS, SNS, S3, ElastiCache), Docker, Kubernetes, Kong Gateway, Azure DevOps CI/CD\\
+\textbf{Data and messaging:} MongoDB, PostgreSQL, Redis, Elasticsearch, Apache Kafka\\
+\textbf{Auth, observability, testing:} OAuth 2.0 / OIDC, JWT, Okta, OpenTelemetry, Splunk, xUnit / NUnit
+
+% ---------- Experience ----------
+\section{Experience}
+\org{Verisk Analytics}{Hyderabad, India}
+\role{Software Engineer II}{Apr 2026 -- Present}
+\role{Software Engineer I}{Jul 2024 -- Mar 2026}
+\begin{itemize}
+  \item Co-designed and built RulesRunner, a stateless .NET microservice that moved compliance checks off the client onto an SQS-backed worker, cutting user wait time from about 3\,s to 0.5\,s and allowing horizontal scaling.
+  \item Built the backend for Xactimate import/export across 30+ data types using asynchronous processing, S3 presigned URLs and MongoDB. Transfers became ${\sim}38\%$ faster and related customer tickets fell by roughly a quarter.
+  \item Rolled out OAuth 2.0 with Okta-issued JWTs on AWS EKS behind Kong API Gateway for 6 of the platform's 15+ services, integrating with the existing Identity Server flow.
+  \item Migrated 4 client applications from Forms Authentication to JWT bearer auth over a shared Redis session store, adding token revocation so that logout ends the session everywhere instead of leaving tokens valid for days.
+  \item Implemented Okta Event Hook--driven logout propagation across 4 tenants with an idempotent webhook receiver and a reconciliation poller for missed events, after confirming from the OIDC spec that Okta lacks back-channel logout.
+  \item Designed event-driven pipelines on SQS, SNS and Lambda with idempotent consumers, retry/backoff and dead-letter queues; wrote the design docs for service boundaries, API contracts and DLQ handling.
+  \item Added URL-based versioning across 16 v2 endpoints and Swagger/OpenAPI docs to ASP.NET Core APIs handling ${\sim}200$K requests a week.
+  \item Cut hot-endpoint response times by ${\sim}34\%$ via ElastiCache caching, connection pooling and index tuning on MongoDB and PostgreSQL.
+  \item Migrated legacy .NET Framework services (ASP.NET MVC, Web API 2) to .NET 8 and reworked the Azure DevOps pipelines with staged gates and parallel jobs, roughly halving deployment time.
+  \item Built an internal agent on the OpenAI API that drafts and routes 30--50 Jira tickets a week; use Claude Code daily for implementation and refactoring, reviewing all generated code before merge.
+\end{itemize}
+\vspace{1pt}
+\role{Software Engineering Intern}{Jan 2024 -- Jun 2024}
+
+% ---------- Projects ----------
+\section{Projects}
+\role{Attendance \& Payroll SaaS (sole developer) \,|\, \normalfont\href{https://sanskar-engineers-payroll-ui.onrender.com}{sanskar-engineers-payroll-ui.onrender.com}}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Multi-tenant payroll and attendance product used by 15+ small businesses, built on Spring Boot (Java 17), React + TypeScript and PostgreSQL, deployed on Render.
+  \item Tenant isolation via a shared-schema \texttt{org\_id}, Hibernate filters and query-level scoping; JWT auth with 15-minute access tokens, revocable refresh tokens and 3-role RBAC.
+  \item Payroll engine for monthly, daily and hourly pay with prorated mid-month rate changes, overtime, advances and carry-forward; finalized records are locked against retroactive edits.
+\end{itemize}
+\vspace{1pt}
+\role{Expense Tracker}{Aug -- Dec 2023}
+Five Spring Boot microservices with Kafka and Kong API Gateway, containerized with Docker and run on Kubernetes.
+
+% ---------- Education & Certification ----------
+\section{Education \& Certification}
+\role{B.Tech in Computer Engineering, Vishwakarma Institute of Technology, Pune}{2020 -- 2024 \,|\, CGPA 8.8/10}
+\role{AWS Certified Cloud Practitioner, Amazon Web Services}{Oct 2024}
+
+\end{document}
